@@ -15,6 +15,6 @@ public class FirstQuestionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_question);
         progressBar = findViewById(R.id.progressId);
-        progressBar.setProgress(50);
+        progressBar.setProgress(70);
     }
 }

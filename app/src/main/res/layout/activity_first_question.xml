@@ -130,4 +130,27 @@
                 android:text="Нет" />
         </RadioGroup>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnNext"
+        android:textColor="@color/colorTvCoinCount"
+        android:layout_marginBottom="20dp"
+        android:text="2 из 6"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_height="wrap_content"
+        android:text="Далее"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/gradient_blue"
+        android:foreground="@drawable/my_ripple"
+        android:textAllCaps="false" />
+
 </RelativeLayout>

@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
 
     <color name="textColor">#343434</color>
+    <color name="colorTvCoinCount">#5CAFFF</color>
 </resources>

@@ -18,6 +18,7 @@
         android:textColor="@color/textColor"
         android:background="@drawable/gradient"
         android:foreground="@drawable/my_ripple"
+        android:onClick="onClick"
         android:textAllCaps="false" />
 
 </RelativeLayout>

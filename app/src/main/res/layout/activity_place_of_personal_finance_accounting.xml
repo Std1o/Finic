@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_questions"
-    tools:context=".FirstQuestionActivity">
+    tools:context=".PlaceOfPersonalFinanceAccountingActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -96,39 +96,45 @@
         android:padding="45dp"
         android:layout_below="@id/toolbar"
         android:textAlignment="center"
-        android:text="Ведете ли вы учет личных финансов?"
+        android:text="Где вы ведете учете личных финансов?"
         android:background="@color/colorWhite"
         android:textColor="@color/textColor"
         android:textSize="17sp"/>
 
-        <RadioGroup
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/tvQuestion"
+        android:layout_marginLeft="70dp">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="70dp"
-            android:layout_below="@+id/tvQuestion"
-            android:layout_marginLeft="70dp">
+            android:text="Приложение" />
 
-            <RadioButton
-                android:id="@+id/radioButton1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Да" />
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Заметки"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
 
-            <RadioButton
-                android:id="@+id/radioButton2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Время от времени"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"/>
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Таблица" />
 
-            <RadioButton
-                android:id="@+id/radioButton3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Нет" />
-        </RadioGroup>
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="В блокноте от руки" />
+    </RadioGroup>
 
     <TextView
         android:layout_width="wrap_content"
@@ -151,7 +157,6 @@
         android:textColor="@color/colorWhite"
         android:background="@drawable/gradient_blue"
         android:foreground="@drawable/my_ripple"
-        android:onClick="onClick"
         android:textAllCaps="false" />
 
 </RelativeLayout>

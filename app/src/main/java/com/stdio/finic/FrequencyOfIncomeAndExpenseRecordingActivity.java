@@ -2,14 +2,13 @@ package com.stdio.finic;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-public class PlaceOfPersonalFinanceAccountingActivity extends AppCompatActivity {
+public class FrequencyOfIncomeAndExpenseRecordingActivity extends AppCompatActivity {
 
     private ProgressBar progressBar;
     int id = 0;
@@ -18,7 +17,7 @@ public class PlaceOfPersonalFinanceAccountingActivity extends AppCompatActivity 
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.AppTheme_ToolBar);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_place_of_personal_finance_accounting);
+        setContentView(R.layout.activity_frequency_of_income_and_expense_recording);
 
         progressBar = findViewById(R.id.progressId);
         progressBar.setProgress(70);
@@ -37,12 +36,8 @@ public class PlaceOfPersonalFinanceAccountingActivity extends AppCompatActivity 
         @Override
         public void onClick(View v) {
             RadioButton rb = (RadioButton)v;
-            Toast.makeText(PlaceOfPersonalFinanceAccountingActivity.this, rb.getText(), Toast.LENGTH_SHORT).show();
+            id = rb.getId();
+            Toast.makeText(FrequencyOfIncomeAndExpenseRecordingActivity.this, rb.getText(), Toast.LENGTH_SHORT).show();
         }
     };
-
-    public void onClick(View view) {
-        startActivity(new Intent(PlaceOfPersonalFinanceAccountingActivity.this, FrequencyOfIncomeAndExpenseRecordingActivity.class));
-
-    }
 }

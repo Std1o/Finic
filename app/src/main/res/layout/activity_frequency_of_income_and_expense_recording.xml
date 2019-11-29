@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_questions"
-    tools:context=".PlaceOfPersonalFinanceAccountingActivity">
+    tools:context=".FrequencyOfIncomeAndExpenseRecordingActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -93,13 +93,13 @@
         android:id="@+id/tvQuestion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="45dp"
         android:layout_below="@id/toolbar"
-        android:textAlignment="center"
-        android:text="Где вы ведете учете личных финансов?"
         android:background="@color/colorWhite"
+        android:padding="45dp"
+        android:text="Как часто вы вносите доходы/расходы в учет?"
+        android:textAlignment="center"
         android:textColor="@color/textColor"
-        android:textSize="17sp"/>
+        android:textSize="17sp" />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -113,13 +113,13 @@
             android:id="@+id/radioButton1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Приложение" />
+            android:text="1 раз в день" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Заметки"
+            android:text="1 раз в 3-4 дня"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"/>
 
@@ -127,13 +127,13 @@
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Таблица" />
+            android:text="1 раз в неделю" />
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="В блокноте от руки" />
+            android:text="1 раз в месяц" />
     </RadioGroup>
 
     <TextView
@@ -157,7 +157,6 @@
         android:textColor="@color/colorWhite"
         android:background="@drawable/gradient_blue"
         android:foreground="@drawable/my_ripple"
-        android:textAllCaps="false"
-        android:onClick="onClick"/>
+        android:textAllCaps="false" />
 
 </RelativeLayout>

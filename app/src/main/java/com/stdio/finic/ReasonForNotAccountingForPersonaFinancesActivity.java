@@ -2,14 +2,13 @@ package com.stdio.finic;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-public class FrequencyOfIncomeAndExpenseRecordingActivity extends AppCompatActivity {
+public class ReasonForNotAccountingForPersonaFinancesActivity extends AppCompatActivity {
 
     private ProgressBar progressBar;
     int id = 0;
@@ -18,7 +17,7 @@ public class FrequencyOfIncomeAndExpenseRecordingActivity extends AppCompatActiv
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.AppTheme_ToolBar);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_frequency_of_income_and_expense_recording);
+        setContentView(R.layout.activity_reason_for_not_accounting_for_persona_finances);
 
         progressBar = findViewById(R.id.progressId);
         progressBar.setProgress(70);
@@ -38,12 +37,7 @@ public class FrequencyOfIncomeAndExpenseRecordingActivity extends AppCompatActiv
         public void onClick(View v) {
             RadioButton rb = (RadioButton)v;
             id = rb.getId();
-            Toast.makeText(FrequencyOfIncomeAndExpenseRecordingActivity.this, rb.getText(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(ReasonForNotAccountingForPersonaFinancesActivity.this, rb.getText(), Toast.LENGTH_SHORT).show();
         }
     };
-
-    public void onClick(View view) {
-        startActivity(new Intent(FrequencyOfIncomeAndExpenseRecordingActivity.this, ReasonForNotAccountingForPersonaFinancesActivity.class));
-
-    }
 }

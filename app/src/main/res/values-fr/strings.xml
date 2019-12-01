@@ -10,15 +10,15 @@
     <string name="getVip">Вперед за VIP-статусом</string>
     <string name="send">Отправить</string>
 
-    <string name="hello">Привет!</string>
-    <string name="name">Меня зовут</string>
-    <string name="finik">Финик</string>
-    <string name="startFirstPart">И я твой будущий финансовый бро, который поможет тебе экономить до 30% от бюджета и откладывать деньги на вашу мечту!</string>
-    <string name="startFirstPart2">Пожалуйста, пройдите этот короткий опрос и получите по итогу</string>
-    <string name="thousand">1000 монет-бонусов</string>
-    <string name="in_our_app"> в нашем приложении.</string>
-    <string name="startFirstPart3">Ответьте на все вопросы и получите</string>
-    <string name="vip"> VIP-статус</string>
+    <string name="hello">Salut!</string>
+    <string name="name">Je suis ana</string>
+    <string name="finik">Finic</string>
+    <string name="startFirstPart">Et je suis votre futur courtier financier, ce qui vous permettra d\'économiser jusqu\'à 30% de votre budget et d\'économiser pour vos rêves!</string>
+    <string name="startFirstPart2">Veuillez répondre à ce court sondage et recevez</string>
+    <string name="thousand">1000 bonus</string>
+    <string name="in_our_app"> dans notre application</string>
+    <string name="startFirstPart3">Répondez à toutes les questions et obtenez le</string>
+    <string name="vip"> statut VIP</string>
 
 
     <string name="q1">Ведете ли вы учет личных финансов?</string>

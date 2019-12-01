@@ -13,6 +13,7 @@ public class ReasonForNotAccountingForPersonaFinancesActivity extends AppCompatA
 
     private ProgressBar progressBar;
     int id = 0;
+    String answer = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +38,12 @@ public class ReasonForNotAccountingForPersonaFinancesActivity extends AppCompatA
         public void onClick(View v) {
             RadioButton rb = (RadioButton)v;
             id = rb.getId();
-            Toast.makeText(ReasonForNotAccountingForPersonaFinancesActivity.this, rb.getText(), Toast.LENGTH_SHORT).show();
+            answer = "\n\nПочему вы не ведете учет личных финансов? - " + rb.getText();
         }
     };
 
     public void onClick(View view) {
+        MainActivity.message += answer;
         startActivity(new Intent(this, FinancialAccountingIncentiveActivity.class));
     }
 }

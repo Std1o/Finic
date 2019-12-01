@@ -49,6 +49,8 @@ public class ReasonForAccountingForPersonaFinancesActivity extends AppCompatActi
                             senderMail,
                             recipient);
                     dialog.dismiss();
+                    startActivity(new Intent(ReasonForAccountingForPersonaFinancesActivity.this, CompleteActivity.class));
+                    finish();
                 } catch (Exception e) {
                     Log.e("mylog", "Error: " + e.getMessage());
                 }

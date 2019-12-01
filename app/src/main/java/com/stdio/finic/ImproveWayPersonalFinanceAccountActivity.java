@@ -23,5 +23,6 @@ public class ImproveWayPersonalFinanceAccountActivity extends AppCompatActivity 
             MainActivity.message += "\n\nЧего вам не хватает в текущем способе учета личных финансов? - " + etAdvice.getText().toString();
         }
         startActivity(new Intent(this, ReasonForAccountingForPersonaFinancesActivity.class));
+        finish();
     }
 }

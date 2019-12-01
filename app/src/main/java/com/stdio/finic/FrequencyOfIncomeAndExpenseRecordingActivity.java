@@ -45,6 +45,7 @@ public class FrequencyOfIncomeAndExpenseRecordingActivity extends AppCompatActiv
     public void onClick(View view) {
         MainActivity.message += answer;
         startActivity(new Intent(FrequencyOfIncomeAndExpenseRecordingActivity.this, NecessaryFunctionalActivity.class));
+        finish();
 
     }
 }

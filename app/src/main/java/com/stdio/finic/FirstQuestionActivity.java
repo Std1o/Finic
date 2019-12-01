@@ -45,6 +45,7 @@ public class FirstQuestionActivity extends AppCompatActivity {
         if (id == R.id.radioButton1 || id == R.id.radioButton2) {
             MainActivity.message += answer;
             startActivity(new Intent(FirstQuestionActivity.this, PlaceOfPersonalFinanceAccountingActivity.class));
+            finish();
         }
         else if (id == R.id.radioButton3){
             MainActivity.message += answer;

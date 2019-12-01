@@ -64,5 +64,6 @@ public class PlaceOfPersonalFinanceAccountingActivity extends AppCompatActivity 
             MainActivity.message += s + ", ";
         }
         startActivity(new Intent(PlaceOfPersonalFinanceAccountingActivity.this, FrequencyOfIncomeAndExpenseRecordingActivity.class));
+        finish();
     }
 }

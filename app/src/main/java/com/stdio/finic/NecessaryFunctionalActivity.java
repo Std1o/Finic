@@ -69,6 +69,7 @@ public class NecessaryFunctionalActivity extends AppCompatActivity {
             MainActivity.message += "\nДругое - " + etAdvice.getText().toString();
         }
         startActivity(new Intent(this, ImproveWayPersonalFinanceAccountActivity.class));
+        finish();
 
     }
 }

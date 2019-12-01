@@ -3,9 +3,11 @@ package com.stdio.finic;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -13,6 +15,7 @@ public class FinancialAccountingIncentiveActivity extends AppCompatActivity {
 
     ArrayList<String> list = new ArrayList<>();
     String question = "";
+    TextView tvMoney;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +36,10 @@ public class FinancialAccountingIncentiveActivity extends AppCompatActivity {
 
         CheckBox fifthCheckBox = findViewById(R.id.checkBox5);
         fifthCheckBox.setOnClickListener(CheckBoxClickListener);
+
+        findViewById(R.id.tvMoney);
+        SharedPreferences prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);
+        tvMoney.setText(prefs.getString("moneyCount", "0"));
     }
 
     View.OnClickListener CheckBoxClickListener = new View.OnClickListener() {

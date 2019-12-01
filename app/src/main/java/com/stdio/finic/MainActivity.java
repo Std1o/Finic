@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     public static String message = "";
-    TextView tvMoney, tvStartBody;
+    TextView tvMoney, tvStartBody, tvStartBody2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +30,16 @@ public class MainActivity extends AppCompatActivity {
             tvMoney.setText(prefs.getInt("moneyCount", 0) + "");
             tvStartBody = findViewById(R.id.tvStartBody);
             String text = "<font color=#FFFFFF>\n" + getResources().getString(R.string.name)
-                    + "</font> <font color=#FFE300>" + getResources().getString(R.string.finik)
-                    + "</font>"
-                    + "</font> <font color=#FFFFFF>" + getResources().getString(R.string.startFirstPart)+ "</font>"
+                    + "</font> <font color=#FFE300>" + getResources().getString(R.string.finik) + "</font>"
+                    + "</font> <font color=#FFFFFF>" + getResources().getString(R.string.startFirstPart)+ "</font>";
+            tvStartBody.setText(Html.fromHtml(text));
+
+            tvStartBody2 = findViewById(R.id.tvStartBody2);
+            String text2 =
+                    "</font> <font color=#FFFFFF>" + getResources().getString(R.string.startFirstPart2)+ "</font>"
                     + "</font> <font color=#FFE300>" + getResources().getString(R.string.thousand)+ "</font>"
                     + "</font> <font color=#FFFFFF>" + getResources().getString(R.string.in_our_app)+ "</font>";
-            tvStartBody.setText(Html.fromHtml(text));
+            tvStartBody2.setText(Html.fromHtml(text2));
         }
     }
 

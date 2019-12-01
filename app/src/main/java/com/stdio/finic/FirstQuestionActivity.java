@@ -13,7 +13,7 @@ public class FirstQuestionActivity extends AppCompatActivity {
 
     private ProgressBar progressBar;
     int id = 0;
-    boolean isFirstClick = true;
+    String answer = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,18 +37,17 @@ public class FirstQuestionActivity extends AppCompatActivity {
         public void onClick(View v) {
             RadioButton rb = (RadioButton)v;
             id = rb.getId();
-            if (isFirstClick) {
-                MainActivity.message += "Ведете ли вы учет личных финансов? - " + rb.getText();
-            }
-            isFirstClick = false;
+            answer = "Ведете ли вы учет личных финансов? - " + rb.getText();
         }
     };
 
     public void onClick(View view) {
         if (id == R.id.radioButton1 || id == R.id.radioButton2) {
+            MainActivity.message += answer;
             startActivity(new Intent(FirstQuestionActivity.this, PlaceOfPersonalFinanceAccountingActivity.class));
         }
         else if (id == R.id.radioButton3){
+            MainActivity.message += answer;
             startActivity(new Intent(this, ReasonForNotAccountingForPersonaFinancesActivity.class));
         }
         else {

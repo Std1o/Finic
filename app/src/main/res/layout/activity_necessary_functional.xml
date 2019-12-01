@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_questions"
-    tools:context=".FrequencyOfIncomeAndExpenseRecordingActivity">
+    tools:context=".NecessaryFunctionalActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -93,53 +93,75 @@
         android:id="@+id/tvQuestion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar"
-        android:background="@color/colorWhite"
         android:padding="45dp"
-        android:text="Как часто вы вносите доходы/расходы в учет?"
+        android:layout_below="@id/toolbar"
         android:textAlignment="center"
+        android:text="Отметьте, какими функциями должно обладать идеальное приложение для учета финансов, чтобы вы им пользовались"
+        android:background="@color/colorWhite"
         android:textColor="@color/textColor"
-        android:textSize="17sp" />
+        android:textSize="17sp"/>
 
-    <RadioGroup
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_height="match_parent"
         android:layout_marginTop="70dp"
-        android:layout_below="@+id/tvQuestion"
-        android:layout_marginLeft="50dp">
+        android:layout_below="@+id/tvQuestion">
 
-        <RadioButton
-            android:id="@+id/radioButton1"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:text="1 раз в день" />
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="40dp">
 
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
-            android:textSize="15sp"
-            android:layout_height="wrap_content"
-            android:text="1 раз в 3-4 дня"
-            android:layout_marginTop="10dp" />
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Ручной ввод доходов/расходов в 2 клика" />
 
-        <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="match_parent"
-            android:textSize="15sp"
-            android:layout_height="wrap_content"
-            android:text="1 раз в неделю"
-            android:layout_marginTop="10dp"/>
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Интеграция с банками и автоматическая подгрузка всех расходов/поступлений с банковских счетов"
+                android:layout_marginTop="15dp"/>
 
-        <RadioButton
-            android:id="@+id/radioButton4"
-            android:layout_width="match_parent"
-            android:textSize="15sp"
-            android:layout_height="wrap_content"
-            android:text="1 раз в месяц"
-            android:layout_marginTop="10dp"/>
-    </RadioGroup>
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Наличие в приложении советника, который бы помогал вам экономить до 30% от бюджета и откладывать деньги на вашу мечту"
+                android:layout_marginTop="15dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Напоминалка об обязательных платежах"
+                android:layout_marginTop="15dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Напоминалка о перерасходах по категории и о возможном овердрафте"
+                android:layout_marginTop="15dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Возможность формировать индивидуальные отчеты по параметрам, удобным именно вам и делать выгрузки файлом"
+                android:layout_marginTop="15dp"/>
+        </LinearLayout>
+    </ScrollView>
 
     <TextView
         android:layout_width="wrap_content"
@@ -149,6 +171,13 @@
         android:textColor="@color/colorTvCoinCount"
         android:layout_marginBottom="15dp"
         android:text="2 из 6"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_layer"
+        android:layout_alignParentBottom="true"/>
 
     <Button
         android:id="@+id/btnNext"
@@ -162,7 +191,6 @@
         android:textColor="@color/colorWhite"
         android:background="@drawable/gradient_blue"
         android:foreground="@drawable/my_ripple"
-        android:textAllCaps="false"
-        android:onClick="onClick"/>
+        android:textAllCaps="false" />
 
 </RelativeLayout>

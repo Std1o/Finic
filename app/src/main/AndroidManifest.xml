@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ReasonForNotAccountingForPersonaFinancesActivity"></activity>
+        <activity android:name=".NecessaryFunctionalActivity"></activity>
+        <activity android:name=".ReasonForNotAccountingForPersonaFinancesActivity" />
         <activity android:name=".FrequencyOfIncomeAndExpenseRecordingActivity" />
         <activity android:name=".PlaceOfPersonalFinanceAccountingActivity" />
         <activity android:name=".FirstQuestionActivity" />

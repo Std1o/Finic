@@ -9,11 +9,11 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="60dp"
-        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_height="60dp"
         android:text="Вперед за VIP-статусом"
         android:textColor="@color/textColor"
         android:background="@drawable/gradient"

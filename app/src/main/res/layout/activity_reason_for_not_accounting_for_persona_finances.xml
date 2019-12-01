@@ -107,18 +107,20 @@
         android:orientation="vertical"
         android:layout_marginTop="70dp"
         android:layout_below="@+id/tvQuestion"
-        android:layout_marginLeft="70dp">
+        android:layout_marginLeft="50dp">
 
         <RadioButton
             android:id="@+id/radioButton1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="15sp"
             android:text="Не понимаю зачем" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="15sp"
             android:text="Не знаю, как это делать правильно"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"/>
@@ -127,12 +129,14 @@
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="15sp"
             android:text="Сложно, не удобно" />
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="15sp"
             android:text="Занимает много времени" />
     </RadioGroup>
 
@@ -142,17 +146,17 @@
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/btnNext"
         android:textColor="@color/colorTvCoinCount"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="15dp"
         android:text="2 из 6"/>
 
     <Button
         android:id="@+id/btnNext"
         android:layout_width="match_parent"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="60dp"
-        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_height="60dp"
         android:text="Далее"
         android:textColor="@color/colorWhite"
         android:background="@drawable/gradient_blue"

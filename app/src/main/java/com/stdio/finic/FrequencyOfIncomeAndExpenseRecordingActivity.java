@@ -43,7 +43,7 @@ public class FrequencyOfIncomeAndExpenseRecordingActivity extends AppCompatActiv
     };
 
     public void onClick(View view) {
-        startActivity(new Intent(FrequencyOfIncomeAndExpenseRecordingActivity.this, ReasonForNotAccountingForPersonaFinancesActivity.class));
+        startActivity(new Intent(FrequencyOfIncomeAndExpenseRecordingActivity.this, NecessaryFunctionalActivity.class));
 
     }
 }

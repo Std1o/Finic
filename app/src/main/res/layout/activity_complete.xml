@@ -31,4 +31,47 @@
             app:srcCompat="@drawable/money" />
     </LinearLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/tvCongratulations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/helloTextColor"
+            android:text="@string/congratulations" />
+
+        <TextView
+            android:id="@+id/tvCompleteBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@id/tvCongratulations"
+            android:layout_marginTop="18sp"
+            android:text="@string/complete1" />
+
+        <TextView
+            android:id="@+id/tvCompleteBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@id/tvCompleteBody"
+            android:layout_marginTop="18sp"
+            android:text="@string/complete2" />
+
+    </RelativeLayout>
+
 </RelativeLayout>

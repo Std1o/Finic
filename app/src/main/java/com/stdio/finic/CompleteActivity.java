@@ -4,11 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.Html;
 import android.widget.TextView;
 
 public class CompleteActivity extends AppCompatActivity {
 
-    TextView tvMoney;
+    TextView tvMoney, tvCompleteBody2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,5 +25,13 @@ public class CompleteActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = isCompletedPref.edit();
         editor.putBoolean("isCompleted", true);
         editor.apply();
+
+        tvCompleteBody2 = findViewById(R.id.tvCompleteBody2);
+        String text = "<font color=#FFFFFF>\n" + getResources().getString(R.string.complete2)
+                + "</font> <font color=#FFE300>" + getResources().getString(R.string.vip) + "</font>"
+                + "</font> <font color=#FFFFFF>" + getResources().getString(R.string.in_our_app)+ "</font>"
+                + "</font> <font color=#FFFFFF>" + getResources().getString(R.string.complete2_2)+ "</font>"
+                + "</font> <font color=#FFE300> " + getResources().getString(R.string.thousand)+ "!</font>";
+        tvCompleteBody2.setText(Html.fromHtml(text));
     }
 }

@@ -139,7 +139,7 @@
         android:background="@drawable/gradient_blue"
         android:foreground="@drawable/my_ripple"
         android:onClick="onClick"
-        android:text="@string/next"
+        android:text="@string/send"
         android:textAllCaps="false"
         android:textColor="@color/colorWhite" />
 

@@ -62,4 +62,9 @@
     <string name="no_answer_3_3">Четкое понимание того, что это позволит мне жить без долгов</string>
     <string name="no_answer_3_4">Четкое понимание того, что это позволит мне накопить на мечту</string>
     <string name="no_answer_3_5">Наличие удобного и простого приложения, которое автоматизировало бы учет и выдавало бы мне рекомендации по личным финансам</string>
+
+    <string name="congratulations">Поздравляем!</string>
+    <string name="complete1">Вы успешно ответили на все вопросы!</string>
+    <string name="complete2">Теперь вы получили</string>
+    <string name="complete2_2">по учету финансов! А также получили</string>
 </resources>

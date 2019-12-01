@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_questions"
+    tools:context=".NecessaryFunctionalActivityLine2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:translationZ="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/rlProgress">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="0"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Забрано   "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorTvCoinCount"
+                        android:text="600"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="   монет"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progressId"
+                android:layout_marginTop="30dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_below="@+id/rlProgress"
+                android:progressDrawable="@drawable/gradient_progress"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="10dp"/>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="45dp"
+        android:layout_below="@id/toolbar"
+        android:textAlignment="center"
+        android:text="Отметьте, какими функциями должно обладать идеальное приложение для учета финансов, чтобы вы им пользовались"
+        android:background="@color/colorWhite"
+        android:textColor="@color/textColor"
+        android:textSize="17sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/tvQuestion">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:layout_height="wrap_content"
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="40dp"
+                android:gravity="start"
+                android:textSize="15sp"
+                android:text="Ручной ввод доходов/расходов в 2 клика" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="40dp"
+                android:gravity="start"
+                android:text="Интеграция с банками и автоматическая подгрузка всех расходов/поступлений с банковских счетов"
+                android:layout_marginTop="15dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="40dp"
+                android:gravity="start"
+                android:text="Наличие в приложении советника, который бы помогал вам экономить до 30% от бюджета и откладывать деньги на вашу мечту"
+                android:layout_marginTop="15dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="40dp"
+                android:gravity="start"
+                android:text="Напоминалка об обязательных платежах"
+                android:layout_marginTop="15dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="40dp"
+                android:gravity="start"
+                android:text="Напоминалка о перерасходах по категории и о возможном овердрафте"
+                android:layout_marginTop="15dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="40dp"
+                android:gravity="start"
+                android:text="Возможность формировать индивидуальные отчеты по параметрам, удобным именно вам и делать выгрузки файлом"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/etAdvice"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:ems="10"
+                android:inputType="textPersonName|textCapSentences|textMultiLine"
+                android:background="@drawable/selector_lines_edit_view_bg"
+                android:gravity="center_horizontal"
+                android:hint="Опишите в 2-3 предложениях, пожалуйста."
+                android:layout_marginTop="30dp"/>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="135dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:srcCompat="@drawable/ic_layer"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnNext"
+        android:textColor="@color/colorTvCoinCount"
+        android:layout_marginBottom="15dp"
+        android:text="2 из 6"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_height="60dp"
+        android:text="Отправить"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/gradient_blue"
+        android:foreground="@drawable/my_ripple"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

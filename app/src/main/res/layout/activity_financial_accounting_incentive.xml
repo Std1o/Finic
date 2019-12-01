@@ -98,7 +98,7 @@
         android:layout_below="@id/toolbar"
         android:background="@color/colorWhite"
         android:padding="45dp"
-        android:text="Что вас сподвигло бы к учету личных финансов?"
+        android:text="@string/no_q3"
         android:textAlignment="center"
         android:textColor="@color/textColor"
         android:textSize="17sp" />
@@ -115,10 +115,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
+            android:gravity="start"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:text="Обучение личным финансам"
-            android:gravity="start"
+            android:text="@string/no_answer_3_1"
             android:textSize="15sp" />
 
         <CheckBox
@@ -127,10 +127,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="10dp"
+            android:gravity="start"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:gravity="start"
-            android:text="Четкое понимание, сколько средств я бы мог сэкономить с помощью учета"
+            android:text="@string/no_answer_3_2"
             android:textSize="15sp" />
 
         <CheckBox
@@ -139,10 +139,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="10dp"
+            android:gravity="start"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:gravity="start"
-            android:text="Четкое понимание того, что это позволит мне жить без долгов"
+            android:text="@string/no_answer_3_3"
             android:textSize="15sp" />
 
         <CheckBox
@@ -151,10 +151,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="10dp"
+            android:gravity="start"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:gravity="start"
-            android:text="Четкое понимание того, что это позволит мне накопить на мечту"
+            android:text="@string/no_answer_3_4"
             android:textSize="15sp" />
 
         <CheckBox
@@ -163,10 +163,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="10dp"
+            android:gravity="start"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:gravity="start"
-            android:text="Наличие удобного и простого приложения, которое автоматизировало бы учет и выдавало бы мне рекомендации по личным финансам"
+            android:text="@string/no_answer_3_5"
             android:textSize="15sp" />
     </LinearLayout>
 

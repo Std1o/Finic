@@ -98,7 +98,7 @@
         android:layout_below="@id/toolbar"
         android:background="@color/colorWhite"
         android:padding="45dp"
-        android:text="Почему вы не ведете учет личных финансов?"
+        android:text="@string/no_q2"
         android:textAlignment="center"
         android:textColor="@color/textColor"
         android:textSize="17sp" />
@@ -114,44 +114,44 @@
             android:id="@+id/radioButton1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:layout_marginLeft="60dp"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:layout_marginLeft="60dp"
-            android:text="Не понимаю зачем" />
+            android:text="@string/no_answer_2_1"
+            android:textSize="15sp" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:layout_marginLeft="60dp"
-            android:text="Не знаю, как это делать правильно"
-            android:layout_marginTop="10dp" />
+            android:text="@string/no_answer_2_2"
+            android:textSize="15sp" />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:layout_marginLeft="60dp"
-            android:text="Сложно, не удобно"
-            android:layout_marginTop="10dp" />
+            android:text="@string/no_answer_2_3"
+            android:textSize="15sp" />
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:layout_marginLeft="60dp"
-            android:text="Занимает много времени"
-            android:layout_marginTop="10dp" />
+            android:text="@string/no_answer_2_4"
+            android:textSize="15sp" />
     </RadioGroup>
 
     <TextView

@@ -98,7 +98,7 @@
         android:layout_below="@id/toolbar"
         android:background="@color/colorWhite"
         android:padding="45dp"
-        android:text="Почему вы ведете учет личных финансов?"
+        android:text="@string/yes_q6"
         android:textAlignment="center"
         android:textColor="@color/textColor"
         android:textSize="17sp" />
@@ -124,7 +124,7 @@
         android:inputType="textPersonName|textCapSentences|textMultiLine"
         android:background="@drawable/selector_lines_edit_view_bg"
         android:gravity="center_horizontal"
-        android:hint="Опишите в 2-3 предложениях, пожалуйста." />
+        android:hint="@string/answer_field" />
 
     <Button
         android:id="@+id/btnNext"

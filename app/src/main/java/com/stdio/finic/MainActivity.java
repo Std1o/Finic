@@ -20,6 +20,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -43,6 +44,14 @@ public class MainActivity extends AppCompatActivity {
             finish();
         }
         else {
+            Resources res = getResources();
+// Change locale settings in the app.
+            DisplayMetrics dm = res.getDisplayMetrics();
+            android.content.res.Configuration conf = res.getConfiguration();
+            System.out.println(getLanguageFromPosition(languagePref.getInt("language", getSpinnerPosition(Locale.getDefault().getCountry()))));
+            conf.setLocale(new Locale(getLanguageFromPosition(languagePref.getInt("language", getSpinnerPosition(Locale.getDefault().getCountry()))))); // API 17+ only.
+// Use conf.locale = new Locale(...) if targeting lower versions
+            res.updateConfiguration(conf, dm);
             setContentView(R.layout.activity_main);
 
             images.add(R.drawable.en);
@@ -54,14 +63,6 @@ public class MainActivity extends AppCompatActivity {
             images.add(R.drawable.ru);
 
             spinner = findViewById(R.id.spinner2);
-
-            Resources res = getResources();
-// Change locale settings in the app.
-            DisplayMetrics dm = res.getDisplayMetrics();
-            android.content.res.Configuration conf = res.getConfiguration();
-            conf.setLocale(new Locale("fr")); // API 17+ only.
-// Use conf.locale = new Locale(...) if targeting lower versions
-            res.updateConfiguration(conf, dm);
 
             ArrayAdapter<Integer> spinnerAdapter = new ArrayAdapter<Integer>(this, android.R.layout.simple_spinner_dropdown_item, images) {
 
@@ -106,13 +107,15 @@ public class MainActivity extends AppCompatActivity {
 
             spinner.setAdapter(spinnerAdapter);
             System.out.println(Locale.getDefault().getCountry());
-            spinner.setSelection(languagePref.getInt("language", getSpinnerPosition(Locale.getDefault().getCountry())));
+            int pos = languagePref.getInt("language", getSpinnerPosition(Locale.getDefault().getCountry()));
+            spinner.setSelection(pos);
             spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 @Override
                 public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                     SharedPreferences.Editor editor = languagePref.edit();
                     editor.putInt("language", position);
                     editor.apply();
+                    Toast.makeText(MainActivity.this, "Изменения вступят в силу после перезапуска", Toast.LENGTH_SHORT).show();
                 }
 
                 @Override
@@ -158,6 +161,9 @@ public class MainActivity extends AppCompatActivity {
             case "es":
                 position = 2;
                 break;
+            case "fr":
+                position = 3;
+                break;
             case "it":
                 position = 4;
                 break;
@@ -169,6 +175,34 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         return position;
+    }
+
+    private String getLanguageFromPosition(int position) {
+        String code = "";
+        switch (position) {
+            case 0:
+                code = "en";
+                break;
+            case 1:
+                code = "de";
+                break;
+            case 2:
+                code = "es";
+                break;
+            case 3:
+                code = "fr";
+                break;
+            case 4:
+                code = "it";
+                break;
+            case 5:
+                code = "pt";
+                break;
+            case 6:
+                code = "ru";
+                break;
+        }
+        return code;
     }
 
     public void onClick(View view) {

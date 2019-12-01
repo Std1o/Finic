@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_questions"
-    tools:context=".ImproveWayPersonalFinanceAccountActivity">
+    tools:context=".ReasonForAccountingForPersonaFinancesActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -96,7 +96,7 @@
         android:layout_below="@id/toolbar"
         android:background="@color/colorWhite"
         android:padding="45dp"
-        android:text="Чего вам не хватает в текущем способе учета личных финансов?"
+        android:text="Почему вы ведете учет личных финансов?"
         android:textAlignment="center"
         android:textColor="@color/textColor"
         android:textSize="17sp" />
@@ -133,7 +133,6 @@
         android:layout_marginBottom="40dp"
         android:layout_height="60dp"
         android:text="Далее"
-        android:onClick="onClick"
         android:textColor="@color/colorWhite"
         android:background="@drawable/gradient_blue"
         android:foreground="@drawable/my_ripple"

@@ -21,22 +21,22 @@
     <string name="vip"> status di VIP</string>
 
 
-    <string name="q1">Ведете ли вы учет личных финансов?</string>
-    <string name="answer1_1">Да</string>
-    <string name="answer1_2">Да, время от времени</string>
-    <string name="answer1_3">Нет</string>
+    <string name="q1">Tiene dei registri delle finanze personali?</string>
+    <string name="answer1_1">Sì</string>
+    <string name="answer1_2">Si\', di tanto in tanto</string>
+    <string name="answer1_3">No</string>
 
-    <string name="yes_q2">Где вы ведете учете личных финансов?</string>
-    <string name="yes_answer_2_1">Приложение в телефоне</string>
-    <string name="yes_answer_2_2">Заметки</string>
-    <string name="yes_answer_2_3">Таблица</string>
-    <string name="yes_answer_2_4">В блокноте от руки</string>
+    <string name="yes_q2">Dove tenete i registri delle vostre finanze personali?</string>
+    <string name="yes_answer_2_1">App Telefono</string>
+    <string name="yes_answer_2_2">Note</string>
+    <string name="yes_answer_2_3">Tavolo</string>
+    <string name="yes_answer_2_4">Nel taccuino a mano</string>
 
-    <string name="yes_q3">Как часто вы вносите доходы/расходы в учет?</string>
-    <string name="yes_answer_3_1">1 раз в день</string>
-    <string name="yes_answer_3_2">1 раз в 3-4 дня</string>
-    <string name="yes_answer_3_3">1 раз в неделю</string>
-    <string name="yes_answer_3_4">1 раз в месяц</string>
+    <string name="yes_q3">Con quale frequenza registrate le vostre entrate/spese?</string>
+    <string name="yes_answer_3_1">Una volta al giorno</string>
+    <string name="yes_answer_3_2">Una volta ogni 3-4 giorni</string>
+    <string name="yes_answer_3_3">Una volta alla settimana</string>
+    <string name="yes_answer_3_4">Una volta al meseц</string>
 
     <string name="yes_q4">Отметьте, какими функциями должно обладать идеальное приложение для учета финансов, чтобы вы им пользовались?</string>
     <string name="yes_answer_4_1">Ручной ввод доходов/расходов в 2 клика</string>

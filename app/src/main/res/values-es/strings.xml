@@ -63,10 +63,10 @@
     <string name="no_answer_3_4">Un claro entendimiento de que esto me permitirá ahorrar para un sueño</string>
     <string name="no_answer_3_5">Una aplicación conveniente y sencilla que automatizaría la contabilidad y me daría recomendaciones sobre finanzas personales</string>
 
-    <string name="congratulations">Поздравляем!</string>
-    <string name="complete1">Вы успешно ответили на все вопросы!</string>
-    <string name="complete2">Теперь вы получили</string>
-    <string name="complete2_2">по учету финансов! А также получили</string>
-    <string name="complete3">Мы оповестим вас уведомлением, когда приложение будет запущено и вы сможете потратить их чтобы экономить до 30% от своего бюджета и откладывать деньги на вашу мечту!</string>
-    <string name="complete4">Спасибо вам от Финика!</string>
+    <string name="congratulations">Parabéns!</string>
+    <string name="complete1">Você respondeu com sucesso a todas as perguntas!</string>
+    <string name="complete2">Agora você recebeu o</string>
+    <string name="complete2_2">contabilidade financeira!E também recebeu</string>
+    <string name="complete3">Iremos notificá-lo quando a aplicação for lançada e poderá gastá-la para poupar até 30% do seu orçamento e poupar dinheiro para os seus sonhos!</string>
+    <string name="complete4">Obrigado da Finic!</string>
 </resources>

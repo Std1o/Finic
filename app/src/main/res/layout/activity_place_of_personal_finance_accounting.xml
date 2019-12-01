@@ -101,7 +101,7 @@
         android:textColor="@color/textColor"
         android:textSize="17sp"/>
 
-    <RadioGroup
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -109,32 +109,33 @@
         android:layout_below="@+id/tvQuestion"
         android:layout_marginLeft="70dp">
 
-        <RadioButton
-            android:id="@+id/radioButton1"
+        <CheckBox
+            android:id="@+id/checkBox1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Приложение" />
 
-        <RadioButton
-            android:id="@+id/radioButton2"
+        <CheckBox
+            android:id="@+id/checkBox2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Заметки"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginTop="10dp"/>
 
-        <RadioButton
-            android:id="@+id/radioButton3"
+        <CheckBox
+            android:id="@+id/checkBox3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Таблица" />
+            android:text="Таблица"
+            android:layout_marginTop="10dp"/>
 
-        <RadioButton
-            android:id="@+id/radioButton4"
+        <CheckBox
+            android:id="@+id/checkBox4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="В блокноте от руки" />
-    </RadioGroup>
+            android:text="В блокноте от руки"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"

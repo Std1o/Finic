@@ -5,8 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.ProgressBar;
-import android.widget.RadioButton;
+import android.widget.CheckBox;
 import android.widget.Toast;
 
 public class PlaceOfPersonalFinanceAccountingActivity extends AppCompatActivity {
@@ -23,20 +24,23 @@ public class PlaceOfPersonalFinanceAccountingActivity extends AppCompatActivity 
         progressBar = findViewById(R.id.progressId);
         progressBar.setProgress(70);
 
-        RadioButton redRadioButton = findViewById(R.id.radioButton1);
-        redRadioButton.setOnClickListener(radioButtonClickListener);
+        CheckBox redCheckBox = findViewById(R.id.checkBox1);
+        redCheckBox.setOnClickListener(CheckBoxClickListener);
 
-        RadioButton greenRadioButton = findViewById(R.id.radioButton2);
-        greenRadioButton.setOnClickListener(radioButtonClickListener);
+        CheckBox greenCheckBox = findViewById(R.id.checkBox2);
+        greenCheckBox.setOnClickListener(CheckBoxClickListener);
 
-        RadioButton blueRadioButton = findViewById(R.id.radioButton3);
-        blueRadioButton.setOnClickListener(radioButtonClickListener);
+        CheckBox blueCheckBox = findViewById(R.id.checkBox3);
+        blueCheckBox.setOnClickListener(CheckBoxClickListener);
+
+        CheckBox fourthCheckBox = findViewById(R.id.checkBox4);
+        fourthCheckBox.setOnClickListener(CheckBoxClickListener);
     }
 
-    View.OnClickListener radioButtonClickListener = new View.OnClickListener() {
+    View.OnClickListener CheckBoxClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            RadioButton rb = (RadioButton)v;
+            CheckBox rb = (CheckBox)v;
             Toast.makeText(PlaceOfPersonalFinanceAccountingActivity.this, rb.getText(), Toast.LENGTH_SHORT).show();
         }
     };

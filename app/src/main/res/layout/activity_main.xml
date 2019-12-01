@@ -48,80 +48,17 @@
             android:textColor="@color/helloTextColor"
             android:text="@string/hello" />
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/tvStartBody"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tvHello"
+            android:textSize="18sp"
+            android:textAlignment="center"
             android:layout_centerHorizontal="true"
-            android:id="@+id/ln1">
-
-            <TextView
-                android:id="@+id/tvName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:textAlignment="center"
-                android:textColor="@color/colorWhite"
-                android:text="@string/name" />
-
-            <TextView
-                android:id="@+id/tvfinik"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:textAlignment="center"
-                android:textColor="@color/helloTextColor"
-                android:text="@string/finik" />
-
-            <TextView
-                android:id="@+id/tvStartFirstPart"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:textAlignment="center"
-                android:textColor="@color/colorWhite"
-                android:text="@string/startFirstPart" />
-
-        </LinearLayout>
-        <TextView
-            android:id="@+id/tvStartFirstPart2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textAlignment="center"
             android:textColor="@color/colorWhite"
-            android:layout_below="@id/ln1"
-            android:text="@string/startFirstPart2" />
-
-        <TextView
-            android:id="@+id/tvStartSecondPart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textAlignment="center"
-            android:textColor="@color/colorWhite"
-            android:layout_below="@id/tvStartFirstPart2"
-            android:text="@string/startSecondPart" />
-
-        <TextView
-            android:id="@+id/tvStartSecondPart2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textAlignment="center"
-            android:textColor="@color/colorWhite"
-            android:layout_below="@id/tvStartSecondPart"
-            android:text="@string/startSecondPart2" />
-
-        <TextView
-            android:id="@+id/tvThousand"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textAlignment="center"
-            android:textColor="@color/helloTextColor"
-            android:layout_toRightOf="@id/tvStartFirstPart2"
-            android:text="@string/thousand" />
+            android:layout_below="@id/tvHello"
+            android:layout_marginTop="18sp"
+            android:text="@string/name" />
 
     </RelativeLayout>
 

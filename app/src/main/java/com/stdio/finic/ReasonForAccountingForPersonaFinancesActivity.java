@@ -17,14 +17,19 @@ public class ReasonForAccountingForPersonaFinancesActivity extends AppCompatActi
     String recipient = "kwork-stdio@mail.ru";
     String senderMail = "finic.app@gmail.com";
     String senderPassword = "yourpassword";
+    EditText etAdvice;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reason_for_accounting_for_persona_finances);
+        etAdvice = findViewById(R.id.etAdvice);
     }
 
     public void onClick(View view) {
+        if (!etAdvice.getText().toString().isEmpty()) {
+            MainActivity.message += "\n\nПочему вы ведете учет личных финансов? - " + etAdvice.getText().toString();
+        }
         sendMessage();
     }
 

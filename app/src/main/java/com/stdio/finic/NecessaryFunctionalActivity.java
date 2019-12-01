@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 
 import java.util.ArrayList;
 
@@ -13,6 +14,7 @@ public class NecessaryFunctionalActivity extends AppCompatActivity {
 
     boolean isFirstClick = true;
     ArrayList<String> list = new ArrayList<>();
+    EditText etAdvice;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,8 @@ public class NecessaryFunctionalActivity extends AppCompatActivity {
 
         CheckBox sixthCheckBox = findViewById(R.id.checkBox6);
         sixthCheckBox.setOnClickListener(CheckBoxClickListener);
+
+        etAdvice = findViewById(R.id.etAdvice);
 
     }
 
@@ -60,6 +64,9 @@ public class NecessaryFunctionalActivity extends AppCompatActivity {
     public void onClick(View view) {
         for (String s : list) {
             MainActivity.message += s + ", ";
+        }
+        if (!etAdvice.getText().toString().isEmpty()) {
+            MainActivity.message += "\nДругое - " + etAdvice.getText().toString();
         }
         startActivity(new Intent(this, ImproveWayPersonalFinanceAccountActivity.class));
 

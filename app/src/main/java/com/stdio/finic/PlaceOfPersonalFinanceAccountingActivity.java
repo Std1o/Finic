@@ -17,7 +17,6 @@ public class PlaceOfPersonalFinanceAccountingActivity extends AppCompatActivity 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setTheme(R.style.AppTheme_ToolBar);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_place_of_personal_finance_accounting);
 

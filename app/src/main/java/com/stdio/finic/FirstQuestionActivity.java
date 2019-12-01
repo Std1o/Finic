@@ -16,7 +16,6 @@ public class FirstQuestionActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setTheme(R.style.AppTheme_ToolBar);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_question);
         progressBar = findViewById(R.id.progressId);

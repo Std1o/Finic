@@ -16,7 +16,6 @@ public class FrequencyOfIncomeAndExpenseRecordingActivity extends AppCompatActiv
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setTheme(R.style.AppTheme_ToolBar);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_frequency_of_income_and_expense_recording);
 

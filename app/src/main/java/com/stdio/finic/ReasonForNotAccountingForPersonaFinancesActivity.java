@@ -16,7 +16,6 @@ public class ReasonForNotAccountingForPersonaFinancesActivity extends AppCompatA
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setTheme(R.style.AppTheme_ToolBar);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reason_for_not_accounting_for_persona_finances);
 

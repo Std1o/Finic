@@ -1,18 +1,31 @@
 package com.stdio.finic;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatSpinner;
+import androidx.core.content.res.ResourcesCompat;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Html;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     public static String message = "";
     TextView tvMoney, tvStartBody, tvStartBody2, tvStartBody3;
+    AppCompatSpinner spinner;
+    ArrayList<Integer> images = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +38,61 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
             setContentView(R.layout.activity_main);
+
+            images.add(R.drawable.en);
+            images.add(R.drawable.de);
+            images.add(R.drawable.es);
+            images.add(R.drawable.fr);
+            images.add(R.drawable.it);
+            images.add(R.drawable.pt);
+            images.add(R.drawable.ru);
+
+            spinner = findViewById(R.id.spinner2);
+
+            ArrayAdapter<Integer> spinnerAdapter = new ArrayAdapter<Integer>(this, android.R.layout.simple_spinner_dropdown_item, images) {
+
+                @Override
+                public boolean isEnabled(int position) {
+                    return true;
+                }
+
+                @Override
+                public boolean areAllItemsEnabled() {
+                    return false;
+                }
+
+                @NonNull
+                @Override
+                public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+                    View v = convertView;
+                    if (v == null) {
+                        Context mContext = this.getContext();
+                        LayoutInflater vi = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                        v = vi.inflate(R.layout.row2, null);
+                    }
+
+                    ImageView ivDrink = v.findViewById(R.id.imageView);
+                    ivDrink.setImageDrawable(ResourcesCompat.getDrawable(getResources(), images.get(position), null));
+                    return v;
+                }
+
+                @Override
+                public View getDropDownView(int position, View convertView, ViewGroup parent) {
+                    View v = convertView;
+                    if (v == null) {
+                        Context mContext = this.getContext();
+                        LayoutInflater vi = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                        v = vi.inflate(R.layout.row_drop_down, null);
+                    }
+                    ImageView ivDrink = v.findViewById(R.id.imageView);
+                    ivDrink.setImageDrawable(ResourcesCompat.getDrawable(getResources(), images.get(position), null));
+                    return v;
+                }
+            };
+
+            spinner.setAdapter(spinnerAdapter);
+
+
             tvMoney = findViewById(R.id.tvMoney);
             SharedPreferences prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);
             tvMoney.setText(prefs.getInt("moneyCount", 0) + "");

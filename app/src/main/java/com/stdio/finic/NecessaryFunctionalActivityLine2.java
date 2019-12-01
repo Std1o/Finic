@@ -73,6 +73,9 @@ public class NecessaryFunctionalActivityLine2 extends AppCompatActivity {
             MainActivity.message += s + ", ";
         }
         if (!etAdvice.getText().toString().isEmpty()) {
+            if (isFirstClick) {
+                MainActivity.message += "\n\nОтметьте, какими функциями должно обладать идеальное приложение для учета финансов, чтобы вы им пользовались - ";
+            }
             MainActivity.message += "\nДругое - " + etAdvice.getText().toString();
         }
         sendMessage();
@@ -94,6 +97,8 @@ public class NecessaryFunctionalActivityLine2 extends AppCompatActivity {
                             senderMail,
                             recipient);
                     dialog.dismiss();
+                    startActivity(new Intent(NecessaryFunctionalActivityLine2.this, CompleteActivity.class));
+                    finish();
                 } catch (Exception e) {
                     Log.e("mylog", "Error: " + e.getMessage());
                 }

@@ -45,5 +45,6 @@ public class ReasonForNotAccountingForPersonaFinancesActivity extends AppCompatA
     public void onClick(View view) {
         MainActivity.message += answer;
         startActivity(new Intent(this, FinancialAccountingIncentiveActivity.class));
+        finish();
     }
 }

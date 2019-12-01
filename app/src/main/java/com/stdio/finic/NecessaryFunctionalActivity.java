@@ -66,6 +66,9 @@ public class NecessaryFunctionalActivity extends AppCompatActivity {
             MainActivity.message += s + ", ";
         }
         if (!etAdvice.getText().toString().isEmpty()) {
+            if (isFirstClick) {
+                MainActivity.message += "\n\nОтметьте, какими функциями должно обладать идеальное приложение для учета финансов, чтобы вы им пользовались - ";
+            }
             MainActivity.message += "\nДругое - " + etAdvice.getText().toString();
         }
         startActivity(new Intent(this, ImproveWayPersonalFinanceAccountActivity.class));

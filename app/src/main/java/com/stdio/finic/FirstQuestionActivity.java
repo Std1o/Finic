@@ -50,6 +50,7 @@ public class FirstQuestionActivity extends AppCompatActivity {
         else if (id == R.id.radioButton3){
             MainActivity.message += answer;
             startActivity(new Intent(this, ReasonForNotAccountingForPersonaFinancesActivity.class));
+            finish();
         }
         else {
             Toast.makeText(this, getResources().getString(R.string.err_no_selected), Toast.LENGTH_SHORT).show();

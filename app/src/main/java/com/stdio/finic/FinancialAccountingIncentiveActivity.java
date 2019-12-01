@@ -57,5 +57,6 @@ public class FinancialAccountingIncentiveActivity extends AppCompatActivity {
             MainActivity.message += s + ", ";
         }
         startActivity(new Intent(this, NecessaryFunctionalActivityLine2.class));
+        finish();
     }
 }

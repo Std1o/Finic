@@ -106,14 +106,16 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="70dp"
-        android:layout_below="@+id/tvQuestion"
-        android:layout_marginLeft="50dp">
+        android:layout_below="@+id/tvQuestion">
 
         <RadioButton
             android:id="@+id/radioButton1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="15sp"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:layout_marginLeft="60dp"
             android:text="Не понимаю зачем" />
 
         <RadioButton
@@ -121,6 +123,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="15sp"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:layout_marginLeft="60dp"
             android:text="Не знаю, как это делать правильно"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"/>
@@ -130,6 +135,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="15sp"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:layout_marginLeft="60dp"
             android:text="Сложно, не удобно" />
 
         <RadioButton
@@ -137,6 +145,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="15sp"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:layout_marginLeft="60dp"
             android:text="Занимает много времени" />
     </RadioGroup>
 

@@ -106,14 +106,16 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="70dp"
-        android:layout_below="@+id/tvQuestion"
-        android:layout_marginLeft="50dp">
+        android:layout_below="@+id/tvQuestion">
 
         <CheckBox
             android:id="@+id/checkBox1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="15sp"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:layout_marginLeft="60dp"
             android:text="Приложение" />
 
         <CheckBox
@@ -122,6 +124,9 @@
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:text="Заметки"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="10dp"/>
 
         <CheckBox
@@ -130,6 +135,9 @@
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:text="Таблица"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="10dp"/>
 
         <CheckBox
@@ -138,6 +146,9 @@
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:text="В блокноте от руки"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="10dp"/>
     </LinearLayout>
 

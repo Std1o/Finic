@@ -106,20 +106,25 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="70dp"
-        android:layout_below="@+id/tvQuestion"
-        android:layout_marginLeft="50dp">
+        android:layout_below="@+id/tvQuestion">
 
         <RadioButton
             android:id="@+id/radioButton1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="15sp"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:layout_marginLeft="60dp"
             android:text="1 раз в день" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:textSize="15sp"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:layout_marginLeft="60dp"
             android:layout_height="wrap_content"
             android:text="1 раз в 3-4 дня"
             android:layout_marginTop="10dp" />
@@ -128,6 +133,9 @@
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:textSize="15sp"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:layout_marginLeft="60dp"
             android:layout_height="wrap_content"
             android:text="1 раз в неделю"
             android:layout_marginTop="10dp"/>
@@ -136,6 +144,9 @@
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:textSize="15sp"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:layout_marginLeft="60dp"
             android:layout_height="wrap_content"
             android:text="1 раз в месяц"
             android:layout_marginTop="10dp"/>

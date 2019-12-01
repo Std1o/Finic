@@ -9,8 +9,10 @@ import androidx.core.content.res.ResourcesCompat;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.text.Html;
+import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +21,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         SharedPreferences isCompletedPref = getSharedPreferences("isCompletedPref", MODE_PRIVATE);
+        SharedPreferences languagePref = getSharedPreferences("languagePref", MODE_PRIVATE);
         if (isCompletedPref.getBoolean("isCompleted", false)) {
             startActivity(new Intent(this, CompleteActivity.class));
             finish();
@@ -48,6 +52,14 @@ public class MainActivity extends AppCompatActivity {
             images.add(R.drawable.ru);
 
             spinner = findViewById(R.id.spinner2);
+
+            Resources res = getResources();
+// Change locale settings in the app.
+            DisplayMetrics dm = res.getDisplayMetrics();
+            android.content.res.Configuration conf = res.getConfiguration();
+            conf.setLocale(new Locale("fr")); // API 17+ only.
+// Use conf.locale = new Locale(...) if targeting lower versions
+            res.updateConfiguration(conf, dm);
 
             ArrayAdapter<Integer> spinnerAdapter = new ArrayAdapter<Integer>(this, android.R.layout.simple_spinner_dropdown_item, images) {
 
@@ -91,6 +103,8 @@ public class MainActivity extends AppCompatActivity {
             };
 
             spinner.setAdapter(spinnerAdapter);
+            System.out.println(Locale.getDefault().getCountry());
+            spinner.setSelection(getSpinnerPosition(languagePref.getString("language", Locale.getDefault().getCountry())));
 
 
             tvMoney = findViewById(R.id.tvMoney);
@@ -116,6 +130,15 @@ public class MainActivity extends AppCompatActivity {
                             + "</font> <font color=#FFFFFF>" + getResources().getString(R.string.in_our_app)+ "</font>";
             tvStartBody3.setText(Html.fromHtml(text3));
         }
+    }
+
+    private int getSpinnerPosition(String code) {
+        int position = 0;
+        switch (code.toLowerCase()) {
+            case "ru":
+                position = 6;
+        }
+        return position;
     }
 
     public void onClick(View view) {

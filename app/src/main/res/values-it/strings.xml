@@ -2,7 +2,7 @@
     <string name="app_name">Finic</string>
 
     <string name="err_no_selected">Выберите один из ответов</string>
-    <string name="answer_field">Опишите в 2-3 предложениях, пожалуйста.</string>
+    <string name="answer_field">Descrivere in 2-3 frasi, per favore.</string>
     <string name="next">Далее</string>
     <string name="taken">Забрано&#160;&#160;&#160;</string>
     <string name="coins">&#160;&#160;&#160;монет</string>
@@ -38,23 +38,23 @@
     <string name="yes_answer_3_3">Una volta alla settimana</string>
     <string name="yes_answer_3_4">Una volta al meseц</string>
 
-    <string name="yes_q4">Отметьте, какими функциями должно обладать идеальное приложение для учета финансов, чтобы вы им пользовались?</string>
-    <string name="yes_answer_4_1">Ручной ввод доходов/расходов в 2 клика</string>
-    <string name="yes_answer_4_2">Интеграция с банками и автоматическая подгрузка всех расходов/поступлений с банковских счетов</string>
-    <string name="yes_answer_4_3">Наличие в приложении советника, который бы помогал вам экономить до 30% от бюджета и откладывать деньги на вашу мечту</string>
-    <string name="yes_answer_4_4">Напоминалка об обязательных платежах</string>
-    <string name="yes_answer_4_5">Напоминалка о перерасходах по категории и о возможном овердрафте</string>
-    <string name="yes_answer_4_6">Возможность формировать индивидуальные отчеты по параметрам, удобным именно вам и делать выгрузки файлом</string>
+    <string name="yes_q4">Contrassegnare la casella per vedere quali caratteristiche deve avere un\'applicazione di contabilità finanziaria ideale per poterla utilizzare?</string>
+    <string name="yes_answer_4_1">Inserimento manuale dei ricavi e delle spese in 2 click</string>
+    <string name="yes_answer_4_2">Integrazione con le banche e caricamento automatico di tutte le spese/ricevute dai conti bancari</string>
+    <string name="yes_answer_4_3">La presenza nell\'applicazione di un Expert Advisor che vi aiuterebbe a risparmiare fino al 30% del vostro budget e risparmiare denaro per i vostri sogni</string>
+    <string name="yes_answer_4_4">Promemoria dei pagamenti obbligatori</string>
+    <string name="yes_answer_4_5">Promemoria sulla spesa eccessiva per categoria e possibile scoperto di conto corrente</string>
+    <string name="yes_answer_4_6">Possibilità di generare report individuali sui parametri più convenienti per voi e di effettuare upload del file</string>
 
-    <string name="yes_q5">Чего вам не хватает в текущем способе учета личных финансов?</string>
+    <string name="yes_q5">Che cosa le manca nel modo attuale di contabilizzare le finanze personali?</string>
 
-    <string name="yes_q6">Почему вы ведете учет личных финансов?</string>
+    <string name="yes_q6">Perche\' tenete i registri delle vostre finanze personali?</string>
 
-    <string name="no_q2">Почему вы не ведете учет личных финансов?</string>
-    <string name="no_answer_2_1">Не понимаю зачем</string>
-    <string name="no_answer_2_2">Не знаю, как это делать правильно</string>
-    <string name="no_answer_2_3">Сложно, неудобно</string>
-    <string name="no_answer_2_4">Занимает много времени</string>
+    <string name="no_q2">Perche\' non tieni traccia delle tue finanze personali?</string>
+    <string name="no_answer_2_1">Non capisco perche\' non capisco perche</string>
+    <string name="no_answer_2_2">Non so come fare le cose per bene</string>
+    <string name="no_answer_2_3">Difficile, scomodo</string>
+    <string name="no_answer_2_4">Ci vuole un sacco di tempo</string>
 
     <string name="no_q3">Что вас сподвигло бы к учету личных финансов?</string>
     <string name="no_answer_3_1">Обучение личным финансам</string>

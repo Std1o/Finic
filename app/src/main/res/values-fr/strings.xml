@@ -2,7 +2,7 @@
     <string name="app_name">Finic</string>
 
     <string name="err_no_selected">Выберите один из ответов</string>
-    <string name="answer_field">Опишите в 2-3 предложениях, пожалуйста.</string>
+    <string name="answer_field">Décrivez en 2-3 phrases, s\'il vous plaît.</string>
     <string name="next">Далее</string>
     <string name="taken">Забрано&#160;&#160;&#160;</string>
     <string name="coins">&#160;&#160;&#160;монет</string>
@@ -21,30 +21,30 @@
     <string name="vip"> statut VIP</string>
 
 
-    <string name="q1">Ведете ли вы учет личных финансов?</string>
-    <string name="answer1_1">Да</string>
-    <string name="answer1_2">Да, время от времени</string>
-    <string name="answer1_3">Нет</string>
+    <string name="q1">Tenez-vous des registres de vos finances personnelles?</string>
+    <string name="answer1_1">Oui</string>
+    <string name="answer1_2">Oui, de temps en temps</string>
+    <string name="answer1_3">Non</string>
 
-    <string name="yes_q2">Где вы ведете учете личных финансов?</string>
-    <string name="yes_answer_2_1">Приложение в телефоне</string>
-    <string name="yes_answer_2_2">Заметки</string>
-    <string name="yes_answer_2_3">Таблица</string>
-    <string name="yes_answer_2_4">В блокноте от руки</string>
+    <string name="yes_q2">Où conservez-vous les registres de vos finances personnelles ?</string>
+    <string name="yes_answer_2_1">Application pour téléphone</string>
+    <string name="yes_answer_2_2">Notes</string>
+    <string name="yes_answer_2_3">Table</string>
+    <string name="yes_answer_2_4">Dans le cahier à la main</string>
 
-    <string name="yes_q3">Как часто вы вносите доходы/расходы в учет?</string>
-    <string name="yes_answer_3_1">1 раз в день</string>
-    <string name="yes_answer_3_2">1 раз в 3-4 дня</string>
-    <string name="yes_answer_3_3">1 раз в неделю</string>
-    <string name="yes_answer_3_4">1 раз в месяц</string>
+    <string name="yes_q3">À quelle fréquence enregistrez-vous vos revenus et dépenses?</string>
+    <string name="yes_answer_3_1">Une fois par jour</string>
+    <string name="yes_answer_3_2">Une fois tous les 3-4 jours</string>
+    <string name="yes_answer_3_3">Une fois par semaine</string>
+    <string name="yes_answer_3_4">Une fois par mois</string>
 
-    <string name="yes_q4">Отметьте, какими функциями должно обладать идеальное приложение для учета финансов, чтобы вы им пользовались?</string>
-    <string name="yes_answer_4_1">Ручной ввод доходов/расходов в 2 клика</string>
-    <string name="yes_answer_4_2">Интеграция с банками и автоматическая подгрузка всех расходов/поступлений с банковских счетов</string>
-    <string name="yes_answer_4_3">Наличие в приложении советника, который бы помогал вам экономить до 30% от бюджета и откладывать деньги на вашу мечту</string>
-    <string name="yes_answer_4_4">Напоминалка об обязательных платежах</string>
-    <string name="yes_answer_4_5">Напоминалка о перерасходах по категории и о возможном овердрафте</string>
-    <string name="yes_answer_4_6">Возможность формировать индивидуальные отчеты по параметрам, удобным именно вам и делать выгрузки файлом</string>
+    <string name="yes_q4">Cochez la case pour voir quelles sont les caractéristiques qu\'une application de comptabilité financière idéale doit posséder pour que vous puissiez l\'utiliser?</string>
+    <string name="yes_answer_4_1">Saisie manuelle des recettes/dépenses en 2 clics</string>
+    <string name="yes_answer_4_2">Intégration avec les banques et chargement automatique de toutes les dépenses/recettes des comptes bancaires</string>
+    <string name="yes_answer_4_3">La présence dans la demande d\'un conseiller expert qui vous aiderait à économiser jusqu\'à 30 % de votre budget et à économiser de l\'argent pour vos rêves</string>
+    <string name="yes_answer_4_4">Rappel des paiements obligatoires</string>
+    <string name="yes_answer_4_5">Rappel des dépassements de dépenses par catégorie et des découverts éventuels</string>
+    <string name="yes_answer_4_6">Possibilité de générer des rapports individuels sur les paramètres qui vous conviennent et d\'effectuer des téléchargements du fichier</string>
 
     <string name="yes_q5">Чего вам не хватает в текущем способе учета личных финансов?</string>
 

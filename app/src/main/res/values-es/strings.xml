@@ -10,33 +10,33 @@
     <string name="getVip">Вперед за VIP-статусом</string>
     <string name="send">Отправить</string>
 
-    <string name="hello">Привет!</string>
-    <string name="name">Меня зовут</string>
-    <string name="finik">Финик</string>
-    <string name="startFirstPart">И я твой будущий финансовый бро, который поможет тебе экономить до 30% от бюджета и откладывать деньги на вашу мечту!</string>
-    <string name="startFirstPart2">Пожалуйста, пройдите этот короткий опрос и получите по итогу</string>
-    <string name="thousand">1000 монет-бонусов</string>
-    <string name="in_our_app"> в нашем приложении.</string>
-    <string name="startFirstPart3">Ответьте на все вопросы и получите</string>
-    <string name="vip"> VIP-статус</string>
+    <string name="hello">Hola!</string>
+    <string name="name">Me llamo</string>
+    <string name="finik">Finic</string>
+    <string name="startFirstPart">Y yo soy su futuro agente financiero, que le ayudará a ahorrar hasta un 30% de su presupuesto y ahorrar dinero para sus sueños!</string>
+    <string name="startFirstPart2">Por favor, realice esta breve encuesta y obtenga</string>
+    <string name="thousand">1000 monedas de bonificación</string>
+    <string name="in_our_app"> en nuestra aplicación</string>
+    <string name="startFirstPart3">Conteste todas las preguntas y obtenga el</string>
+    <string name="vip"> estatus VIP</string>
 
 
-    <string name="q1">Ведете ли вы учет личных финансов?</string>
-    <string name="answer1_1">Да</string>
-    <string name="answer1_2">Да, время от времени</string>
-    <string name="answer1_3">Нет</string>
+    <string name="q1">¿Mantiene registros de sus finanzas personales?</string>
+    <string name="answer1_1">Sí</string>
+    <string name="answer1_2">Sí, de vez en cuando</string>
+    <string name="answer1_3">No</string>
 
-    <string name="yes_q2">Где вы ведете учете личных финансов?</string>
-    <string name="yes_answer_2_1">Приложение в телефоне</string>
-    <string name="yes_answer_2_2">Заметки</string>
-    <string name="yes_answer_2_3">Таблица</string>
-    <string name="yes_answer_2_4">В блокноте от руки</string>
+    <string name="yes_q2">¿Dónde guarda los registros de sus finanzas personales?</string>
+    <string name="yes_answer_2_1">Aplicación telefónica</string>
+    <string name="yes_answer_2_2">Notas</string>
+    <string name="yes_answer_2_3">Tabla</string>
+    <string name="yes_answer_2_4">En el cuaderno a mano</string>
 
-    <string name="yes_q3">Как часто вы вносите доходы/расходы в учет?</string>
-    <string name="yes_answer_3_1">1 раз в день</string>
-    <string name="yes_answer_3_2">1 раз в 3-4 дня</string>
-    <string name="yes_answer_3_3">1 раз в неделю</string>
-    <string name="yes_answer_3_4">1 раз в месяц</string>
+    <string name="yes_q3">¿Con qué frecuencia registra sus ingresos/gastos?</string>
+    <string name="yes_answer_3_1">Una vez al día</string>
+    <string name="yes_answer_3_2">Una vez cada 3-4 días</string>
+    <string name="yes_answer_3_3">Una vez a la semana</string>
+    <string name="yes_answer_3_4">Una vez al mes</string>
 
     <string name="yes_q4">Отметьте, какими функциями должно обладать идеальное приложение для учета финансов, чтобы вы им пользовались?</string>
     <string name="yes_answer_4_1">Ручной ввод доходов/расходов в 2 клика</string>

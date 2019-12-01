@@ -18,6 +18,6 @@ public class CompleteActivity extends AppCompatActivity {
 
         tvMoney = findViewById(R.id.tvMoney);
         SharedPreferences prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);
-        tvMoney.setText(prefs.getString("moneyCount", "0"));
+        tvMoney.setText(prefs.getInt("moneyCount", 0) + "");
     }
 }

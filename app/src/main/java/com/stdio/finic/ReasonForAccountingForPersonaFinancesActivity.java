@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.stdio.finic.gmailHelper.GMailSender;
 
@@ -18,11 +20,18 @@ public class ReasonForAccountingForPersonaFinancesActivity extends AppCompatActi
     String senderMail = "finic.app@gmail.com";
     String senderPassword = "yourpassword";
     EditText etAdvice;
+    TextView tvMoney;
+    SharedPreferences prefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reason_for_accounting_for_persona_finances);
+
+        tvMoney = findViewById(R.id.tvMoney);
+        prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);
+        tvMoney.setText(prefs.getInt("moneyCount", 0) + "");
+
         etAdvice = findViewById(R.id.etAdvice);
     }
 
@@ -49,6 +58,9 @@ public class ReasonForAccountingForPersonaFinancesActivity extends AppCompatActi
                             senderMail,
                             recipient);
                     dialog.dismiss();
+                    SharedPreferences.Editor editor = prefs.edit();
+                    editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 200);
+                    editor.apply();
                     startActivity(new Intent(ReasonForAccountingForPersonaFinancesActivity.this, CompleteActivity.class));
                     finish();
                 } catch (Exception e) {

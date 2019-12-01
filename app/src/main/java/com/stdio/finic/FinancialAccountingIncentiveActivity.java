@@ -16,6 +16,7 @@ public class FinancialAccountingIncentiveActivity extends AppCompatActivity {
     ArrayList<String> list = new ArrayList<>();
     String question = "";
     TextView tvMoney;
+    SharedPreferences prefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +38,9 @@ public class FinancialAccountingIncentiveActivity extends AppCompatActivity {
         CheckBox fifthCheckBox = findViewById(R.id.checkBox5);
         fifthCheckBox.setOnClickListener(CheckBoxClickListener);
 
-        findViewById(R.id.tvMoney);
-        SharedPreferences prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);
-        tvMoney.setText(prefs.getString("moneyCount", "0"));
+        tvMoney = findViewById(R.id.tvMoney);
+        prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);
+        tvMoney.setText(prefs.getInt("moneyCount", 0) + "");
     }
 
     View.OnClickListener CheckBoxClickListener = new View.OnClickListener() {
@@ -63,6 +64,9 @@ public class FinancialAccountingIncentiveActivity extends AppCompatActivity {
         for (String s : list) {
             MainActivity.message += s + ", ";
         }
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 150);
+        editor.apply();
         startActivity(new Intent(this, NecessaryFunctionalActivityLine2.class));
         finish();
     }

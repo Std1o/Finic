@@ -3,10 +3,12 @@ package com.stdio.finic;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class FrequencyOfIncomeAndExpenseRecordingActivity extends AppCompatActivity {
@@ -14,11 +16,17 @@ public class FrequencyOfIncomeAndExpenseRecordingActivity extends AppCompatActiv
     private ProgressBar progressBar;
     int id = 0;
     String answer = "";
+    TextView tvMoney;
+    SharedPreferences prefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_frequency_of_income_and_expense_recording);
+
+        tvMoney = findViewById(R.id.tvMoney);
+        prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);
+        tvMoney.setText(prefs.getInt("moneyCount", 0) + "");
 
         progressBar = findViewById(R.id.progressId);
         progressBar.setProgress(70);
@@ -44,6 +52,9 @@ public class FrequencyOfIncomeAndExpenseRecordingActivity extends AppCompatActiv
 
     public void onClick(View view) {
         MainActivity.message += answer;
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 150);
+        editor.apply();
         startActivity(new Intent(FrequencyOfIncomeAndExpenseRecordingActivity.this, NecessaryFunctionalActivity.class));
         finish();
 

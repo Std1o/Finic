@@ -3,11 +3,13 @@ package com.stdio.finic;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ProgressBar;
 import android.widget.CheckBox;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -18,11 +20,17 @@ public class PlaceOfPersonalFinanceAccountingActivity extends AppCompatActivity 
     int id = 0;
     boolean isFirstClick = true;
     ArrayList<String> list = new ArrayList<>();
+    TextView tvMoney;
+    SharedPreferences prefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_place_of_personal_finance_accounting);
+
+        tvMoney = findViewById(R.id.tvMoney);
+        prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);
+        tvMoney.setText(prefs.getInt("moneyCount", 0) + "");
 
         progressBar = findViewById(R.id.progressId);
         progressBar.setProgress(70);
@@ -63,6 +71,9 @@ public class PlaceOfPersonalFinanceAccountingActivity extends AppCompatActivity 
         for (String s : list) {
             MainActivity.message += s + ", ";
         }
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 150);
+        editor.apply();
         startActivity(new Intent(PlaceOfPersonalFinanceAccountingActivity.this, FrequencyOfIncomeAndExpenseRecordingActivity.class));
         finish();
     }

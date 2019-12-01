@@ -3,10 +3,12 @@ package com.stdio.finic;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -15,11 +17,19 @@ public class NecessaryFunctionalActivity extends AppCompatActivity {
     boolean isFirstClick = true;
     ArrayList<String> list = new ArrayList<>();
     EditText etAdvice;
+    TextView tvMoney;
+    SharedPreferences prefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_necessary_functional);
+
+        tvMoney = findViewById(R.id.tvMoney);
+        prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);
+        tvMoney.setText(prefs.getInt("moneyCount", 0) + "");
+
+
         CheckBox redCheckBox = findViewById(R.id.checkBox1);
         redCheckBox.setOnClickListener(CheckBoxClickListener);
 
@@ -71,6 +81,9 @@ public class NecessaryFunctionalActivity extends AppCompatActivity {
             }
             MainActivity.message += "\nДругое - " + etAdvice.getText().toString();
         }
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 150);
+        editor.apply();
         startActivity(new Intent(this, ImproveWayPersonalFinanceAccountActivity.class));
         finish();
 

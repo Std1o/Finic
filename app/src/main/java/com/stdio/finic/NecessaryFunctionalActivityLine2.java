@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.stdio.finic.gmailHelper.GMailSender;
 
@@ -22,11 +24,17 @@ public class NecessaryFunctionalActivityLine2 extends AppCompatActivity {
     String recipient = "kwork-stdio@mail.ru";
     String senderMail = "finic.app@gmail.com";
     String senderPassword = "yourpassword";
+    TextView tvMoney;
+    SharedPreferences prefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_necessary_functional_line2);
+
+        tvMoney = findViewById(R.id.tvMoney);
+        prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);
+        tvMoney.setText(prefs.getInt("moneyCount", 0) + "");
 
         CheckBox redCheckBox = findViewById(R.id.checkBox1);
         redCheckBox.setOnClickListener(CheckBoxClickListener);
@@ -97,6 +105,9 @@ public class NecessaryFunctionalActivityLine2 extends AppCompatActivity {
                             senderMail,
                             recipient);
                     dialog.dismiss();
+                    SharedPreferences.Editor editor = prefs.edit();
+                    editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 350);
+                    editor.apply();
                     startActivity(new Intent(NecessaryFunctionalActivityLine2.this, CompleteActivity.class));
                     finish();
                 } catch (Exception e) {

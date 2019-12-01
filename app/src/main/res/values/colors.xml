@@ -7,4 +7,5 @@
     <color name="textColor">#343434</color>
     <color name="colorTvCoinCount">#5CAFFF</color>
     <color name="colorWhite">#FFFF</color>
+    <color name="helloTextColor">#FFE300</color>
 </resources>

@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">Finic</string>
 
+    <string name="hello">Привет!</string>
+    <string name="name">\n\n Меня зовут</string>
+    <string name="finik">\n\n Финик</string>
+    <string name="startFirstPart">\n\n. И я твой будущий</string>
+    <string name="startFirstPart2">финансовый бро, который поможет тебе экономить до 30% от бюджета и откладывать деньги на вашу мечту! </string>
+    <string name="startSecondPart">\nПожалуйста, пройдите этот короткий опрос и</string>
+    <string name="startSecondPart2"> получите по итогу</string>
+    <string name="thousand">1000 монет-бонусов</string>
+
     <string name="err_no_selected">Выберите один из ответов</string>
 </resources>

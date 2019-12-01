@@ -3,6 +3,12 @@
 
     <string name="err_no_selected">Выберите один из ответов</string>
     <string name="answer_field">Опишите в 2-3 предложениях, пожалуйста.</string>
+    <string name="next">Далее</string>
+    <string name="taken">Забрано&#160;&#160;&#160;</string>
+    <string name="coins">&#160;&#160;&#160;монет</string>
+    <string name="of">of</string>
+    <string name="getVip">Вперед за VIP-статусом</string>
+    <string name="send">Отправить</string>
 
     <string name="hello">Привет!</string>
     <string name="name">Меня зовут</string>

@@ -16,7 +16,7 @@
     <string name="startFirstPart">And I am your future financial broker, which will help you save up to 30% of your budget and save money for your dreams!</string>
     <string name="startFirstPart2">Please take this short survey and get</string>
     <string name="thousand">1000 bonus coins</string>
-    <string name="in_our_app"> in our application.</string>
+    <string name="in_our_app"> in our application</string>
     <string name="startFirstPart3">Answer all questions and get</string>
     <string name="vip"> VIP status</string>
 
@@ -51,22 +51,22 @@
     <string name="yes_q6">Why do you keep records of personal finances?</string>
 
     <string name="no_q2">Why don\'t you keep track of your personal finances?</string>
-    <string name="no_answer_2_1">Не понимаю зачем</string>
-    <string name="no_answer_2_2">Не знаю, как это делать правильно</string>
-    <string name="no_answer_2_3">Сложно, неудобно</string>
-    <string name="no_answer_2_4">Занимает много времени</string>
+    <string name="no_answer_2_1">I don\'t understand why</string>
+    <string name="no_answer_2_2">I don\'t know how to do this right</string>
+    <string name="no_answer_2_3">Difficult, uncomfortable</string>
+    <string name="no_answer_2_4">It takes a lot of time</string>
 
-    <string name="no_q3">Что вас сподвигло бы к учету личных финансов?</string>
-    <string name="no_answer_3_1">Обучение личным финансам</string>
-    <string name="no_answer_3_2">Четкое понимание, сколько средств я бы мог сэкономить с помощью учета</string>
-    <string name="no_answer_3_3">Четкое понимание того, что это позволит мне жить без долгов</string>
-    <string name="no_answer_3_4">Четкое понимание того, что это позволит мне накопить на мечту</string>
-    <string name="no_answer_3_5">Наличие удобного и простого приложения, которое автоматизировало бы учет и выдавало бы мне рекомендации по личным финансам</string>
+    <string name="no_q3">What would encourage you to keep track of your personal finances?</string>
+    <string name="no_answer_3_1">Personal finance training</string>
+    <string name="no_answer_3_2">A clear understanding of how much I could save through accounting</string>
+    <string name="no_answer_3_3">A clear understanding that this will allow me to live without debts</string>
+    <string name="no_answer_3_4">A clear understanding that this will allow me to save up for a dream</string>
+    <string name="no_answer_3_5">A convenient and simple application that would automate accounting and give me recommendations on personal finances</string>
 
-    <string name="congratulations">Поздравляем!</string>
-    <string name="complete1">Вы успешно ответили на все вопросы!</string>
-    <string name="complete2">Теперь вы получили</string>
-    <string name="complete2_2">по учету финансов! А также получили</string>
-    <string name="complete3">Мы оповестим вас уведомлением, когда приложение будет запущено и вы сможете потратить их чтобы экономить до 30% от своего бюджета и откладывать деньги на вашу мечту!</string>
-    <string name="complete4">Спасибо вам от Финика!</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="complete1">You have successfully answered all the questions!</string>
+    <string name="complete2">Now you have received</string>
+    <string name="complete2_2">for financial accounting! And also received</string>
+    <string name="complete3">We will notify you when the application is launched and you will be able to spend it to save up to 30% of your budget and save money for your dreams!</string>
+    <string name="complete4">Thank you from Finic!</string>
 </resources>

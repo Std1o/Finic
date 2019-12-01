@@ -56,17 +56,17 @@
     <string name="no_answer_2_3">Difficile, scomodo</string>
     <string name="no_answer_2_4">Ci vuole un sacco di tempo</string>
 
-    <string name="no_q3">Что вас сподвигло бы к учету личных финансов?</string>
-    <string name="no_answer_3_1">Обучение личным финансам</string>
-    <string name="no_answer_3_2">Четкое понимание, сколько средств я бы мог сэкономить с помощью учета</string>
-    <string name="no_answer_3_3">Четкое понимание того, что это позволит мне жить без долгов</string>
-    <string name="no_answer_3_4">Четкое понимание того, что это позволит мне накопить на мечту</string>
-    <string name="no_answer_3_5">Наличие удобного и простого приложения, которое автоматизировало бы учет и выдавало бы мне рекомендации по личным финансам</string>
+    <string name="no_q3">Cosa vi incoraggerebbe a tenere traccia delle vostre finanze personali?</string>
+    <string name="no_answer_3_1">Formazione finanziaria personale</string>
+    <string name="no_answer_3_2">Una chiara comprensione di quanto potrei risparmiare attraverso la contabilità</string>
+    <string name="no_answer_3_3">Una chiara comprensione del fatto che questo mi permetterà di vivere senza debiti</string>
+    <string name="no_answer_3_4">La chiara consapevolezza che questo mi permetterà di risparmiare per un sogno</string>
+    <string name="no_answer_3_5">Un\'applicazione comoda e semplice che automatizza la contabilità e mi dà consigli sulle finanze personali</string>
 
-    <string name="congratulations">Поздравляем!</string>
-    <string name="complete1">Вы успешно ответили на все вопросы!</string>
-    <string name="complete2">Теперь вы получили</string>
-    <string name="complete2_2">по учету финансов! А также получили</string>
-    <string name="complete3">Мы оповестим вас уведомлением, когда приложение будет запущено и вы сможете потратить их чтобы экономить до 30% от своего бюджета и откладывать деньги на вашу мечту!</string>
-    <string name="complete4">Спасибо вам от Финика!</string>
+    <string name="congratulations">Congratulazioni!</string>
+    <string name="complete1">Avete risposto con successo a tutte le domande!</string>
+    <string name="complete2">Ora hai ricevuto lo</string>
+    <string name="complete2_2">di contabilità finanziaria! E ha anche ricevuto</string>
+    <string name="complete3"> Vi informeremo quando l\'applicazione viene lanciata e potrete spenderla per risparmiare fino al 30% del vostro budget e risparmiare denaro per i vostri sogni!</string>
+    <string name="complete4">Grazie da Finic!</string>
 </resources>

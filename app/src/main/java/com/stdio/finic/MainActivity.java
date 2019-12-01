@@ -17,11 +17,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        tvMoney = findViewById(R.id.tvMoney);
-        SharedPreferences prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);
-        tvMoney.setText(prefs.getInt("moneyCount", 0) + "");
+        SharedPreferences isCompletedPref = getSharedPreferences("isCompletedPref", MODE_PRIVATE);
+        if (isCompletedPref.getBoolean("isCompleted", false)) {
+            startActivity(new Intent(this, CompleteActivity.class));
+            finish();
+        }
+        else {
+            setContentView(R.layout.activity_main);
+            tvMoney = findViewById(R.id.tvMoney);
+            SharedPreferences prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);
+            tvMoney.setText(prefs.getInt("moneyCount", 0) + "");
+        }
     }
 
     public void onClick(View view) {

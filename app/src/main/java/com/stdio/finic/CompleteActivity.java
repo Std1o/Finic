@@ -19,5 +19,10 @@ public class CompleteActivity extends AppCompatActivity {
         tvMoney = findViewById(R.id.tvMoney);
         SharedPreferences prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);
         tvMoney.setText(prefs.getInt("moneyCount", 0) + "");
+
+        SharedPreferences isCompletedPref = getSharedPreferences("isCompletedPref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = isCompletedPref.edit();
+        editor.putBoolean("isCompleted", true);
+        editor.apply();
     }
 }

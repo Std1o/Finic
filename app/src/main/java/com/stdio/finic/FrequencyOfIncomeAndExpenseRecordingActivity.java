@@ -13,6 +13,7 @@ public class FrequencyOfIncomeAndExpenseRecordingActivity extends AppCompatActiv
 
     private ProgressBar progressBar;
     int id = 0;
+    boolean isFirstClick = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,10 @@ public class FrequencyOfIncomeAndExpenseRecordingActivity extends AppCompatActiv
         public void onClick(View v) {
             RadioButton rb = (RadioButton)v;
             id = rb.getId();
-            Toast.makeText(FrequencyOfIncomeAndExpenseRecordingActivity.this, rb.getText(), Toast.LENGTH_SHORT).show();
+            if (isFirstClick) {
+                MainActivity.message += "\n\nКак часто вы вносите доходы/расходы в учет? - " + rb.getText();
+            }
+            isFirstClick = false;
         }
     };
 

@@ -13,6 +13,7 @@ public class FirstQuestionActivity extends AppCompatActivity {
 
     private ProgressBar progressBar;
     int id = 0;
+    boolean isFirstClick = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +37,10 @@ public class FirstQuestionActivity extends AppCompatActivity {
         public void onClick(View v) {
             RadioButton rb = (RadioButton)v;
             id = rb.getId();
-            Toast.makeText(FirstQuestionActivity.this, rb.getText(), Toast.LENGTH_SHORT).show();
+            if (isFirstClick) {
+                MainActivity.message += "Ведете ли вы учет личных финансов? - " + rb.getText();
+            }
+            isFirstClick = false;
         }
     };
 

@@ -10,10 +10,14 @@ import android.widget.ProgressBar;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class PlaceOfPersonalFinanceAccountingActivity extends AppCompatActivity {
 
     private ProgressBar progressBar;
     int id = 0;
+    boolean isFirstClick = true;
+    ArrayList<String> list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,12 +44,25 @@ public class PlaceOfPersonalFinanceAccountingActivity extends AppCompatActivity 
         @Override
         public void onClick(View v) {
             CheckBox rb = (CheckBox)v;
-            Toast.makeText(PlaceOfPersonalFinanceAccountingActivity.this, rb.getText(), Toast.LENGTH_SHORT).show();
+            if (isFirstClick) {
+                MainActivity.message += "\n\nГде вы ведете учете личных финансов? - ";
+            }
+            isFirstClick = false;
+            if (rb.isChecked()) {
+                if (!list.contains(rb.getText().toString())) {
+                    list.add(rb.getText().toString());
+                }
+            }
+            else {
+                list.remove(rb.getText().toString());
+            }
         }
     };
 
     public void onClick(View view) {
+        for (String s : list) {
+            MainActivity.message += s + ", ";
+        }
         startActivity(new Intent(PlaceOfPersonalFinanceAccountingActivity.this, FrequencyOfIncomeAndExpenseRecordingActivity.class));
-
     }
 }

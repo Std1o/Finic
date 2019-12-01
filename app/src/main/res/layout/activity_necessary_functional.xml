@@ -95,13 +95,13 @@
         android:id="@+id/tvQuestion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="45dp"
         android:layout_below="@id/toolbar"
-        android:textAlignment="center"
-        android:text="Отметьте, какими функциями должно обладать идеальное приложение для учета финансов, чтобы вы им пользовались"
         android:background="@color/colorWhite"
+        android:padding="45dp"
+        android:text="@string/yes_q4"
+        android:textAlignment="center"
         android:textColor="@color/textColor"
-        android:textSize="17sp"/>
+        android:textSize="17sp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -118,80 +118,80 @@
             <CheckBox
                 android:id="@+id/checkBox1"
                 android:layout_width="wrap_content"
-                android:layout_gravity="right"
                 android:layout_height="wrap_content"
-                android:scaleX="1.1"
-                android:scaleY="1.1"
+                android:layout_gravity="right"
                 android:layout_marginLeft="60dp"
                 android:layout_marginRight="40dp"
                 android:gravity="start"
-                android:textSize="15sp"
-                android:text="Ручной ввод доходов/расходов в 2 клика" />
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                android:text="@string/yes_answer_4_1"
+                android:textSize="15sp" />
 
             <CheckBox
                 android:id="@+id/checkBox2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:scaleX="1.1"
-                android:scaleY="1.1"
                 android:layout_marginLeft="60dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="40dp"
                 android:gravity="start"
-                android:text="Интеграция с банками и автоматическая подгрузка всех расходов/поступлений с банковских счетов"
-                android:layout_marginTop="15dp"/>
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                android:text="@string/yes_answer_4_2"
+                android:textSize="15sp" />
 
             <CheckBox
                 android:id="@+id/checkBox3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:scaleX="1.1"
-                android:scaleY="1.1"
                 android:layout_marginLeft="60dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="40dp"
                 android:gravity="start"
-                android:text="Наличие в приложении советника, который бы помогал вам экономить до 30% от бюджета и откладывать деньги на вашу мечту"
-                android:layout_marginTop="15dp"/>
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                android:text="@string/yes_answer_4_3"
+                android:textSize="15sp" />
 
             <CheckBox
                 android:id="@+id/checkBox4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:scaleX="1.1"
-                android:scaleY="1.1"
                 android:layout_marginLeft="60dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="40dp"
                 android:gravity="start"
-                android:text="Напоминалка об обязательных платежах"
-                android:layout_marginTop="15dp"/>
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                android:text="@string/yes_answer_4_4"
+                android:textSize="15sp" />
 
             <CheckBox
                 android:id="@+id/checkBox5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:scaleX="1.1"
-                android:scaleY="1.1"
                 android:layout_marginLeft="60dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="40dp"
                 android:gravity="start"
-                android:text="Напоминалка о перерасходах по категории и о возможном овердрафте"
-                android:layout_marginTop="15dp"/>
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                android:text="@string/yes_answer_4_5"
+                android:textSize="15sp" />
 
             <CheckBox
                 android:id="@+id/checkBox6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:scaleX="1.1"
-                android:scaleY="1.1"
                 android:layout_marginLeft="60dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="40dp"
                 android:gravity="start"
-                android:text="Возможность формировать индивидуальные отчеты по параметрам, удобным именно вам и делать выгрузки файлом"
-                android:layout_marginTop="15dp"/>
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                android:text="@string/yes_answer_4_6"
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/etAdvice"

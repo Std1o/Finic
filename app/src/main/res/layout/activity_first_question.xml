@@ -98,7 +98,7 @@
         android:padding="45dp"
         android:layout_below="@id/toolbar"
         android:textAlignment="center"
-        android:text="Ведете ли вы учет личных финансов?"
+        android:text="@string/q1"
         android:background="@color/colorWhite"
         android:textColor="@color/textColor"
         android:textSize="17sp"/>
@@ -114,33 +114,33 @@
                 android:id="@+id/radioButton1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
+                android:layout_marginLeft="60dp"
                 android:scaleX="1.1"
                 android:scaleY="1.1"
-                android:layout_marginLeft="60dp"
-                android:text="Да" />
+                android:text="@string/answer1_1"
+                android:textSize="15sp" />
 
             <RadioButton
                 android:id="@+id/radioButton2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Время от времени"
-                android:textSize="15sp"
-                android:scaleX="1.1"
-                android:scaleY="1.1"
                 android:layout_marginLeft="60dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="10dp"
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                android:text="@string/answer1_2"
+                android:textSize="15sp" />
 
             <RadioButton
                 android:id="@+id/radioButton3"
                 android:layout_width="match_parent"
-                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
                 android:scaleX="1.1"
                 android:scaleY="1.1"
-                android:layout_marginLeft="60dp"
-                android:layout_height="wrap_content"
-                android:text="Нет" />
+                android:text="@string/answer1_3"
+                android:textSize="15sp" />
         </RadioGroup>
 
     <TextView

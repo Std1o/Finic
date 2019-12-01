@@ -95,13 +95,13 @@
         android:id="@+id/tvQuestion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="45dp"
         android:layout_below="@id/toolbar"
-        android:textAlignment="center"
-        android:text="Где вы ведете учете личных финансов?"
         android:background="@color/colorWhite"
+        android:padding="45dp"
+        android:text="@string/yes_q2"
+        android:textAlignment="center"
         android:textColor="@color/textColor"
-        android:textSize="17sp"/>
+        android:textSize="17sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -114,44 +114,44 @@
             android:id="@+id/checkBox1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:layout_marginLeft="60dp"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:layout_marginLeft="60dp"
-            android:text="Приложение" />
+            android:text="@string/yes_answer_2_1"
+            android:textSize="15sp" />
 
         <CheckBox
             android:id="@+id/checkBox2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:text="Заметки"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="10dp"/>
+            android:text="@string/yes_answer_2_2"
+            android:textSize="15sp" />
 
         <CheckBox
             android:id="@+id/checkBox3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:text="Таблица"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="10dp"/>
+            android:text="@string/yes_answer_2_3"
+            android:textSize="15sp" />
 
         <CheckBox
             android:id="@+id/checkBox4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:text="В блокноте от руки"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="10dp"/>
+            android:text="@string/yes_answer_2_4"
+            android:textSize="15sp" />
     </LinearLayout>
 
     <TextView

@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     AppCompatSpinner spinner;
     ArrayList<Integer> images = new ArrayList<>();
     SharedPreferences languagePref;
+    boolean isShowed = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -115,7 +116,12 @@ public class MainActivity extends AppCompatActivity {
                     SharedPreferences.Editor editor = languagePref.edit();
                     editor.putInt("language", position);
                     editor.apply();
-                    Toast.makeText(MainActivity.this, "Изменения вступят в силу после перезапуска", Toast.LENGTH_SHORT).show();
+                    if (isShowed) {
+                        Toast.makeText(MainActivity.this, "Изменения вступят в силу после перезапуска", Toast.LENGTH_SHORT).show();
+                    }
+                    else {
+                        isShowed = true;
+                    }
                 }
 
                 @Override

@@ -36,7 +36,8 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_centerInParent="true">
+        android:layout_above="@+id/btnGetVip"
+        android:layout_marginBottom="80dp">
 
         <TextView
             android:id="@+id/tvHello"
@@ -72,9 +73,22 @@
             android:layout_marginTop="18sp"
             android:text="@string/startFirstPart2" />
 
+        <TextView
+            android:id="@+id/tvStartBody3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@id/tvStartBody2"
+            android:layout_marginTop="18sp"
+            android:text="@string/startFirstPart3" />
+
     </RelativeLayout>
 
     <Button
+        android:id="@+id/btnGetVip"
         android:layout_width="match_parent"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"

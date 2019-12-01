@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     public static String message = "";
-    TextView tvMoney, tvStartBody, tvStartBody2;
+    TextView tvMoney, tvStartBody, tvStartBody2, tvStartBody3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +40,13 @@ public class MainActivity extends AppCompatActivity {
                     + "</font> <font color=#FFE300>" + getResources().getString(R.string.thousand)+ "</font>"
                     + "</font> <font color=#FFFFFF>" + getResources().getString(R.string.in_our_app)+ "</font>";
             tvStartBody2.setText(Html.fromHtml(text2));
+
+            tvStartBody3 = findViewById(R.id.tvStartBody3);
+            String text3 =
+                    "</font> <font color=#FFFFFF>" + getResources().getString(R.string.startFirstPart3)+ "</font>"
+                            + "</font> <font color=#FFE300>" + getResources().getString(R.string.vip)+ "</font>"
+                            + "</font> <font color=#FFFFFF>" + getResources().getString(R.string.in_our_app)+ "</font>";
+            tvStartBody3.setText(Html.fromHtml(text3));
         }
     }
 

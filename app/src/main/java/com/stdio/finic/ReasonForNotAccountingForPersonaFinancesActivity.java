@@ -2,6 +2,7 @@ package com.stdio.finic;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
@@ -40,4 +41,8 @@ public class ReasonForNotAccountingForPersonaFinancesActivity extends AppCompatA
             Toast.makeText(ReasonForNotAccountingForPersonaFinancesActivity.this, rb.getText(), Toast.LENGTH_SHORT).show();
         }
     };
+
+    public void onClick(View view) {
+        startActivity(new Intent(this, FinancialAccountingIncentiveActivity.class));
+    }
 }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_questions"
-    tools:context=".ReasonForNotAccountingForPersonaFinancesActivity">
+    tools:context=".FinancialAccountingIncentiveActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -96,61 +96,77 @@
         android:layout_below="@id/toolbar"
         android:background="@color/colorWhite"
         android:padding="45dp"
-        android:text="Почему вы не ведете учет личных финансов?"
+        android:text="Что вас сподвигло бы к учету личных финансов?"
         android:textAlignment="center"
         android:textColor="@color/textColor"
         android:textSize="17sp" />
 
-    <RadioGroup
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="70dp"
         android:layout_below="@+id/tvQuestion">
 
-        <RadioButton
-            android:id="@+id/radioButton1"
+        <CheckBox
+            android:id="@+id/checkBox1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:layout_marginLeft="60dp"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:layout_marginLeft="60dp"
-            android:text="Не понимаю зачем" />
+            android:text="Обучение личным финансам"
+            android:gravity="start"
+            android:textSize="15sp" />
 
-        <RadioButton
-            android:id="@+id/radioButton2"
+        <CheckBox
+            android:id="@+id/checkBox2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:layout_marginLeft="60dp"
-            android:text="Не знаю, как это делать правильно"
-            android:layout_marginTop="10dp" />
+            android:gravity="start"
+            android:text="Четкое понимание, сколько средств я бы мог сэкономить с помощью учета"
+            android:textSize="15sp" />
 
-        <RadioButton
-            android:id="@+id/radioButton3"
+        <CheckBox
+            android:id="@+id/checkBox3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:layout_marginLeft="60dp"
-            android:text="Сложно, не удобно"
-            android:layout_marginTop="10dp" />
+            android:gravity="start"
+            android:text="Четкое понимание того, что это позволит мне жить без долгов"
+            android:textSize="15sp" />
 
-        <RadioButton
-            android:id="@+id/radioButton4"
+        <CheckBox
+            android:id="@+id/checkBox4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
             android:scaleX="1.1"
             android:scaleY="1.1"
+            android:gravity="start"
+            android:text="Четкое понимание того, что это позволит мне накопить на мечту"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
-            android:text="Занимает много времени"
-            android:layout_marginTop="10dp" />
-    </RadioGroup>
+            android:layout_marginTop="10dp"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:gravity="start"
+            android:text="Наличие удобного и простого приложения, которое автоматизировало бы учет и выдавало бы мне рекомендации по личным финансам"
+            android:textSize="15sp" />
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
@@ -170,10 +186,10 @@
         android:layout_marginBottom="40dp"
         android:layout_height="60dp"
         android:text="Далее"
-        android:onClick="onClick"
         android:textColor="@color/colorWhite"
         android:background="@drawable/gradient_blue"
         android:foreground="@drawable/my_ripple"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:onClick="onClick"/>
 
 </RelativeLayout>

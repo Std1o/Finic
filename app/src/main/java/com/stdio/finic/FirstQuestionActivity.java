@@ -45,5 +45,11 @@ public class FirstQuestionActivity extends AppCompatActivity {
         if (id == R.id.radioButton1 || id == R.id.radioButton2) {
             startActivity(new Intent(FirstQuestionActivity.this, PlaceOfPersonalFinanceAccountingActivity.class));
         }
+        else if (id == R.id.radioButton3){
+            startActivity(new Intent(this, ReasonForNotAccountingForPersonaFinancesActivity.class));
+        }
+        else {
+            Toast.makeText(this, getResources().getString(R.string.err_no_selected), Toast.LENGTH_SHORT).show();
+        }
     }
 }

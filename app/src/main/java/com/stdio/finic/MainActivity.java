@@ -16,6 +16,7 @@ import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -29,13 +30,14 @@ public class MainActivity extends AppCompatActivity {
     TextView tvMoney, tvStartBody, tvStartBody2, tvStartBody3;
     AppCompatSpinner spinner;
     ArrayList<Integer> images = new ArrayList<>();
+    SharedPreferences languagePref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         SharedPreferences isCompletedPref = getSharedPreferences("isCompletedPref", MODE_PRIVATE);
-        SharedPreferences languagePref = getSharedPreferences("languagePref", MODE_PRIVATE);
+        languagePref = getSharedPreferences("languagePref", MODE_PRIVATE);
         if (isCompletedPref.getBoolean("isCompleted", false)) {
             startActivity(new Intent(this, CompleteActivity.class));
             finish();
@@ -104,8 +106,20 @@ public class MainActivity extends AppCompatActivity {
 
             spinner.setAdapter(spinnerAdapter);
             System.out.println(Locale.getDefault().getCountry());
-            spinner.setSelection(getSpinnerPosition(languagePref.getString("language", Locale.getDefault().getCountry())));
+            spinner.setSelection(languagePref.getInt("language", getSpinnerPosition(Locale.getDefault().getCountry())));
+            spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                @Override
+                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                    SharedPreferences.Editor editor = languagePref.edit();
+                    editor.putInt("language", position);
+                    editor.apply();
+                }
 
+                @Override
+                public void onNothingSelected(AdapterView<?> parent) {
+
+                }
+            });
 
             tvMoney = findViewById(R.id.tvMoney);
             SharedPreferences prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);
@@ -135,8 +149,24 @@ public class MainActivity extends AppCompatActivity {
     private int getSpinnerPosition(String code) {
         int position = 0;
         switch (code.toLowerCase()) {
+            case "en":
+                position = 0;
+                break;
+            case "de":
+                position = 1;
+                break;
+            case "es":
+                position = 2;
+                break;
+            case "it":
+                position = 4;
+                break;
+            case "pt":
+                position = 5;
+                break;
             case "ru":
                 position = 6;
+                break;
         }
         return position;
     }

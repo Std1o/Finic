@@ -11,6 +11,7 @@ import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
@@ -29,16 +30,10 @@ public class AlarmManagerBroadcastReceiver extends BroadcastReceiver {
         PowerManager.WakeLock wl= pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,"YOUR TAG");
 //Осуществляем блокировку
         wl.acquire();
-
-//Здесь можно делать обработку.
-        Bundle extras= intent.getExtras();
-
-        if(extras!=null && extras.getBoolean(ONE_TIME, Boolean.FALSE)){
-//проверяем параметр ONE_TIME, если это одиночный будильник,
-//выводим соответствующее сообщение.;
+        SharedPreferences prefs = context.getSharedPreferences("moneyPref", Context.MODE_PRIVATE);
+        if (prefs.getInt("moneyCount", 0) != 1000) {
+            sendNotification(context, "Пройдите опрос");
         }
-        Format formatter=new SimpleDateFormat("hh:mm:ss a");
-        sendNotification(context, "Пройдите опрос");
 
 //Разблокируем поток.
         wl.release();

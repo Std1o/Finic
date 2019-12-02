@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class ImproveWayPersonalFinanceAccountActivity extends AppCompatActivity {
@@ -14,12 +15,16 @@ public class ImproveWayPersonalFinanceAccountActivity extends AppCompatActivity 
     EditText etAdvice;
     TextView tvMoney;
     SharedPreferences prefs;
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_improve_way_personal_finance_account);
         etAdvice = findViewById(R.id.etAdvice);
+
+        progressBar = findViewById(R.id.progressId);
+        progressBar.setProgress(80);
 
         tvMoney = findViewById(R.id.tvMoney);
         prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);

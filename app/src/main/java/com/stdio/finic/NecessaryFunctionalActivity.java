@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -19,11 +20,15 @@ public class NecessaryFunctionalActivity extends AppCompatActivity {
     EditText etAdvice;
     TextView tvMoney;
     SharedPreferences prefs;
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_necessary_functional);
+
+        progressBar = findViewById(R.id.progressId);
+        progressBar.setProgress(64);
 
         tvMoney = findViewById(R.id.tvMoney);
         prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);

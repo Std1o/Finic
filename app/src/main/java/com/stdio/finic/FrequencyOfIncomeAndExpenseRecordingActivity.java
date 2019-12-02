@@ -29,7 +29,7 @@ public class FrequencyOfIncomeAndExpenseRecordingActivity extends AppCompatActiv
         tvMoney.setText(prefs.getInt("moneyCount", 0) + "");
 
         progressBar = findViewById(R.id.progressId);
-        progressBar.setProgress(70);
+        progressBar.setProgress(48);
 
         RadioButton redRadioButton = findViewById(R.id.radioButton1);
         redRadioButton.setOnClickListener(radioButtonClickListener);

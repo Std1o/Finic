@@ -33,7 +33,7 @@ public class PlaceOfPersonalFinanceAccountingActivity extends AppCompatActivity 
         tvMoney.setText(prefs.getInt("moneyCount", 0) + "");
 
         progressBar = findViewById(R.id.progressId);
-        progressBar.setProgress(70);
+        progressBar.setProgress(32);
 
         CheckBox redCheckBox = findViewById(R.id.checkBox1);
         redCheckBox.setOnClickListener(CheckBoxClickListener);

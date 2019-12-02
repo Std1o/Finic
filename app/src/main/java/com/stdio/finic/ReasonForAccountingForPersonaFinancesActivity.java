@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.stdio.finic.gmailHelper.GMailSender;
@@ -22,11 +23,15 @@ public class ReasonForAccountingForPersonaFinancesActivity extends AppCompatActi
     EditText etAdvice;
     TextView tvMoney;
     SharedPreferences prefs;
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reason_for_accounting_for_persona_finances);
+
+        progressBar = findViewById(R.id.progressId);
+        progressBar.setProgress(95);
 
         tvMoney = findViewById(R.id.tvMoney);
         prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);

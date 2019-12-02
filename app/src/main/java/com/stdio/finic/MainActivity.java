@@ -166,7 +166,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private int getSpinnerPosition(String code) {
+    public static int getSpinnerPosition(String code) {
         int position = 0;
         switch (code.toLowerCase()) {
             case "en":
@@ -194,7 +194,7 @@ public class MainActivity extends AppCompatActivity {
         return position;
     }
 
-    private String getLanguageFromPosition(int position) {
+    public static String getLanguageFromPosition(int position) {
         String code = "";
         switch (position) {
             case 0:

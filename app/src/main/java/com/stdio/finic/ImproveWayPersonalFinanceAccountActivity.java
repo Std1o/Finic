@@ -4,12 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Locale;
 
 public class ImproveWayPersonalFinanceAccountActivity extends AppCompatActivity {
 
@@ -21,6 +25,13 @@ public class ImproveWayPersonalFinanceAccountActivity extends AppCompatActivity 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        SharedPreferences languagePref = getSharedPreferences("languagePref", MODE_PRIVATE);
+        Resources res = getResources();
+        DisplayMetrics dm = res.getDisplayMetrics();
+        android.content.res.Configuration conf = res.getConfiguration();
+        conf.setLocale(new Locale(MainActivity.getLanguageFromPosition(languagePref
+                .getInt("language", MainActivity.getSpinnerPosition(Locale.getDefault().getCountry())))));
+        res.updateConfiguration(conf, dm);
         setContentView(R.layout.activity_improve_way_personal_finance_account);
         etAdvice = findViewById(R.id.etAdvice);
 

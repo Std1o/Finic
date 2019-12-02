@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
@@ -17,6 +19,7 @@ import android.widget.Toast;
 import com.stdio.finic.gmailHelper.GMailSender;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class NecessaryFunctionalActivityLine2 extends AppCompatActivity {
 
@@ -34,6 +37,13 @@ public class NecessaryFunctionalActivityLine2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        SharedPreferences languagePref = getSharedPreferences("languagePref", MODE_PRIVATE);
+        Resources res = getResources();
+        DisplayMetrics dm = res.getDisplayMetrics();
+        android.content.res.Configuration conf = res.getConfiguration();
+        conf.setLocale(new Locale(MainActivity.getLanguageFromPosition(languagePref
+                .getInt("language", MainActivity.getSpinnerPosition(Locale.getDefault().getCountry())))));
+        res.updateConfiguration(conf, dm);
         setContentView(R.layout.activity_necessary_functional_line2);
 
         progressBar = findViewById(R.id.progressId);

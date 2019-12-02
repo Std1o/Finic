@@ -41,7 +41,7 @@ public class ImproveWayPersonalFinanceAccountActivity extends AppCompatActivity 
         if (!etAdvice.getText().toString().isEmpty()) {
             MainActivity.message += "\n\nЧего вам не хватает в текущем способе учета личных финансов? - " + etAdvice.getText().toString();
             SharedPreferences.Editor editor = prefs.edit();
-            editor.putInt("moneyCount", 800);
+            editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 200);
             editor.apply();
             startActivity(new Intent(this, ReasonForAccountingForPersonaFinancesActivity.class));
             finish();

@@ -73,7 +73,7 @@ public class ReasonForAccountingForPersonaFinancesActivity extends AppCompatActi
                             recipient);
                     dialog.dismiss();
                     SharedPreferences.Editor editor = prefs.edit();
-                    editor.putInt("moneyCount", 1000);
+                    editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 200);
                     editor.apply();
                     startActivity(new Intent(ReasonForAccountingForPersonaFinancesActivity.this, CompleteActivity.class));
                     finish();

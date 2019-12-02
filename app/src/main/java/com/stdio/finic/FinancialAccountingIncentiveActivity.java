@@ -84,7 +84,7 @@ public class FinancialAccountingIncentiveActivity extends AppCompatActivity {
                 MainActivity.message += s + ", ";
             }
             SharedPreferences.Editor editor = prefs.edit();
-            editor.putInt("moneyCount", 650);
+            editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 350);
             editor.apply();
             startActivity(new Intent(this, NecessaryFunctionalActivityLine2.class));
             finish();

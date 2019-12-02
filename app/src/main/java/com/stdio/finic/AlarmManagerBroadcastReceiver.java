@@ -50,7 +50,7 @@ public class AlarmManagerBroadcastReceiver extends BroadcastReceiver {
         intent.putExtra(ONE_TIME, Boolean.FALSE);//Задаем параметр интента
         PendingIntent pi= PendingIntent.getBroadcast(context,0, intent,0);
 //Устанавливаем интервал срабатывания в 5 секунд.
-        am.setRepeating(AlarmManager.RTC_WAKEUP,System.currentTimeMillis(),1000*10,pi);
+        am.setRepeating(AlarmManager.RTC_WAKEUP,System.currentTimeMillis(),1000*60*60*24,pi);
     }
 
 

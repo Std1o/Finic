@@ -18,6 +18,7 @@ public class ReasonForNotAccountingForPersonaFinancesActivity extends AppCompatA
     String answer = "";
     TextView tvMoney;
     SharedPreferences prefs;
+    boolean nextIsAllowed = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,15 +48,21 @@ public class ReasonForNotAccountingForPersonaFinancesActivity extends AppCompatA
             RadioButton rb = (RadioButton)v;
             id = rb.getId();
             answer = "\n\nПочему вы не ведете учет личных финансов? - " + rb.getText();
+            nextIsAllowed = true;
         }
     };
 
     public void onClick(View view) {
-        MainActivity.message += answer;
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putInt("moneyCount", 300);
-        editor.apply();
-        startActivity(new Intent(this, FinancialAccountingIncentiveActivity.class));
-        finish();
+        if (nextIsAllowed) {
+            MainActivity.message += answer;
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putInt("moneyCount", 300);
+            editor.apply();
+            startActivity(new Intent(this, FinancialAccountingIncentiveActivity.class));
+            finish();
+        }
+        else {
+            Toast.makeText(this, getResources().getString(R.string.err_no_selected), Toast.LENGTH_SHORT).show();
+        }
     }
 }

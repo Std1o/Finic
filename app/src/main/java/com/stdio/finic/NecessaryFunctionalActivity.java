@@ -85,7 +85,7 @@ public class NecessaryFunctionalActivity extends AppCompatActivity {
     };
 
     public void onClick(View view) {
-        if (nextIsAllowed) {
+        if (nextIsAllowed || !etAdvice.getText().toString().isEmpty()) {
             for (String s : list) {
                 MainActivity.message += s + ", ";
             }

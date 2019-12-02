@@ -12,6 +12,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.stdio.finic.gmailHelper.GMailSender;
 
@@ -28,6 +29,7 @@ public class NecessaryFunctionalActivityLine2 extends AppCompatActivity {
     TextView tvMoney;
     SharedPreferences prefs;
     private ProgressBar progressBar;
+    boolean nextIsAllowed = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,20 +80,29 @@ public class NecessaryFunctionalActivityLine2 extends AppCompatActivity {
             else {
                 list.remove(rb.getText().toString());
             }
+            if (!list.isEmpty()) {
+                nextIsAllowed = true;
+            }
+            else {
+                nextIsAllowed = false;
+            }
         }
     };
 
     public void onClick(View view) {
-        for (String s : list) {
-            MainActivity.message += s + ", ";
-        }
-        if (!etAdvice.getText().toString().isEmpty()) {
+        if (nextIsAllowed || !etAdvice.getText().toString().isEmpty()) {
+            for (String s : list) {
+                MainActivity.message += s + ", ";
+            }
             if (isFirstClick) {
                 MainActivity.message += "\n\nОтметьте, какими функциями должно обладать идеальное приложение для учета финансов, чтобы вы им пользовались - ";
             }
             MainActivity.message += "\nДругое - " + etAdvice.getText().toString();
+            sendMessage();
         }
-        sendMessage();
+        else {
+            Toast.makeText(this, getResources().getString(R.string.err_no_selected), Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void sendMessage() {

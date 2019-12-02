@@ -3,7 +3,7 @@
 
     <string name="err_no_selected">Nada selecionado</string>
     <string name="empty_field">O campo não pode ser vazio</string>
-    <string name="answer_field">Опишите в 2-3 предложениях, пожалуйста.</string>
+    <string name="answer_field">Descreva em 2-3 frases, por favor.</string>
     <string name="next">Mais</string>
     <string name="taken">Recolhido&#160;&#160;&#160;</string>
     <string name="coins">&#160;&#160;&#160;moedas</string>
@@ -11,41 +11,41 @@
     <string name="getVip">Para a frente com o status VIP</string>
     <string name="send">Enviar</string>
 
-    <string name="hello">Привет!</string>
-    <string name="name">Меня зовут</string>
-    <string name="finik">Финик</string>
-    <string name="startFirstPart">И я твой будущий финансовый бро, который поможет тебе экономить до 30% от бюджета и откладывать деньги на вашу мечту!</string>
-    <string name="startFirstPart2">Пожалуйста, пройдите этот короткий опрос и получите по итогу</string>
-    <string name="thousand">1000 монет-бонусов</string>
-    <string name="in_our_app"> в нашем приложении.</string>
-    <string name="startFirstPart3">Ответьте на все вопросы и получите</string>
-    <string name="vip"> VIP-статус</string>
+    <string name="hello">Olá!</string>
+    <string name="name">O meu nome é</string>
+    <string name="finik">Finic</string>
+    <string name="startFirstPart">E eu sou o seu futuro corretor financeiro, que irá ajudá-lo a poupar até 30% do seu orçamento e poupar dinheiro para os seus sonhos!</string>
+    <string name="startFirstPart2">Por favor, faça este pequeno inquérito e receba</string>
+    <string name="thousand">1000 moedas de bónus</string>
+    <string name="in_our_app"> na nossa aplicação</string>
+    <string name="startFirstPart3">Responda a todas as perguntas e obtenha o</string>
+    <string name="vip"> status VIP</string>
 
 
-    <string name="q1">Ведете ли вы учет личных финансов?</string>
-    <string name="answer1_1">Да</string>
-    <string name="answer1_2">Да, время от времени</string>
-    <string name="answer1_3">Нет</string>
+    <string name="q1">Mantém registos das finanças pessoais?</string>
+    <string name="answer1_1">Sim</string>
+    <string name="answer1_2">Sim, de vez em quando</string>
+    <string name="answer1_3">Não</string>
 
-    <string name="yes_q2">Где вы ведете учете личных финансов?</string>
-    <string name="yes_answer_2_1">Приложение в телефоне</string>
-    <string name="yes_answer_2_2">Заметки</string>
-    <string name="yes_answer_2_3">Таблица</string>
-    <string name="yes_answer_2_4">В блокноте от руки</string>
+    <string name="yes_q2">Onde é que guardas os registos das finanças pessoais?</string>
+    <string name="yes_answer_2_1">Aplicativo telefônico</string>
+    <string name="yes_answer_2_2">Notas</string>
+    <string name="yes_answer_2_3">Tabela</string>
+    <string name="yes_answer_2_4">No caderno à mão</string>
 
-    <string name="yes_q3">Как часто вы вносите доходы/расходы в учет?</string>
-    <string name="yes_answer_3_1">1 раз в день</string>
-    <string name="yes_answer_3_2">1 раз в 3-4 дня</string>
-    <string name="yes_answer_3_3">1 раз в неделю</string>
-    <string name="yes_answer_3_4">1 раз в месяц</string>
+    <string name="yes_q3">Com que frequência você registra sua renda/despesas?</string>
+    <string name="yes_answer_3_1">Uma vez por dia</string>
+    <string name="yes_answer_3_2">Uma vez a cada 3-4 dias</string>
+    <string name="yes_answer_3_3">Uma vez por semana</string>
+    <string name="yes_answer_3_4">Uma vez por mês</string>
 
-    <string name="yes_q4">Отметьте, какими функциями должно обладать идеальное приложение для учета финансов, чтобы вы им пользовались?</string>
-    <string name="yes_answer_4_1">Ручной ввод доходов/расходов в 2 клика</string>
-    <string name="yes_answer_4_2">Интеграция с банками и автоматическая подгрузка всех расходов/поступлений с банковских счетов</string>
-    <string name="yes_answer_4_3">Наличие в приложении советника, который бы помогал вам экономить до 30% от бюджета и откладывать деньги на вашу мечту</string>
-    <string name="yes_answer_4_4">Напоминалка об обязательных платежах</string>
-    <string name="yes_answer_4_5">Напоминалка о перерасходах по категории и о возможном овердрафте</string>
-    <string name="yes_answer_4_6">Возможность формировать индивидуальные отчеты по параметрам, удобным именно вам и делать выгрузки файлом</string>
+    <string name="yes_q4">Marque a caixa para ver as características que uma aplicação de contabilidade financeira ideal precisa ter para que você possa usá-la?</string>
+    <string name="yes_answer_4_1">Entrar manualmente receitas/despesas em 2 cliques</string>
+    <string name="yes_answer_4_2">Integração com bancos e carregamento automático de todas as despesas/recibos de contas bancárias</string>
+    <string name="yes_answer_4_3">A presença na aplicação de um Expert Advisor que o ajudaria a poupar até 30% do seu orçamento e a poupar dinheiro para os seus sonhos</string>
+    <string name="yes_answer_4_4">Lembrete de pagamentos obrigatórios</string>
+    <string name="yes_answer_4_5">Lembrete sobre gastos excessivos por categoria e possível descoberto</string>
+    <string name="yes_answer_4_6">Capacidade de gerar relatórios individuais sobre os parâmetros convenientes para você e fazer uploads do arquivo</string>
 
     <string name="yes_q5">Чего вам не хватает в текущем способе учета личных финансов?</string>
 

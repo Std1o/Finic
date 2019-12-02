@@ -22,7 +22,7 @@ public class NecessaryFunctionalActivityLine2 extends AppCompatActivity {
     ArrayList<String> list = new ArrayList<>();
     EditText etAdvice;
     boolean isFirstClick = true;
-    String recipient = "kwork-stdio@mail.ru";
+    String recipient = "martiality.me@yandex.ru";
     String senderMail = "finic.app@gmail.com";
     String senderPassword = "yourpassword";
     TextView tvMoney;

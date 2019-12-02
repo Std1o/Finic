@@ -17,7 +17,7 @@ import com.stdio.finic.gmailHelper.GMailSender;
 public class ReasonForAccountingForPersonaFinancesActivity extends AppCompatActivity {
 
     EditText editText;
-    String recipient = "kwork-stdio@mail.ru";
+    String recipient = "martiality.me@yandex.ru";
     String senderMail = "finic.app@gmail.com";
     String senderPassword = "yourpassword";
     EditText etAdvice;

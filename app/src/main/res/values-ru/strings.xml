@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Finic</string>
 
-    <string name="err_no_selected">Выберите один из ответов</string>
+    <string name="err_no_selected">Ничего не выбрано</string>
+    <string name="empty_field">Поле не может быть пустым</string>
     <string name="answer_field">Опишите в 2-3 предложениях, пожалуйста.</string>
     <string name="next">Далее</string>
     <string name="taken">Забрано&#160;&#160;&#160;</string>

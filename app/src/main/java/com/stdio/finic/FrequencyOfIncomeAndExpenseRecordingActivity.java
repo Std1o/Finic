@@ -18,6 +18,7 @@ public class FrequencyOfIncomeAndExpenseRecordingActivity extends AppCompatActiv
     String answer = "";
     TextView tvMoney;
     SharedPreferences prefs;
+    boolean nextIsAllowed = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,16 +48,21 @@ public class FrequencyOfIncomeAndExpenseRecordingActivity extends AppCompatActiv
             RadioButton rb = (RadioButton)v;
             id = rb.getId();
             answer = "\n\nКак часто вы вносите доходы/расходы в учет? - " + rb.getText();
+            nextIsAllowed = true;
         }
     };
 
     public void onClick(View view) {
-        MainActivity.message += answer;
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putInt("moneyCount", 450);
-        editor.apply();
-        startActivity(new Intent(FrequencyOfIncomeAndExpenseRecordingActivity.this, NecessaryFunctionalActivity.class));
-        finish();
-
+        if (nextIsAllowed) {
+            MainActivity.message += answer;
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putInt("moneyCount", 450);
+            editor.apply();
+            startActivity(new Intent(FrequencyOfIncomeAndExpenseRecordingActivity.this, NecessaryFunctionalActivity.class));
+            finish();
+        }
+        else {
+            Toast.makeText(this, getResources().getString(R.string.err_no_selected), Toast.LENGTH_SHORT).show();
+        }
     }
 }

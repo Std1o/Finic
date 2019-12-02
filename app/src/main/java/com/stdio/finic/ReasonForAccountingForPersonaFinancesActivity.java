@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.stdio.finic.gmailHelper.GMailSender;
 
@@ -43,8 +44,11 @@ public class ReasonForAccountingForPersonaFinancesActivity extends AppCompatActi
     public void onClick(View view) {
         if (!etAdvice.getText().toString().isEmpty()) {
             MainActivity.message += "\n\nПочему вы ведете учет личных финансов? - " + etAdvice.getText().toString();
+            sendMessage();
         }
-        sendMessage();
+        else {
+            Toast.makeText(this, getResources().getString(R.string.empty_field), Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void sendMessage() {

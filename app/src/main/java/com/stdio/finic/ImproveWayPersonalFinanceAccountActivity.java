@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ImproveWayPersonalFinanceAccountActivity extends AppCompatActivity {
 
@@ -34,11 +35,14 @@ public class ImproveWayPersonalFinanceAccountActivity extends AppCompatActivity 
     public void onClick(View view) {
         if (!etAdvice.getText().toString().isEmpty()) {
             MainActivity.message += "\n\nЧего вам не хватает в текущем способе учета личных финансов? - " + etAdvice.getText().toString();
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putInt("moneyCount", 800);
+            editor.apply();
+            startActivity(new Intent(this, ReasonForAccountingForPersonaFinancesActivity.class));
+            finish();
         }
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putInt("moneyCount", 800);
-        editor.apply();
-        startActivity(new Intent(this, ReasonForAccountingForPersonaFinancesActivity.class));
-        finish();
+        else {
+            Toast.makeText(this, getResources().getString(R.string.empty_field), Toast.LENGTH_SHORT).show();
+        }
     }
 }

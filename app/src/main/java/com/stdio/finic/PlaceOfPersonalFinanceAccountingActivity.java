@@ -22,6 +22,7 @@ public class PlaceOfPersonalFinanceAccountingActivity extends AppCompatActivity 
     ArrayList<String> list = new ArrayList<>();
     TextView tvMoney;
     SharedPreferences prefs;
+    boolean nextIsAllowed = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,17 +65,28 @@ public class PlaceOfPersonalFinanceAccountingActivity extends AppCompatActivity 
             else {
                 list.remove(rb.getText().toString());
             }
+            if (!list.isEmpty()) {
+                nextIsAllowed = true;
+            }
+            else {
+                nextIsAllowed = false;
+            }
         }
     };
 
     public void onClick(View view) {
-        for (String s : list) {
-            MainActivity.message += s + ", ";
+        if (nextIsAllowed) {
+            for (String s : list) {
+                MainActivity.message += s + ", ";
+            }
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putInt("moneyCount", 300);
+            editor.apply();
+            startActivity(new Intent(PlaceOfPersonalFinanceAccountingActivity.this, FrequencyOfIncomeAndExpenseRecordingActivity.class));
+            finish();
         }
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putInt("moneyCount", 300);
-        editor.apply();
-        startActivity(new Intent(PlaceOfPersonalFinanceAccountingActivity.this, FrequencyOfIncomeAndExpenseRecordingActivity.class));
-        finish();
+        else {
+            Toast.makeText(this, getResources().getString(R.string.err_no_selected), Toast.LENGTH_SHORT).show();
+        }
     }
 }

@@ -29,7 +29,7 @@ public class ReasonForNotAccountingForPersonaFinancesActivity extends AppCompatA
         tvMoney.setText(prefs.getInt("moneyCount", 0) + "");
 
         progressBar = findViewById(R.id.progressId);
-        progressBar.setProgress(70);
+        progressBar.setProgress(50);
 
         RadioButton redRadioButton = findViewById(R.id.radioButton1);
         redRadioButton.setOnClickListener(radioButtonClickListener);

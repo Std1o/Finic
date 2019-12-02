@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -17,11 +18,15 @@ public class FinancialAccountingIncentiveActivity extends AppCompatActivity {
     String question = "";
     TextView tvMoney;
     SharedPreferences prefs;
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_financial_accounting_incentive);
+
+        progressBar = findViewById(R.id.progressId);
+        progressBar.setProgress(75);
 
         CheckBox redCheckBox = findViewById(R.id.checkBox1);
         redCheckBox.setOnClickListener(CheckBoxClickListener);

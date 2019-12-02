@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.stdio.finic.gmailHelper.GMailSender;
@@ -26,11 +27,15 @@ public class NecessaryFunctionalActivityLine2 extends AppCompatActivity {
     String senderPassword = "yourpassword";
     TextView tvMoney;
     SharedPreferences prefs;
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_necessary_functional_line2);
+
+        progressBar = findViewById(R.id.progressId);
+        progressBar.setProgress(90);
 
         tvMoney = findViewById(R.id.tvMoney);
         prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);

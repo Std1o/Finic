@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Integer> images = new ArrayList<>();
     SharedPreferences languagePref;
     boolean isShowed = false;
+    private AlarmManagerBroadcastReceiver alarm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +55,15 @@ public class MainActivity extends AppCompatActivity {
 // Use conf.locale = new Locale(...) if targeting lower versions
             res.updateConfiguration(conf, dm);
             setContentView(R.layout.activity_main);
+
+            alarm=new AlarmManagerBroadcastReceiver();
+
+            Context context= this.getApplicationContext();
+            if(alarm!=null){
+                alarm.SetAlarm(context);
+            }else{
+                Toast.makeText(context,"Alarm is null", Toast.LENGTH_SHORT).show();
+            }
 
             images.add(R.drawable.en);
             images.add(R.drawable.de);

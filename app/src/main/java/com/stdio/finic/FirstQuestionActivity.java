@@ -53,7 +53,7 @@ public class FirstQuestionActivity extends AppCompatActivity {
         if (id == R.id.radioButton1 || id == R.id.radioButton2) {
             MainActivity.message += answer;
             SharedPreferences.Editor editor = prefs.edit();
-            editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 150);
+            editor.putInt("moneyCount", 150);
             editor.apply();
             startActivity(new Intent(FirstQuestionActivity.this, PlaceOfPersonalFinanceAccountingActivity.class));
             finish();
@@ -61,7 +61,7 @@ public class FirstQuestionActivity extends AppCompatActivity {
         else if (id == R.id.radioButton3){
             MainActivity.message += answer;
             SharedPreferences.Editor editor = prefs.edit();
-            editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 150);
+            editor.putInt("moneyCount", 150);
             editor.apply();
             startActivity(new Intent(this, ReasonForNotAccountingForPersonaFinancesActivity.class));
             finish();

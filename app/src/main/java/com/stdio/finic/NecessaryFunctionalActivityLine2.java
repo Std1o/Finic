@@ -111,7 +111,7 @@ public class NecessaryFunctionalActivityLine2 extends AppCompatActivity {
                             recipient);
                     dialog.dismiss();
                     SharedPreferences.Editor editor = prefs.edit();
-                    editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 350);
+                    editor.putInt("moneyCount", 1000);
                     editor.apply();
                     startActivity(new Intent(NecessaryFunctionalActivityLine2.this, CompleteActivity.class));
                     finish();

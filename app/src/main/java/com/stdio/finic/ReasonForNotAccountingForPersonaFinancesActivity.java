@@ -53,7 +53,7 @@ public class ReasonForNotAccountingForPersonaFinancesActivity extends AppCompatA
     public void onClick(View view) {
         MainActivity.message += answer;
         SharedPreferences.Editor editor = prefs.edit();
-        editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 150);
+        editor.putInt("moneyCount", 300);
         editor.apply();
         startActivity(new Intent(this, FinancialAccountingIncentiveActivity.class));
         finish();

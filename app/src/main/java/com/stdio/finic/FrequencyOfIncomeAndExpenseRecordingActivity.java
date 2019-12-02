@@ -53,7 +53,7 @@ public class FrequencyOfIncomeAndExpenseRecordingActivity extends AppCompatActiv
     public void onClick(View view) {
         MainActivity.message += answer;
         SharedPreferences.Editor editor = prefs.edit();
-        editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 150);
+        editor.putInt("moneyCount", 450);
         editor.apply();
         startActivity(new Intent(FrequencyOfIncomeAndExpenseRecordingActivity.this, NecessaryFunctionalActivity.class));
         finish();

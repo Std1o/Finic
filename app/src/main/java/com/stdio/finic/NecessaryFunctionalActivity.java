@@ -87,7 +87,7 @@ public class NecessaryFunctionalActivity extends AppCompatActivity {
             MainActivity.message += "\nДругое - " + etAdvice.getText().toString();
         }
         SharedPreferences.Editor editor = prefs.edit();
-        editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 150);
+        editor.putInt("moneyCount", 600);
         editor.apply();
         startActivity(new Intent(this, ImproveWayPersonalFinanceAccountActivity.class));
         finish();

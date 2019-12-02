@@ -72,7 +72,7 @@ public class PlaceOfPersonalFinanceAccountingActivity extends AppCompatActivity 
             MainActivity.message += s + ", ";
         }
         SharedPreferences.Editor editor = prefs.edit();
-        editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 150);
+        editor.putInt("moneyCount", 300);
         editor.apply();
         startActivity(new Intent(PlaceOfPersonalFinanceAccountingActivity.this, FrequencyOfIncomeAndExpenseRecordingActivity.class));
         finish();

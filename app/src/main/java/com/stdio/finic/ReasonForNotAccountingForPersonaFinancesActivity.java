@@ -29,6 +29,11 @@ public class ReasonForNotAccountingForPersonaFinancesActivity extends AppCompatA
         prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);
         tvMoney.setText(prefs.getInt("moneyCount", 0) + "");
 
+        SharedPreferences currentPagePref = getSharedPreferences("currentPagePref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = currentPagePref.edit();
+        editor.putString("currentPage", getClass().getSimpleName());
+        editor.apply();
+
         progressBar = findViewById(R.id.progressId);
         progressBar.setProgress(50);
 

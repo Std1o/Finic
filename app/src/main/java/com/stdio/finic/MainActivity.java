@@ -39,10 +39,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
-        SharedPreferences isCompletedPref = getSharedPreferences("isCompletedPref", MODE_PRIVATE);
+        SharedPreferences currentPagePref = getSharedPreferences("currentPagePref", MODE_PRIVATE);
         languagePref = getSharedPreferences("languagePref", MODE_PRIVATE);
-        if (isCompletedPref.getBoolean("isCompleted", false)) {
-            startActivity(new Intent(this, CompleteActivity.class));
+        String currentActivity = currentPagePref.getString("currentPage", "");
+        if (!currentActivity.isEmpty()) {
+            startActivity(new Intent("."+currentActivity));
             finish();
         }
         else {

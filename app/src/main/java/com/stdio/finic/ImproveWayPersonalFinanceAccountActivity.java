@@ -24,6 +24,11 @@ public class ImproveWayPersonalFinanceAccountActivity extends AppCompatActivity 
         setContentView(R.layout.activity_improve_way_personal_finance_account);
         etAdvice = findViewById(R.id.etAdvice);
 
+        SharedPreferences currentPagePref = getSharedPreferences("currentPagePref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = currentPagePref.edit();
+        editor.putString("currentPage", getClass().getSimpleName());
+        editor.apply();
+
         progressBar = findViewById(R.id.progressId);
         progressBar.setProgress(80);
 

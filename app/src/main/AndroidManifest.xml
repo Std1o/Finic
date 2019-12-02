@@ -12,16 +12,76 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.ToolBar">
-        <activity android:name=".CompleteActivity"></activity>
-        <activity android:name=".NecessaryFunctionalActivityLine2" />
-        <activity android:name=".FinancialAccountingIncentiveActivity" />
-        <activity android:name=".ReasonForAccountingForPersonaFinancesActivity" />
-        <activity android:name=".ImproveWayPersonalFinanceAccountActivity" />
-        <activity android:name=".NecessaryFunctionalActivity" />
-        <activity android:name=".ReasonForNotAccountingForPersonaFinancesActivity" />
-        <activity android:name=".FrequencyOfIncomeAndExpenseRecordingActivity" />
-        <activity android:name=".PlaceOfPersonalFinanceAccountingActivity" />
-        <activity android:name=".FirstQuestionActivity" />
+        <activity android:name=".CompleteActivity">
+            <intent-filter>
+                <action android:name=".CompleteActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NecessaryFunctionalActivityLine2">
+            <intent-filter>
+                <action android:name=".NecessaryFunctionalActivityLine2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FinancialAccountingIncentiveActivity">
+            <intent-filter>
+                <action android:name=".FinancialAccountingIncentiveActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ReasonForAccountingForPersonaFinancesActivity">
+            <intent-filter>
+                <action android:name=".ReasonForAccountingForPersonaFinancesActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ImproveWayPersonalFinanceAccountActivity">
+            <intent-filter>
+                <action android:name=".ImproveWayPersonalFinanceAccountActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NecessaryFunctionalActivity">
+            <intent-filter>
+                <action android:name=".NecessaryFunctionalActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ReasonForNotAccountingForPersonaFinancesActivity">
+            <intent-filter>
+                <action android:name=".ReasonForNotAccountingForPersonaFinancesActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FrequencyOfIncomeAndExpenseRecordingActivity">
+            <intent-filter>
+                <action android:name=".FrequencyOfIncomeAndExpenseRecordingActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PlaceOfPersonalFinanceAccountingActivity">
+            <intent-filter>
+                <action android:name=".PlaceOfPersonalFinanceAccountingActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FirstQuestionActivity">
+            <intent-filter>
+                <action android:name=".FirstQuestionActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

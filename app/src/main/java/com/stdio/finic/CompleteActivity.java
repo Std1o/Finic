@@ -128,9 +128,9 @@ public class CompleteActivity extends AppCompatActivity {
         SharedPreferences prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);
         tvMoney.setText(prefs.getInt("moneyCount", 0) + "");
 
-        SharedPreferences isCompletedPref = getSharedPreferences("isCompletedPref", MODE_PRIVATE);
-        SharedPreferences.Editor editor = isCompletedPref.edit();
-        editor.putBoolean("isCompleted", true);
+        SharedPreferences currentPagePref = getSharedPreferences("currentPagePref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = currentPagePref.edit();
+        editor.putString("currentPage", getClass().getSimpleName());
         editor.apply();
 
         tvCompleteBody2 = findViewById(R.id.tvCompleteBody2);

@@ -36,6 +36,11 @@ public class NecessaryFunctionalActivity extends AppCompatActivity {
         prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);
         tvMoney.setText(prefs.getInt("moneyCount", 0) + "");
 
+        SharedPreferences currentPagePref = getSharedPreferences("currentPagePref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = currentPagePref.edit();
+        editor.putString("currentPage", getClass().getSimpleName());
+        editor.apply();
+
 
         CheckBox redCheckBox = findViewById(R.id.checkBox1);
         redCheckBox.setOnClickListener(CheckBoxClickListener);

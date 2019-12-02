@@ -30,6 +30,11 @@ public class FinancialAccountingIncentiveActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressId);
         progressBar.setProgress(75);
 
+        SharedPreferences currentPagePref = getSharedPreferences("currentPagePref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = currentPagePref.edit();
+        editor.putString("currentPage", getClass().getSimpleName());
+        editor.apply();
+
         CheckBox redCheckBox = findViewById(R.id.checkBox1);
         redCheckBox.setOnClickListener(CheckBoxClickListener);
 

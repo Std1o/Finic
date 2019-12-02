@@ -40,6 +40,9 @@ public class ReasonForNotAccountingForPersonaFinancesActivity extends AppCompatA
 
         RadioButton blueRadioButton = findViewById(R.id.radioButton3);
         blueRadioButton.setOnClickListener(radioButtonClickListener);
+
+        RadioButton fourth = findViewById(R.id.radioButton4);
+        fourth.setOnClickListener(radioButtonClickListener);
     }
 
     View.OnClickListener radioButtonClickListener = new View.OnClickListener() {

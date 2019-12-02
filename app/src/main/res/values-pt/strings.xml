@@ -47,27 +47,27 @@
     <string name="yes_answer_4_5">Lembrete sobre gastos excessivos por categoria e possível descoberto</string>
     <string name="yes_answer_4_6">Capacidade de gerar relatórios individuais sobre os parâmetros convenientes para você e fazer uploads do arquivo</string>
 
-    <string name="yes_q5">Чего вам не хватает в текущем способе учета личных финансов?</string>
+    <string name="yes_q5">O que lhe falta na forma atual de contabilizar as finanças pessoais?</string>
 
-    <string name="yes_q6">Почему вы ведете учет личных финансов?</string>
+    <string name="yes_q6">Porque é que mantém registos das finanças pessoais?</string>
 
-    <string name="no_q2">Почему вы не ведете учет личных финансов?</string>
-    <string name="no_answer_2_1">Не понимаю зачем</string>
-    <string name="no_answer_2_2">Не знаю, как это делать правильно</string>
-    <string name="no_answer_2_3">Сложно, неудобно</string>
-    <string name="no_answer_2_4">Занимает много времени</string>
+    <string name="no_q2">Porque não controla as suas finanças pessoais?</string>
+    <string name="no_answer_2_1">Não percebo porque é que o</string>
+    <string name="no_answer_2_2">Não sei como fazer isto bem</string>
+    <string name="no_answer_2_3">Difícil, desconfortável</string>
+    <string name="no_answer_2_4">ЗLeva muito tempo</string>
 
-    <string name="no_q3">Что вас сподвигло бы к учету личных финансов?</string>
-    <string name="no_answer_3_1">Обучение личным финансам</string>
-    <string name="no_answer_3_2">Четкое понимание, сколько средств я бы мог сэкономить с помощью учета</string>
-    <string name="no_answer_3_3">Четкое понимание того, что это позволит мне жить без долгов</string>
-    <string name="no_answer_3_4">Четкое понимание того, что это позволит мне накопить на мечту</string>
-    <string name="no_answer_3_5">Наличие удобного и простого приложения, которое автоматизировало бы учет и выдавало бы мне рекомендации по личным финансам</string>
+    <string name="no_q3">O que o encorajaria a controlar as suas finanças pessoais?</string>
+    <string name="no_answer_3_1">Formação em finanças pessoais</string>
+    <string name="no_answer_3_2">Uma compreensão clara de quanto eu poderia economizar através da contabilidade</string>
+    <string name="no_answer_3_3">Uma compreensão clara de que isto me permitirá viver sem dívidas</string>
+    <string name="no_answer_3_4">Uma compreensão clara de que isto me permitirá poupar para um sonho</string>
+    <string name="no_answer_3_5">Uma aplicação conveniente e simples que automatizaria a contabilidade e me daria recomendações sobre finanças pessoais</string>
 
-    <string name="congratulations">Поздравляем!</string>
-    <string name="complete1">Вы успешно ответили на все вопросы!</string>
-    <string name="complete2">Теперь вы получили</string>
-    <string name="complete2_2">по учету финансов! А также получили</string>
-    <string name="complete3">Мы оповестим вас уведомлением, когда приложение будет запущено и вы сможете потратить их чтобы экономить до 30% от своего бюджета и откладывать деньги на вашу мечту!</string>
-    <string name="complete4">Спасибо вам от Финика!</string>
+    <string name="congratulations">Parabéns!</string>
+    <string name="complete1">Você respondeu com sucesso a todas as perguntas!</string>
+    <string name="complete2">Agora você recebeu o</string>
+    <string name="complete2_2">contabilidade financeira! E também recebeu</string>
+    <string name="complete3">Iremos notificá-lo quando a aplicação for lançada e poderá gastá-la para poupar até 30% do seu orçamento e poupar dinheiro para os seus sonhos!</string>
+    <string name="complete4">Obrigado da Finic!</string>
 </resources>

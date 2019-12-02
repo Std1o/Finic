@@ -69,8 +69,8 @@ public class ReasonForAccountingForPersonaFinancesActivity extends AppCompatActi
 
     private void sendMessage() {
         final ProgressDialog dialog = new ProgressDialog(this);
-        dialog.setTitle("Отправка данных");
-        dialog.setMessage("Пожалуйста, подождите...");
+        dialog.setTitle("Sending Email");
+        dialog.setMessage("Please wait...");
         dialog.setCancelable(false);
         dialog.show();
         Thread sender = new Thread(new Runnable() {

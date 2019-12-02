@@ -5,13 +5,20 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import android.app.AlarmManager;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.media.RingtoneManager;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.PowerManager;
 import android.widget.Toast;
+
+import androidx.core.app.NotificationCompat;
 
 public class AlarmManagerBroadcastReceiver extends BroadcastReceiver {
     final public static String ONE_TIME="onetime";
@@ -31,7 +38,7 @@ public class AlarmManagerBroadcastReceiver extends BroadcastReceiver {
 //выводим соответствующее сообщение.;
         }
         Format formatter=new SimpleDateFormat("hh:mm:ss a");
-        Toast.makeText(context, "AAAAAAAAAAAA", Toast.LENGTH_LONG).show();
+        sendNotification(context, "Пройдите опрос");
 
 //Разблокируем поток.
         wl.release();
@@ -46,19 +53,44 @@ public class AlarmManagerBroadcastReceiver extends BroadcastReceiver {
         am.setRepeating(AlarmManager.RTC_WAKEUP,System.currentTimeMillis(),1000*10,pi);
     }
 
-    public void CancelAlarm(Context context)
-    {
-        Intent intent=new Intent(context, AlarmManagerBroadcastReceiver.class);
-        PendingIntent sender= PendingIntent.getBroadcast(context,0, intent,0);
-        AlarmManager alarmManager=(AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-        alarmManager.cancel(sender);//Отменяем будильник, связанный с интентом данного класса
-    }
 
-    public void setOnetimeTimer(Context context){
-        AlarmManager am=(AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
-        Intent intent=new Intent(context, AlarmManagerBroadcastReceiver.class);
-        intent.putExtra(ONE_TIME, Boolean.TRUE);//Задаем параметр интента
-        PendingIntent pi= PendingIntent.getBroadcast(context,0, intent,0);
-        am.set(AlarmManager.RTC_WAKEUP,System.currentTimeMillis(),pi);
+    public void sendNotification(Context context, String messageBody) {
+        int notificationCode = 378;
+
+        Intent intent = new Intent(context, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        PendingIntent pendingIntent = PendingIntent.getActivity(context, notificationCode, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        Uri defaultRingtone = null;
+        defaultRingtone = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            NotificationManager notificationManager =
+                    (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+            NotificationChannel channel = new NotificationChannel("dayPlanner",
+                    "Channel name",
+                    NotificationManager.IMPORTANCE_DEFAULT);
+            channel.setDescription("Channel description");
+            notificationManager.createNotificationChannel(channel);
+            NotificationCompat.Builder notificationCompat = new NotificationCompat.Builder(context, "dayPlanner")
+                    .setSmallIcon(R.drawable.ic_launcher_foreground)
+                    .setSound(defaultRingtone)
+                    .setContentTitle(context.getResources().getString(R.string.app_name))
+                    .setAutoCancel(true)
+                    .setContentIntent(pendingIntent)
+                    .setContentText(messageBody);
+            notificationManager.notify(notificationCode, notificationCompat.build());
+        } else {
+            NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+            NotificationCompat.Builder notificationCompat = new NotificationCompat.Builder(context, "dayPlanner")
+                    .setSmallIcon(R.drawable.ic_launcher_foreground)
+                    .setSound(defaultRingtone)
+                    .setContentTitle(context.getResources().getString(R.string.app_name))
+                    .setAutoCancel(true)
+                    .setContentIntent(pendingIntent)
+                    .setContentText(messageBody);
+            notificationManager.notify(notificationCode, notificationCompat.build());
+        }
+
     }
 }

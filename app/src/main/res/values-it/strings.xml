@@ -1,14 +1,15 @@
 <resources>
     <string name="app_name">Finic</string>
 
-    <string name="err_no_selected">Выберите один из ответов</string>
+    <string name="err_no_selected">Niente selezionato</string>
+    <string name="empty_field">Il campo non può essere vuoto</string>
     <string name="answer_field">Descrivere in 2-3 frasi, per favore.</string>
-    <string name="next">Далее</string>
-    <string name="taken">Забрано&#160;&#160;&#160;</string>
-    <string name="coins">&#160;&#160;&#160;монет</string>
+    <string name="next">Quindi</string>
+    <string name="taken">Ritirato&#160;&#160;&#160;</string>
+    <string name="coins">&#160;&#160;&#160;monete</string>
     <string name="of">of</string>
-    <string name="getVip">Вперед за VIP-статусом</string>
-    <string name="send">Отправить</string>
+    <string name="getVip">Avanti per lo stato VIP</string>
+    <string name="send">Inviare</string>
 
     <string name="hello">Ciao!</string>
     <string name="name">Mi chiamo</string>

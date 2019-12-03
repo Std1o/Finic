@@ -17,6 +17,10 @@
     <string name="page5">5 of 6</string>
     <string name="page6">6 of 6</string>
 
+    <string name="page2_no">2 of 4</string>
+    <string name="page3_no">3 of 4</string>
+    <string name="page4_no">4 of 4</string>
+
     <string name="hello">Hi!</string>
     <string name="name">My name is</string>
     <string name="finik">Finic</string>

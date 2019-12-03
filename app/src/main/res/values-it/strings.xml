@@ -11,6 +11,16 @@
     <string name="getVip">Avanti per lo stato VIP</string>
     <string name="send">Inviare</string>
 
+    <string name="page2">2 di 6</string>
+    <string name="page3">3 di 6</string>
+    <string name="page4">4 di 6</string>
+    <string name="page5">5 di 6</string>
+    <string name="page6">6 di 6</string>
+
+    <string name="page2_no">2 di 4</string>
+    <string name="page3_no">3 di 4</string>
+    <string name="page4_no">4 di 4</string>
+
     <string name="hello">Ciao!</string>
     <string name="name">Mi chiamo</string>
     <string name="finik">Finic</string>

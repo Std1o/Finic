@@ -11,6 +11,16 @@
     <string name="getVip">Вперед за VIP-статусом</string>
     <string name="send">Отправить</string>
 
+    <string name="page2">2 из 6</string>
+    <string name="page3">3 из 6</string>
+    <string name="page4">4 из 6</string>
+    <string name="page5">5 из 6</string>
+    <string name="page6">6 из 6</string>
+
+    <string name="page2_no">2 из 4</string>
+    <string name="page3_no">3 из 4</string>
+    <string name="page4_no">4 из 4</string>
+
     <string name="hello">Привет!</string>
     <string name="name">Меня зовут</string>
     <string name="finik">Финик</string>

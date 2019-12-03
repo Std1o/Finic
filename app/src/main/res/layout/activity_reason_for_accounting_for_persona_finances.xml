@@ -112,7 +112,7 @@
         android:layout_above="@+id/btnNext"
         android:textColor="@color/colorTvCoinCount"
         android:layout_marginBottom="15dp"
-        android:text="2 из 6"/>
+        android:text="6 из 6"/>
 
     <EditText
         android:id="@+id/etAdvice"

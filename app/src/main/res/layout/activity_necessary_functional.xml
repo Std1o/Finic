@@ -225,7 +225,7 @@
         android:layout_above="@+id/btnNext"
         android:textColor="@color/colorTvCoinCount"
         android:layout_marginBottom="15dp"
-        android:text="2 из 6"/>
+        android:text="4 из 6"/>
 
     <Button
         android:id="@+id/btnNext"

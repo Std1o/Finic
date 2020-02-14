@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Finic</string>
+
+    <string name="err_no_selected">Nothing is selected</string>
+    <string name="empty_field">The field cannot be empty</string>
+    <string name="answer_field">Describe in 2-3 sentences, please.</string>
+    <string name="next">Next</string>
+    <string name="taken">collected&#160;&#160;&#160;</string>
+    <string name="coins">&#160;&#160;&#160;coins</string>
+    <string name="of">of</string>
+    <string name="getVip">Go for VIP status</string>
+    <string name="send">Send</string>
+
+    <string name="page2">2 of 6</string>
+    <string name="page3">3 of 6</string>
+    <string name="page4">4 of 6</string>
+    <string name="page5">5 of 6</string>
+    <string name="page6">6 of 6</string>
+
+    <string name="page2_no">2 of 4</string>
+    <string name="page3_no">3 of 4</string>
+    <string name="page4_no">4 of 4</string>
+
+    <string name="hello">Hi!</string>
+    <string name="name">My name is</string>
+    <string name="finik">Finic</string>
+    <string name="startFirstPart">And I am your future financial broker, which will help you save up to 30% of your budget and save money for your dreams!</string>
+    <string name="startFirstPart2">Please take this short survey and get</string>
+    <string name="thousand">1000 bonus coins</string>
+    <string name="in_our_app"> in our application</string>
+    <string name="startFirstPart3">Answer all questions and get</string>
+    <string name="vip"> VIP status</string>
+
+
+    <string name="q1">Do you keep records of personal finances?</string>
+    <string name="answer1_1">Yes, I do</string>
+    <string name="answer1_2">Yeah, from time to time.</string>
+    <string name="answer1_3">No</string>
+
+    <string name="yes_q2">Where do you keep records of personal finances?</string>
+    <string name="yes_answer_2_1">Phone app</string>
+    <string name="yes_answer_2_2">Notes</string>
+    <string name="yes_answer_2_3">Table</string>
+    <string name="yes_answer_2_4">In the notebook by hand</string>
+
+    <string name="yes_q3">How often do you record your income/expense?</string>
+    <string name="yes_answer_3_1">Once a day</string>
+    <string name="yes_answer_3_2">Once every 3-4 days</string>
+    <string name="yes_answer_3_3">Once a week</string>
+    <string name="yes_answer_3_4">Once a month</string>
+
+    <string name="yes_q4">Tick the box to see what features an ideal financial accounting application needs to have in order for you to use it?</string>
+    <string name="yes_answer_4_1">Manually enter revenues/expenses in 2 clicks</string>
+    <string name="yes_answer_4_2">Integration with banks and automatic loading of all expenses/receipts from bank accounts</string>
+    <string name="yes_answer_4_3">The presence in the application of an Expert Advisor that would help you save up to 30% of your budget and save money for your dreams</string>
+    <string name="yes_answer_4_4">Reminder of mandatory payments</string>
+    <string name="yes_answer_4_5">Reminder on overspending by category and possible overdraft</string>
+    <string name="yes_answer_4_6">Ability to generate individual reports on the parameters convenient for you and make uploads of the file</string>
+
+    <string name="yes_q5">What do you lack in the current way of accounting for personal finances?</string>
+
+    <string name="yes_q6">Why do you keep records of personal finances?</string>
+
+    <string name="no_q2">Why don\'t you keep track of your personal finances?</string>
+    <string name="no_answer_2_1">I don\'t understand why</string>
+    <string name="no_answer_2_2">I don\'t know how to do this right</string>
+    <string name="no_answer_2_3">Difficult, uncomfortable</string>
+    <string name="no_answer_2_4">It takes a lot of time</string>
+
+    <string name="no_q3">What would encourage you to keep track of your personal finances?</string>
+    <string name="no_answer_3_1">Personal finance training</string>
+    <string name="no_answer_3_2">A clear understanding of how much I could save through accounting</string>
+    <string name="no_answer_3_3">A clear understanding that this will allow me to live without debts</string>
+    <string name="no_answer_3_4">A clear understanding that this will allow me to save up for a dream</string>
+    <string name="no_answer_3_5">A convenient and simple application that would automate accounting and give me recommendations on personal finances</string>
+
+    <string name="congratulations">Congratulations!</string>
+    <string name="complete1">You have successfully answered all the questions!</string>
+    <string name="complete2">Now you have received</string>
+    <string name="complete2_2">for financial accounting! And also received</string>
+    <string name="complete3">We will notify you when the application is launched and you will be able to spend it to save up to 30% of your budget and save money for your dreams!</string>
+    <string name="complete4">Thank you from Finic!</string>
+
+    <string name="future_interface">Giao diện tương lai của chúng tôi</string>
+</resources>

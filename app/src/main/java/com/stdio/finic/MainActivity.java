@@ -42,8 +42,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
-        startActivity(new Intent(this, SlideActivity1.class));
-        Animatoo.animateFade(this);
         SharedPreferences currentPagePref = getSharedPreferences("currentPagePref", MODE_PRIVATE);
         languagePref = getSharedPreferences("languagePref", MODE_PRIVATE);
         String currentActivity = currentPagePref.getString("currentPage", "");

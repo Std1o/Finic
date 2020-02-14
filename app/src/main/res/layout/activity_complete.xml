@@ -2,24 +2,26 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CompleteActivity"
-    android:background="@drawable/bg_complete">
+    android:background="@drawable/bg_complete"
+    tools:context=".CompleteActivity">
 
     <androidx.appcompat.widget.AppCompatSpinner
         android:id="@+id/spinner2"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp">
 
         <TextView
             android:id="@+id/tvMoney"
@@ -39,69 +41,70 @@
     </LinearLayout>
 
     <RelativeLayout
+        android:id="@+id/relativeLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="100dp">
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp">
 
         <TextView
             android:id="@+id/tvCongratulations"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textAlignment="center"
             android:layout_centerHorizontal="true"
+            android:text="@string/congratulations"
+            android:textAlignment="center"
             android:textColor="@color/helloTextColor"
-            android:text="@string/congratulations" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tvCompleteBody"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textAlignment="center"
-            android:layout_centerHorizontal="true"
-            android:textColor="@color/colorWhite"
             android:layout_below="@id/tvCongratulations"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="18sp"
-            android:text="@string/complete1" />
+            android:text="@string/complete1"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tvCompleteBody2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textAlignment="center"
-            android:layout_centerHorizontal="true"
-            android:textColor="@color/colorWhite"
             android:layout_below="@id/tvCompleteBody"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="18sp"
-            android:text="@string/complete2" />
+            android:text="@string/complete2"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tvCompleteBody3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textAlignment="center"
-            android:layout_centerHorizontal="true"
-            android:textColor="@color/colorWhite"
             android:layout_below="@id/tvCompleteBody2"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="18sp"
-            android:text="@string/complete3" />
+            android:text="@string/complete3"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tvCompleteBody4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textAlignment="center"
+            android:layout_below="@id/tvCompleteBody3"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18sp"
+            android:text="@string/complete4"
+            android:textAlignment="center"
             android:textColor="@color/helloTextColor"
-            android:layout_below="@id/tvCompleteBody3"
-            android:text="@string/complete4" />
+            android:textSize="18sp" />
 
     </RelativeLayout>
 

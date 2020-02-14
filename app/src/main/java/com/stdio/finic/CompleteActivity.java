@@ -7,6 +7,7 @@ import androidx.appcompat.widget.AppCompatSpinner;
 import androidx.core.content.res.ResourcesCompat;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -21,12 +22,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+import com.stdio.finic.slideShow.SlideActivity1;
+
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class CompleteActivity extends AppCompatActivity {
+public class CompleteActivity extends AppCompatActivity implements View.OnClickListener {
 
     TextView tvMoney, tvCompleteBody2;
+    ImageView imageView2;
     AppCompatSpinner spinner;
     ArrayList<Integer> images = new ArrayList<>();
     SharedPreferences languagePref;
@@ -127,6 +132,7 @@ public class CompleteActivity extends AppCompatActivity {
         tvMoney = findViewById(R.id.tvMoney);
         SharedPreferences prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);
         tvMoney.setText(prefs.getInt("moneyCount", 0) + "");
+        tvMoney.setOnClickListener(this);
 
         SharedPreferences currentPagePref = getSharedPreferences("currentPagePref", MODE_PRIVATE);
         SharedPreferences.Editor editor = currentPagePref.edit();
@@ -140,6 +146,25 @@ public class CompleteActivity extends AppCompatActivity {
                 + "</font> <font color=#FFFFFF>" + getResources().getString(R.string.complete2_2)+ "</font>"
                 + "</font> <font color=#FFE300> " + getResources().getString(R.string.thousand)+ "!</font>";
         tvCompleteBody2.setText(Html.fromHtml(text));
+        initViewsAndSetListeners();
+    }
+
+    private void initViewsAndSetListeners() {
+        imageView2 = findViewById(R.id.imageView2);
+        imageView2.setOnClickListener(this);
+        findViewById(R.id.tvCongratulations).setOnClickListener(this);
+        findViewById(R.id.tvCompleteBody).setOnClickListener(this);
+        tvCompleteBody2.setOnClickListener(this);
+        findViewById(R.id.tvCompleteBody3).setOnClickListener(this);
+        findViewById(R.id.tvCompleteBody4).setOnClickListener(this);
+        findViewById(R.id.relativeLayout).setOnClickListener(this);
+        findViewById(R.id.relativeLayout2).setOnClickListener(this);
+        findViewById(R.id.linearLayout).setOnClickListener(this);
+    }
+
+    public void onClick(View view) {
+        startActivity(new Intent(this, SlideActivity1.class));
+        Animatoo.animateFade(this);
     }
 
     private int getSpinnerPosition(String code) {

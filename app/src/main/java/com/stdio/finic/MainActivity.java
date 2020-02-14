@@ -22,6 +22,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+import com.stdio.finic.slideShow.SlideActivity1;
+
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -39,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
+        startActivity(new Intent(this, SlideActivity1.class));
+        Animatoo.animateFade(this);
         SharedPreferences currentPagePref = getSharedPreferences("currentPagePref", MODE_PRIVATE);
         languagePref = getSharedPreferences("languagePref", MODE_PRIVATE);
         String currentActivity = currentPagePref.getString("currentPage", "");

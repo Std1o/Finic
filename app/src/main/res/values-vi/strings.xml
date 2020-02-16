@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">Finic</string>
 
-    <string name="err_no_selected">Nothing is selected</string>
+    <string name="err_no_selected">Chọn một trong các câu trả lời</string>
     <string name="empty_field">The field cannot be empty</string>
     <string name="answer_field">Trường để điền thêm: Xin vui lòng ghi 2 - 3 câu.</string>
     <string name="next">Tiếp theo</string>
-    <string name="taken">collected&#160;&#160;&#160;</string>
-    <string name="coins">&#160;&#160;&#160;coins</string>
+    <string name="taken">Đã kiếm được&#160;&#160;&#160;</string>
+    <string name="coins">&#160;&#160;&#160;xu</string>
     <string name="of">of</string>
     <string name="getVip">Tiến lên để đạt danh hiệu VIP</string>
     <string name="send">Send</string>

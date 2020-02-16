@@ -22,20 +22,20 @@
     <string name="page3_no">3 of 4</string>
     <string name="page4_no">4 of 4</string>
 
-    <string name="hello">Hi!</string>
-    <string name="name">My name is</string>
+    <string name="hello">สวัสดี!</string>
+    <string name="name">ฉันชื่อ</string>
     <string name="finik">Finic</string>
-    <string name="startFirstPart">And I am your future financial broker, which will help you save up to 30% of your budget and save money for your dreams!</string>
-    <string name="startFirstPart2">Please take this short survey and get</string>
-    <string name="thousand">1000 bonus coins</string>
-    <string name="in_our_app"> in our application</string>
-    <string name="startFirstPart3">Answer all questions and get</string>
-    <string name="vip"> VIP status</string>
+    <string name="startFirstPart">และฉันเป็นอนาคตของคุณเรื่องการเงินเพื่อที่จะช่วยให้คุณช่วยไป 30%ของงบประมาณและช่วยเงินสำหรับความฝันของคุณ!</string>
+    <string name="startFirstPart2">ได้โปรดสมบูรณ์นี้สั้นและได้ทั้งหมดของ</string>
+    <string name="thousand">1000 โบนัสองเหรียญ</string>
+    <string name="in_our_app"> ในของโปรแกรม</string>
+    <string name="startFirstPart3">ตอบคำถามทุกอย่างและเข้าใจ</string>
+    <string name="vip"> สถานะของ VIP</string>
 
 
-    <string name="q1">Do you keep records of personal finances?</string>
-    <string name="answer1_1">Yes, I do</string>
-    <string name="answer1_2">Yeah, from time to time.</string>
+    <string name="q1">คุณเก็บบันทึกของการเงินของส่วนตัว?</string>
+    <string name="answer1_1">ใช่ฉันทำ</string>
+    <string name="answer1_2">ใช่ยาเสพติดน่ะครับ</string>
     <string name="answer1_3">No</string>
 
     <string name="yes_q2">Where do you keep records of personal finances?</string>

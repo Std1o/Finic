@@ -3,7 +3,7 @@
 
     <string name="err_no_selected">Nothing is selected</string>
     <string name="empty_field">The field cannot be empty</string>
-    <string name="answer_field">Describe in 2-3 sentences, please.</string>
+    <string name="answer_field">Trường để điền thêm: Xin vui lòng ghi 2 - 3 câu.</string>
     <string name="next">Next</string>
     <string name="taken">collected&#160;&#160;&#160;</string>
     <string name="coins">&#160;&#160;&#160;coins</string>
@@ -50,23 +50,23 @@
     <string name="yes_answer_3_3">1 lần mỗi tuần</string>
     <string name="yes_answer_3_4">1 lần mỗi tháng</string>
 
-    <string name="yes_q4">Tick the box to see what features an ideal financial accounting application needs to have in order for you to use it?</string>
-    <string name="yes_answer_4_1">Manually enter revenues/expenses in 2 clicks</string>
-    <string name="yes_answer_4_2">Integration with banks and automatic loading of all expenses/receipts from bank accounts</string>
-    <string name="yes_answer_4_3">The presence in the application of an Expert Advisor that would help you save up to 30% of your budget and save money for your dreams</string>
-    <string name="yes_answer_4_4">Reminder of mandatory payments</string>
-    <string name="yes_answer_4_5">Reminder on overspending by category and possible overdraft</string>
-    <string name="yes_answer_4_6">Ability to generate individual reports on the parameters convenient for you and make uploads of the file</string>
+    <string name="yes_q4">Theo bạn ứng dụng theo dõi tình hình tài chính lý tưởng nên có những tính năng gì để thu hút bạn sử dụng nó?</string>
+    <string name="yes_answer_4_1">Nhập tay các khoản thu nhập/ chi phí trong 2 lần nhấp</string>
+    <string name="yes_answer_4_2">Tích hợp với ngân hàng và tự động tải tất cả các khoản chi phí/ các khoản tiền nạp vào từ các tài khoản ngân hàng</string>
+    <string name="yes_answer_4_3">Có tư vấn trong ứng dụng để có thể giúp bạn tiết kiệm đến 30% ngân sách và dành tiền cho giấc mơ của bạn</string>
+    <string name="yes_answer_4_4">Tính năng nhắc các khoản thanh toán bắt buộc</string>
+    <string name="yes_answer_4_5">Tính năng nhắc các khoản bội chi theo danh mục và khả năng bị thấu chi</string>
+    <string name="yes_answer_4_6">Có thể tạo báo cáo riêng theo các tham số thuận tiện cho bạn và có thể tải file xuống</string>
 
-    <string name="yes_q5">What do you lack in the current way of accounting for personal finances?</string>
+    <string name="yes_q5">Phương thức theo dõi tình hình tài chính cá nhân hiện nay của bạn đang thiếu điều gì?</string>
 
-    <string name="yes_q6">Why do you keep records of personal finances?</string>
+    <string name="yes_q6">Tại sao bạn lại theo dõi tình hình tài chính cá nhân của mình?</string>
 
-    <string name="no_q2">Why don\'t you keep track of your personal finances?</string>
-    <string name="no_answer_2_1">I don\'t understand why</string>
-    <string name="no_answer_2_2">I don\'t know how to do this right</string>
-    <string name="no_answer_2_3">Difficult, uncomfortable</string>
-    <string name="no_answer_2_4">It takes a lot of time</string>
+    <string name="no_q2">Tại sao bạn không theo dõi tình hình tài chính cá nhân của mình?</string>
+    <string name="no_answer_2_1">Tôi cũng không biết tại sao</string>
+    <string name="no_answer_2_2">Tôi không biết phải làm thế nào mới đúng</string>
+    <string name="no_answer_2_3">Khó, không tiện</string>
+    <string name="no_answer_2_4">Tốn thời gian</string>
 
     <string name="no_q3">What would encourage you to keep track of your personal finances?</string>
     <string name="no_answer_3_1">Personal finance training</string>

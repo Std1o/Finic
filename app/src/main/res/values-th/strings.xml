@@ -33,22 +33,22 @@
     <string name="vip"> สถานะของ VIP</string>
 
 
-    <string name="q1">คุณเก็บบันทึกของการเงินของส่วนตัว?</string>
-    <string name="answer1_1">ใช่ฉันทำ</string>
-    <string name="answer1_2">ใช่ยาเสพติดน่ะครับ</string>
-    <string name="answer1_3">No</string>
+    <string name="q1">คุณเก็บบันทึกของส่วนตัวของสถานะทางการเงินมั้ย?</string>
+    <string name="answer1_1">ใช่แล้ว</string>
+    <string name="answer1_2">ใช่ครั้ง</string>
+    <string name="answer1_3">ไม่</string>
 
-    <string name="yes_q2">Where do you keep records of personal finances?</string>
-    <string name="yes_answer_2_1">Phone app</string>
-    <string name="yes_answer_2_2">Notes</string>
-    <string name="yes_answer_2_3">Table</string>
-    <string name="yes_answer_2_4">In the notebook by hand</string>
+    <string name="yes_q2">ที่คุณเก็บส่วนตัวกันว่าการเงินของบันทึก?</string>
+    <string name="yes_answer_2_1">แอพในโทรศัพท์ของคุณ</string>
+    <string name="yes_answer_2_2">บันทึกย่อ</string>
+    <string name="yes_answer_2_3">โต๊ะ</string>
+    <string name="yes_answer_2_4">ในข้อความด่วนทันใจด้วยมือ</string>
 
-    <string name="yes_q3">How often do you record your income/expense?</string>
-    <string name="yes_answer_3_1">Once a day</string>
-    <string name="yes_answer_3_2">Once every 3-4 days</string>
-    <string name="yes_answer_3_3">Once a week</string>
-    <string name="yes_answer_3_4">Once a month</string>
+    <string name="yes_q3">บ่อยแค่ไหนที่คุณบันทึกของคุณรายได้/ค่าใช้จ่าย?</string>
+    <string name="yes_answer_3_1">1 ครั้งต่อวัน</string>
+    <string name="yes_answer_3_2">1 เวลาอยู่ 3-4 วัน</string>
+    <string name="yes_answer_3_3">1 ครั้งต่อสัปดาห์</string>
+    <string name="yes_answer_3_4">1 ครั้งต่อเดือน</string>
 
     <string name="yes_q4">Tick the box to see what features an ideal financial accounting application needs to have in order for you to use it?</string>
     <string name="yes_answer_4_1">Manually enter revenues/expenses in 2 clicks</string>

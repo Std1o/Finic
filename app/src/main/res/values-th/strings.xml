@@ -75,12 +75,12 @@
     <string name="no_answer_3_4">เป็นความเข้าใจชัดเจนของสิ่งนี้จะอนุญาตให้ฉันเพื่อบันทึกสำหรับความฝัน</string>
     <string name="no_answer_3_5">มีบางอย่างได้อย่างง่ายดายและเรียบง่ายโปรแกรมที่จะบัญชีแล้วให้คำแนะนำของฉันแน่นอนดอนบนส่วนตัวของเงิน</string>
 
-    <string name="congratulations">Congratulations!</string>
-    <string name="complete1">You have successfully answered all the questions!</string>
-    <string name="complete2">Now you have received</string>
-    <string name="complete2_2">for financial accounting! And also received</string>
-    <string name="complete3">We will notify you when the application is launched and you will be able to spend it to save up to 30% of your budget and save money for your dreams!</string>
-    <string name="complete4">Thank you from Finic!</string>
+    <string name="congratulations">ขอแสดงความยินดีด้วย!</string>
+    <string name="complete1">คุณต้องเรียบร้อยแล้ตอบคำถาม!</string>
+    <string name="complete2">ตอนนี้คุณต้องได้รับ</string>
+    <string name="complete2_2">สำหรับการเงินบัญชี! และยังได้รับ</string>
+    <string name="complete3">เราจะแจ้งให้ทราบเมื่อแอ๊ปก็คือเราและคุณสามารถใช้มันเพื่อช่วยไป 30%ของงบประมาณและช่วยเงินสำหรับความฝันของคุณ!</string>
+    <string name="complete4">ขอบคุณจากวัน Finic!</string>
 
     <string name="future_interface">อินเตอร์เฟซในอนาคตของเรา</string>
 </resources>

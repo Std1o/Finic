@@ -67,12 +67,12 @@
     <string name="no_answer_2_3">صعب، غير مريح</string>
     <string name="no_answer_2_4">يستغرق الكثير من الوقت</string>
 
-    <string name="no_q3">What would encourage you to keep track of your personal finances?</string>
-    <string name="no_answer_3_1">Personal finance training</string>
-    <string name="no_answer_3_2">A clear understanding of how much I could save through accounting</string>
-    <string name="no_answer_3_3">A clear understanding that this will allow me to live without debts</string>
-    <string name="no_answer_3_4">A clear understanding that this will allow me to save up for a dream</string>
-    <string name="no_answer_3_5">A convenient and simple application that would automate accounting and give me recommendations on personal finances</string>
+    <string name="no_q3">ما الذي يحفزك لحساب ميزانيتك الشخصية؟</string>
+    <string name="no_answer_3_1">التدريب على حساب ميزانيتك الشخصية</string>
+    <string name="no_answer_3_2">فهم واضح لمقدار المال الذي يمكنني توفيره باستخدام المحاسبة</string>
+    <string name="no_answer_3_3">فهم واضح بأن هذا سيسمح لي بالعيش بدون ديون</string>
+    <string name="no_answer_3_4">الفهم الواضح أنه سيسمح لي هذا بالتوفير لتحقيق أحلامي</string>
+    <string name="no_answer_3_5">وجود تطبيق مريح وبسيط من شأنه التشغيل الآلي للمحاسبة ويقدم لي توصيات بشأن الميزانية الشخصية</string>
 
     <string name="congratulations">Congratulations!</string>
     <string name="complete1">You have successfully answered all the questions!</string>

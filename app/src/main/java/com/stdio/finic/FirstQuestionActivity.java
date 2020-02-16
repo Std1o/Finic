@@ -71,7 +71,7 @@ public class FirstQuestionActivity extends AppCompatActivity {
             SharedPreferences.Editor editor = prefs.edit();
             editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 150);
             editor.apply();
-            startActivity(new Intent(FirstQuestionActivity.this, PlaceOfPersonalFinanceAccountingActivity.class));
+            startActivity(new Intent(FirstQuestionActivity.this, YesActivity2.class));
             finish();
         }
         else if (id == R.id.radioButton3){

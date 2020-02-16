@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_questions"
-    tools:context=".FrequencyOfIncomeAndExpenseRecordingActivity">
+    tools:context=".YesActivity2">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -100,61 +100,61 @@
         android:layout_below="@id/toolbar"
         android:background="@color/colorWhite"
         android:padding="45dp"
-        android:text="@string/yes_q3"
+        android:text="@string/yes_q2"
         android:textAlignment="center"
         android:textColor="@color/textColor"
         android:textSize="17sp" />
 
-    <RadioGroup
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="70dp"
         android:layout_below="@+id/tvQuestion">
 
-        <RadioButton
-            android:id="@+id/radioButton1"
+        <CheckBox
+            android:id="@+id/checkBox1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:text="@string/yes_answer_3_1"
+            android:text="@string/yes_answer_2_1"
             android:textSize="15sp" />
 
-        <RadioButton
-            android:id="@+id/radioButton2"
+        <CheckBox
+            android:id="@+id/checkBox2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="10dp"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:text="@string/yes_answer_3_2"
+            android:text="@string/yes_answer_2_2"
             android:textSize="15sp" />
 
-        <RadioButton
-            android:id="@+id/radioButton3"
+        <CheckBox
+            android:id="@+id/checkBox3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="10dp"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:text="@string/yes_answer_3_3"
+            android:text="@string/yes_answer_2_3"
             android:textSize="15sp" />
 
-        <RadioButton
-            android:id="@+id/radioButton4"
+        <CheckBox
+            android:id="@+id/checkBox4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="10dp"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:text="@string/yes_answer_3_4"
+            android:text="@string/yes_answer_2_4"
             android:textSize="15sp" />
-    </RadioGroup>
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
@@ -162,7 +162,7 @@
         android:layout_above="@+id/btnNext"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="15dp"
-        android:text="@string/page3"
+        android:text="@string/page2"
         android:textColor="@color/colorTvCoinCount" />
 
     <Button

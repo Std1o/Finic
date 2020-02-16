@@ -64,14 +64,14 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".FrequencyOfIncomeAndExpenseRecordingActivity">
+        <activity android:name=".YesActivity3">
             <intent-filter>
                 <action android:name=".FrequencyOfIncomeAndExpenseRecordingActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".PlaceOfPersonalFinanceAccountingActivity">
+        <activity android:name=".YesActivity2">
             <intent-filter>
                 <action android:name=".PlaceOfPersonalFinanceAccountingActivity" />
 

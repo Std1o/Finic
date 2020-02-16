@@ -8,18 +8,20 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.ProgressBar;
-import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.Locale;
 
-public class FrequencyOfIncomeAndExpenseRecordingActivity extends AppCompatActivity {
+public class YesActivity2 extends AppCompatActivity {
 
     private ProgressBar progressBar;
     int id = 0;
-    String answer = "";
+    boolean isFirstClick = true;
+    ArrayList<String> list = new ArrayList<>();
     TextView tvMoney;
     SharedPreferences prefs;
     boolean nextIsAllowed = false;
@@ -34,7 +36,7 @@ public class FrequencyOfIncomeAndExpenseRecordingActivity extends AppCompatActiv
         conf.setLocale(new Locale(MainActivity.getLanguageFromPosition(languagePref
                 .getInt("language", MainActivity.getSpinnerPosition(Locale.getDefault().getCountry())))));
         res.updateConfiguration(conf, dm);
-        setContentView(R.layout.activity_frequency_of_income_and_expense_recording);
+        setContentView(R.layout.activity_yes2);
 
         tvMoney = findViewById(R.id.tvMoney);
         prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);
@@ -46,38 +48,55 @@ public class FrequencyOfIncomeAndExpenseRecordingActivity extends AppCompatActiv
         editor.apply();
 
         progressBar = findViewById(R.id.progressId);
-        progressBar.setProgress(48);
+        progressBar.setProgress(32);
 
-        RadioButton redRadioButton = findViewById(R.id.radioButton1);
-        redRadioButton.setOnClickListener(radioButtonClickListener);
+        CheckBox redCheckBox = findViewById(R.id.checkBox1);
+        redCheckBox.setOnClickListener(CheckBoxClickListener);
 
-        RadioButton greenRadioButton = findViewById(R.id.radioButton2);
-        greenRadioButton.setOnClickListener(radioButtonClickListener);
+        CheckBox greenCheckBox = findViewById(R.id.checkBox2);
+        greenCheckBox.setOnClickListener(CheckBoxClickListener);
 
-        RadioButton blueRadioButton = findViewById(R.id.radioButton3);
-        blueRadioButton.setOnClickListener(radioButtonClickListener);
+        CheckBox blueCheckBox = findViewById(R.id.checkBox3);
+        blueCheckBox.setOnClickListener(CheckBoxClickListener);
 
-        RadioButton fourth = findViewById(R.id.radioButton4);
-        fourth.setOnClickListener(radioButtonClickListener);
+        CheckBox fourthCheckBox = findViewById(R.id.checkBox4);
+        fourthCheckBox.setOnClickListener(CheckBoxClickListener);
     }
 
-    View.OnClickListener radioButtonClickListener = new View.OnClickListener() {
+    View.OnClickListener CheckBoxClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            RadioButton rb = (RadioButton)v;
-            id = rb.getId();
-            answer = "\n\nКак часто вы вносите доходы/расходы в учет? - " + rb.getText();
-            nextIsAllowed = true;
+            CheckBox rb = (CheckBox)v;
+            if (isFirstClick) {
+                MainActivity.message += "\n\nГде вы ведете учете личных финансов? - ";
+            }
+            isFirstClick = false;
+            if (rb.isChecked()) {
+                if (!list.contains(rb.getText().toString())) {
+                    list.add(rb.getText().toString());
+                }
+            }
+            else {
+                list.remove(rb.getText().toString());
+            }
+            if (!list.isEmpty()) {
+                nextIsAllowed = true;
+            }
+            else {
+                nextIsAllowed = false;
+            }
         }
     };
 
     public void onClick(View view) {
         if (nextIsAllowed) {
-            MainActivity.message += answer;
+            for (String s : list) {
+                MainActivity.message += s + ", ";
+            }
             SharedPreferences.Editor editor = prefs.edit();
             editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 150);
             editor.apply();
-            startActivity(new Intent(FrequencyOfIncomeAndExpenseRecordingActivity.this, NecessaryFunctionalActivity.class));
+            startActivity(new Intent(YesActivity2.this, YesActivity3.class));
             finish();
         }
         else {

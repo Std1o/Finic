@@ -33,22 +33,22 @@
     <string name="vip"> danh hiệu VIP</string>
 
 
-    <string name="q1">Do you keep records of personal finances?</string>
-    <string name="answer1_1">Yes, I do</string>
-    <string name="answer1_2">Yeah, from time to time.</string>
-    <string name="answer1_3">No</string>
+    <string name="q1">Bạn có theo dõi tình hình tài chính cá nhân của mình không?</string>
+    <string name="answer1_1">Có</string>
+    <string name="answer1_2">Có, thỉnh thoảng</string>
+    <string name="answer1_3">Không</string>
 
-    <string name="yes_q2">Where do you keep records of personal finances?</string>
-    <string name="yes_answer_2_1">Phone app</string>
-    <string name="yes_answer_2_2">Notes</string>
-    <string name="yes_answer_2_3">Table</string>
-    <string name="yes_answer_2_4">In the notebook by hand</string>
+    <string name="yes_q2">Bạn theo dõi tình hình tài chính cá nhân bằng cách nào?</string>
+    <string name="yes_answer_2_1">Ứng dụng trên điện thoại</string>
+    <string name="yes_answer_2_2">Ghi chú</string>
+    <string name="yes_answer_2_3">Bảng tính</string>
+    <string name="yes_answer_2_4">Trong một cuốn sổ tay</string>
 
-    <string name="yes_q3">How often do you record your income/expense?</string>
-    <string name="yes_answer_3_1">Once a day</string>
-    <string name="yes_answer_3_2">Once every 3-4 days</string>
-    <string name="yes_answer_3_3">Once a week</string>
-    <string name="yes_answer_3_4">Once a month</string>
+    <string name="yes_q3">Bạn có thường xuyên ghi lại các khoản thu nhập/ chi phí không?</string>
+    <string name="yes_answer_3_1">1 lần mỗi ngày</string>
+    <string name="yes_answer_3_2">1 lần trong 3-4 ngày</string>
+    <string name="yes_answer_3_3">1 lần mỗi tuần</string>
+    <string name="yes_answer_3_4">1 lần mỗi tháng</string>
 
     <string name="yes_q4">Tick the box to see what features an ideal financial accounting application needs to have in order for you to use it?</string>
     <string name="yes_answer_4_1">Manually enter revenues/expenses in 2 clicks</string>

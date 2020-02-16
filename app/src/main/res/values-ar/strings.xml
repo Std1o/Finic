@@ -2,14 +2,14 @@
     <string name="app_name">Finic</string>
 
     <string name="err_no_selected">اختر واحد من الاختيارات</string>
-    <string name="empty_field">The field cannot be empty</string>
-    <string name="answer_field">Describe in 2-3 sentences, please.</string>
+    <string name="empty_field">الحقل لا يمكن أن يكون فارغا</string>
+    <string name="answer_field">اشرح في جملتين أو ثلاثة من فضلك.</string>
     <string name="next">إضافي</string>
     <string name="taken">جنيت&#160;&#160;&#160;</string>
     <string name="coins">&#160;&#160;&#160;قطعة نقدية</string>
     <string name="of">من</string>
     <string name="getVip">الذهاب لحالة VIP</string>
-    <string name="send">Send</string>
+    <string name="send">أرسل</string>
 
     <string name="page2">2 من 6</string>
     <string name="page3">3 من 6</string>

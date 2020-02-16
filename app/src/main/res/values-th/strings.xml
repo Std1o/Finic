@@ -62,18 +62,18 @@
 
     <string name="yes_q6">ทำไมคุณเก็บบันทึกของส่วนตัวของสถานะทางการเงินมั้ย?</string>
 
-    <string name="no_q2">Why don\'t you keep track of your personal finances?</string>
-    <string name="no_answer_2_1">I don\'t understand why</string>
-    <string name="no_answer_2_2">I don\'t know how to do this right</string>
-    <string name="no_answer_2_3">Difficult, uncomfortable</string>
-    <string name="no_answer_2_4">It takes a lot of time</string>
+    <string name="no_q2">ทำไมคุณไม่เก็บบันทึกสถานะทางการเงินส่วนตัว?</string>
+    <string name="no_answer_2_1">ฉันไม่เข้าใจว่าทำไม</string>
+    <string name="no_answer_2_2">ฉันไม่รู้ว่าต้องทำมันอย่างถูกต้อง</string>
+    <string name="no_answer_2_3">ลำบากหน่อยนะท่านคงไม่มีใครอยากรับ</string>
+    <string name="no_answer_2_4">ต้องใช้เวลานานก</string>
 
-    <string name="no_q3">What would encourage you to keep track of your personal finances?</string>
-    <string name="no_answer_3_1">Personal finance training</string>
-    <string name="no_answer_3_2">A clear understanding of how much I could save through accounting</string>
-    <string name="no_answer_3_3">A clear understanding that this will allow me to live without debts</string>
-    <string name="no_answer_3_4">A clear understanding that this will allow me to save up for a dream</string>
-    <string name="no_answer_3_5">A convenient and simple application that would automate accounting and give me recommendations on personal finances</string>
+    <string name="no_q3">อะไรจะกระตุ้นคุณต้องบัญชีผู้ใช้สำหรับส่วนตัวของสถานะทางการเงินมั้ย?</string>
+    <string name="no_answer_3_1">ส่วนตัวกันว่าการเงินของการฝึก</string>
+    <string name="no_answer_3_2">เป็นความเข้าใจชัดเจนของเงินเท่าไหร่ฉันสามารถช่วยกับบัญชี</string>
+    <string name="no_answer_3_3">เป็นความเข้าใจชัดเจนว่าเรื่องนี้จะอนุญาตให้ฉันต้องอยู่โดยไม่มีหนี้</string>
+    <string name="no_answer_3_4">เป็นความเข้าใจชัดเจนของสิ่งนี้จะอนุญาตให้ฉันเพื่อบันทึกสำหรับความฝัน</string>
+    <string name="no_answer_3_5">มีบางอย่างได้อย่างง่ายดายและเรียบง่ายโปรแกรมที่จะบัญชีแล้วให้คำแนะนำของฉันแน่นอนดอนบนส่วนตัวของเงิน</string>
 
     <string name="congratulations">Congratulations!</string>
     <string name="complete1">You have successfully answered all the questions!</string>

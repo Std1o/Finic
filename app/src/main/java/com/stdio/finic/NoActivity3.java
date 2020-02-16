@@ -16,7 +16,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class FinancialAccountingIncentiveActivity extends AppCompatActivity {
+public class NoActivity3 extends AppCompatActivity {
 
     ArrayList<String> list = new ArrayList<>();
     String question = "";
@@ -35,7 +35,7 @@ public class FinancialAccountingIncentiveActivity extends AppCompatActivity {
         conf.setLocale(new Locale(MainActivity.getLanguageFromPosition(languagePref
                 .getInt("language", MainActivity.getSpinnerPosition(Locale.getDefault().getCountry())))));
         res.updateConfiguration(conf, dm);
-        setContentView(R.layout.activity_financial_accounting_incentive);
+        setContentView(R.layout.activity_no3);
 
         progressBar = findViewById(R.id.progressId);
         progressBar.setProgress(75);

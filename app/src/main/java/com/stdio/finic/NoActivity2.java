@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 import java.util.Locale;
 
-public class ReasonForNotAccountingForPersonaFinancesActivity extends AppCompatActivity {
+public class NoActivity2 extends AppCompatActivity {
 
     private ProgressBar progressBar;
     int id = 0;
@@ -34,7 +34,7 @@ public class ReasonForNotAccountingForPersonaFinancesActivity extends AppCompatA
         conf.setLocale(new Locale(MainActivity.getLanguageFromPosition(languagePref
                 .getInt("language", MainActivity.getSpinnerPosition(Locale.getDefault().getCountry())))));
         res.updateConfiguration(conf, dm);
-        setContentView(R.layout.activity_reason_for_not_accounting_for_persona_finances);
+        setContentView(R.layout.activity_no2);
 
         tvMoney = findViewById(R.id.tvMoney);
         prefs = getSharedPreferences("moneyPref", MODE_PRIVATE);
@@ -77,7 +77,7 @@ public class ReasonForNotAccountingForPersonaFinancesActivity extends AppCompatA
             SharedPreferences.Editor editor = prefs.edit();
             editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 150);
             editor.apply();
-            startActivity(new Intent(this, FinancialAccountingIncentiveActivity.class));
+            startActivity(new Intent(this, NoActivity3.class));
             finish();
         }
         else {

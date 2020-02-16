@@ -79,7 +79,7 @@ public class FirstQuestionActivity extends AppCompatActivity {
             SharedPreferences.Editor editor = prefs.edit();
             editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 150);
             editor.apply();
-            startActivity(new Intent(this, ReasonForNotAccountingForPersonaFinancesActivity.class));
+            startActivity(new Intent(this, NoActivity2.class));
             finish();
         }
         else {

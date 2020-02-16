@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_questions"
-    tools:context=".FinancialAccountingIncentiveActivity">
+    tools:context=".NoActivity2">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -100,77 +100,61 @@
         android:layout_below="@id/toolbar"
         android:background="@color/colorWhite"
         android:padding="45dp"
-        android:text="@string/no_q3"
+        android:text="@string/no_q2"
         android:textAlignment="center"
         android:textColor="@color/textColor"
         android:textSize="17sp" />
 
-    <LinearLayout
+    <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="70dp"
         android:layout_below="@+id/tvQuestion">
 
-        <CheckBox
-            android:id="@+id/checkBox1"
+        <RadioButton
+            android:id="@+id/radioButton1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
-            android:gravity="start"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:text="@string/no_answer_3_1"
+            android:text="@string/no_answer_2_1"
             android:textSize="15sp" />
 
-        <CheckBox
-            android:id="@+id/checkBox2"
+        <RadioButton
+            android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="10dp"
-            android:gravity="start"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:text="@string/no_answer_3_2"
+            android:text="@string/no_answer_2_2"
             android:textSize="15sp" />
 
-        <CheckBox
-            android:id="@+id/checkBox3"
+        <RadioButton
+            android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="10dp"
-            android:gravity="start"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:text="@string/no_answer_3_3"
+            android:text="@string/no_answer_2_3"
             android:textSize="15sp" />
 
-        <CheckBox
-            android:id="@+id/checkBox4"
+        <RadioButton
+            android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="10dp"
-            android:gravity="start"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:text="@string/no_answer_3_4"
+            android:text="@string/no_answer_2_4"
             android:textSize="15sp" />
-
-        <CheckBox
-            android:id="@+id/checkBox5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="10dp"
-            android:gravity="start"
-            android:scaleX="1.1"
-            android:scaleY="1.1"
-            android:text="@string/no_answer_3_5"
-            android:textSize="15sp" />
-    </LinearLayout>
+    </RadioGroup>
 
     <TextView
         android:layout_width="wrap_content"
@@ -178,7 +162,7 @@
         android:layout_above="@+id/btnNext"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="15dp"
-        android:text="@string/page3_no"
+        android:text="@string/page2_no"
         android:textColor="@color/colorTvCoinCount" />
 
     <Button

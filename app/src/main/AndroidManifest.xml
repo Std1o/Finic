@@ -29,51 +29,51 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".FinancialAccountingIncentiveActivity">
+        <activity android:name=".NoActivity3">
             <intent-filter>
-                <action android:name=".FinancialAccountingIncentiveActivity" />
+                <action android:name=".NoActivity3" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".YesActivity6">
             <intent-filter>
-                <action android:name=".ReasonForAccountingForPersonaFinancesActivity" />
+                <action android:name=".YesActivity6" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".YesActivity5">
             <intent-filter>
-                <action android:name=".ImproveWayPersonalFinanceAccountActivity" />
+                <action android:name=".YesActivity5" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".YesActivity4">
             <intent-filter>
-                <action android:name=".NecessaryFunctionalActivity" />
+                <action android:name=".YesActivity4" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ReasonForNotAccountingForPersonaFinancesActivity">
+        <activity android:name=".NoActivity2">
             <intent-filter>
-                <action android:name=".ReasonForNotAccountingForPersonaFinancesActivity" />
+                <action android:name=".NoActivity2" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".YesActivity3">
             <intent-filter>
-                <action android:name=".FrequencyOfIncomeAndExpenseRecordingActivity" />
+                <action android:name=".YesActivity3" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".YesActivity2">
             <intent-filter>
-                <action android:name=".PlaceOfPersonalFinanceAccountingActivity" />
+                <action android:name=".YesActivity2" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

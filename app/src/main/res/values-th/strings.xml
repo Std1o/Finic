@@ -11,6 +11,7 @@
     <string name="getVip">ไปให้สถานะของ VIP</string>
     <string name="send">Send</string>
     <string name="push">ได้โปรดเอา survey</string>
+    <string name="restart_for_changes">การเปลี่ยนแปลงจะมีผลหลังจากที่เริ่มใหม่อีกครั้ง</string>
 
     <string name="page2">2 ใน 6</string>
     <string name="page3">3 ใน 6</string>

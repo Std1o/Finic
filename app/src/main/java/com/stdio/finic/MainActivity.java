@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
                     editor.putInt("language", position);
                     editor.apply();
                     if (isShowed) {
-                        Toast.makeText(MainActivity.this, "Изменения вступят в силу после перезапуска", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, getString(R.string.restart_for_changes), Toast.LENGTH_SHORT).show();
                     }
                     else {
                         isShowed = true;

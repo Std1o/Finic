@@ -11,6 +11,7 @@
     <string name="getVip">Seguir el estado VIP</string>
     <string name="send">Enviar</string>
     <string name="push">Por favor, tome la encuesta</string>
+    <string name="restart_for_changes">Los cambios surtirán efecto después del reinicio</string>
 
     <string name="page2">2 de 6</string>
     <string name="page3">3 de 6</string>

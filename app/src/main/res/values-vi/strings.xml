@@ -11,6 +11,7 @@
     <string name="getVip">Tiến lên để đạt danh hiệu VIP</string>
     <string name="send">Send</string>
     <string name="push">Xin vui lòng đi khảo sát</string>
+    <string name="restart_for_changes">Sự thay đổi sẽ có hiệu quả sau khi khởi động</string>
 
     <string name="page2">2 of 6</string>
     <string name="page3">3 of 6</string>

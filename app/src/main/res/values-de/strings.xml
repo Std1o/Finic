@@ -11,6 +11,7 @@
     <string name="getVip">Vorwärts für VIP-Status</string>
     <string name="send">Senden</string>
     <string name="push">Bitte nehmen Sie die Umfrage</string>
+    <string name="restart_for_changes">Die änderungen treten nach dem Neustart in Kraft</string>
 
     <string name="page2">2 von 6</string>
     <string name="page3">3 von 6</string>

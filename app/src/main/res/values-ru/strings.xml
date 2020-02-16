@@ -11,6 +11,7 @@
     <string name="getVip">Вперед за VIP-статусом</string>
     <string name="send">Отправить</string>
     <string name="push">Пройдите опрос</string>
+    <string name="restart_for_changes">Изменения вступят в силу после перезапуска</string>
 
     <string name="page2">2 из 6</string>
     <string name="page3">3 из 6</string>

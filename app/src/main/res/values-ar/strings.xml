@@ -11,6 +11,7 @@
     <string name="getVip">الذهاب لحالة VIP</string>
     <string name="send">أرسل</string>
     <string name="push">أجب على الاستطلاع</string>
+    <string name="restart_for_changes">التغييرات بعد إعادة التشغيل</string>
 
     <string name="page2">2 من 6</string>
     <string name="page3">3 من 6</string>

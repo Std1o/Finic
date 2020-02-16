@@ -119,7 +119,7 @@ public class CompleteActivity extends AppCompatActivity implements View.OnClickL
                 editor.putInt("language", position);
                 editor.apply();
                 if (isShowed) {
-                    Toast.makeText(CompleteActivity.this, "Изменения вступят в силу после перезапуска", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CompleteActivity.this, getString(R.string.restart_for_changes), Toast.LENGTH_SHORT).show();
                 }
                 else {
                     isShowed = true;

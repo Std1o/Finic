@@ -32,7 +32,7 @@ public class AlarmManagerBroadcastReceiver extends BroadcastReceiver {
         wl.acquire();
         SharedPreferences prefs = context.getSharedPreferences("moneyPref", Context.MODE_PRIVATE);
         if (prefs.getInt("moneyCount", 0) != 1000) {
-            sendNotification(context, "Пройдите опрос");
+            sendNotification(context, context.getString(R.string.push));
         }
 
 //Разблокируем поток.

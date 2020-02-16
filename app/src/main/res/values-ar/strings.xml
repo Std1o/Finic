@@ -21,15 +21,15 @@
     <string name="page3_no">3 of 4</string>
     <string name="page4_no">4 of 4</string>
 
-    <string name="hello">Hi!</string>
-    <string name="name">My name is</string>
-    <string name="finik">Finic</string>
-    <string name="startFirstPart">And I am your future financial broker, which will help you save up to 30% of your budget and save money for your dreams!</string>
-    <string name="startFirstPart2">Please take this short survey and get</string>
-    <string name="thousand">1000 bonus coins</string>
-    <string name="in_our_app"> in our application</string>
-    <string name="startFirstPart3">Answer all questions and get</string>
-    <string name="vip"> VIP status</string>
+    <string name="hello">مرحبا!</string>
+    <string name="name">اسمي</string>
+    <string name="finik">فينيك.</string>
+    <string name="startFirstPart">أنا صديقك المالي المستقبلي الذي سيساعدك على توفير ما يصل إلى 30% من ميزانيتك وتوفير المال لتحقيق حلمك!</string>
+    <string name="startFirstPart2">من فضلك أكمل هذا الاستطلاع القصير واحصل بالمقابل</string>
+    <string name="thousand">1000 قطعة نقدية</string>
+    <string name="in_our_app">  في تطبيقنا.</string>
+    <string name="startFirstPart3">اجب على كل الاسئلة واحصل على مر</string>
+    <string name="vip"> كز VIP في تطبيقنا!</string>
 
 
     <string name="q1">Do you keep records of personal finances?</string>

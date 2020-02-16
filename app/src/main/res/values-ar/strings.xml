@@ -11,15 +11,15 @@
     <string name="getVip">الذهاب لحالة VIP</string>
     <string name="send">Send</string>
 
-    <string name="page2">2 of 6</string>
-    <string name="page3">3 of 6</string>
-    <string name="page4">4 of 6</string>
-    <string name="page5">5 of 6</string>
-    <string name="page6">6 of 6</string>
+    <string name="page2">2 من 6</string>
+    <string name="page3">3 من 6</string>
+    <string name="page4">4 من 6</string>
+    <string name="page5">5 من 6</string>
+    <string name="page6">6 من 6</string>
 
-    <string name="page2_no">2 of 4</string>
-    <string name="page3_no">3 of 4</string>
-    <string name="page4_no">4 of 4</string>
+    <string name="page2_no">2 من 4</string>
+    <string name="page3_no">3 من 4</string>
+    <string name="page4_no">4 من 4</string>
 
     <string name="hello">مرحبا!</string>
     <string name="name">اسمي</string>

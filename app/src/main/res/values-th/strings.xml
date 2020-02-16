@@ -1,26 +1,26 @@
 <resources>
     <string name="app_name">Finic</string>
 
-    <string name="err_no_selected">Nothing is selected</string>
+    <string name="err_no_selected">เลือก 1 ของคำตอบ</string>
     <string name="empty_field">The field cannot be empty</string>
     <string name="answer_field">ปล่อนำเข้าข้อมูลช่องข้อมูล:โปรดอธิบายมันอยู่ใน 2-3 ประโยคนั้นออกมา</string>
-    <string name="next">Next</string>
-    <string name="taken">collected&#160;&#160;&#160;</string>
-    <string name="coins">&#160;&#160;&#160;coins</string>
-    <string name="of">of</string>
-    <string name="getVip">Go for VIP status</string>
+    <string name="next">ถัดไป</string>
+    <string name="taken">ชุดสะสม&#160;&#160;&#160;</string>
+    <string name="coins">&#160;&#160;&#160;เหรียญ</string>
+    <string name="of">ใน</string>
+    <string name="getVip">ไปให้สถานะของ VIP</string>
     <string name="send">Send</string>
     <string name="push">ได้โปรดเอา survey</string>
 
-    <string name="page2">2 of 6</string>
-    <string name="page3">3 of 6</string>
-    <string name="page4">4 of 6</string>
-    <string name="page5">5 of 6</string>
-    <string name="page6">6 of 6</string>
+    <string name="page2">2 ใน 6</string>
+    <string name="page3">3 ใน 6</string>
+    <string name="page4">4 ใน 6</string>
+    <string name="page5">5 ใน 6</string>
+    <string name="page6">6 ใน 6</string>
 
-    <string name="page2_no">2 of 4</string>
-    <string name="page3_no">3 of 4</string>
-    <string name="page4_no">4 of 4</string>
+    <string name="page2_no">2 ใน 4</string>
+    <string name="page3_no">3 ใน 4</string>
+    <string name="page4_no">4 ใน 4</string>
 
     <string name="hello">สวัสดี!</string>
     <string name="name">ฉันชื่อ</string>

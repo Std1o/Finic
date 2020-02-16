@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">Finic</string>
 
-    <string name="err_no_selected">Nothing is selected</string>
+    <string name="err_no_selected">اختر واحد من الاختيارات</string>
     <string name="empty_field">The field cannot be empty</string>
     <string name="answer_field">Describe in 2-3 sentences, please.</string>
-    <string name="next">Next</string>
-    <string name="taken">collected&#160;&#160;&#160;</string>
-    <string name="coins">&#160;&#160;&#160;coins</string>
+    <string name="next">إضافي</string>
+    <string name="taken">جنيت&#160;&#160;&#160;</string>
+    <string name="coins">&#160;&#160;&#160;قطعة نقدية</string>
     <string name="of">of</string>
-    <string name="getVip">Go for VIP status</string>
+    <string name="getVip">الذهاب لحالة VIP</string>
     <string name="send">Send</string>
 
     <string name="page2">2 of 6</string>
@@ -23,7 +23,7 @@
 
     <string name="hello">مرحبا!</string>
     <string name="name">اسمي</string>
-    <string name="finik">فينيك.</string>
+    <string name="finik">فينيك</string>
     <string name="startFirstPart">أنا صديقك المالي المستقبلي الذي سيساعدك على توفير ما يصل إلى 30% من ميزانيتك وتوفير المال لتحقيق حلمك!</string>
     <string name="startFirstPart2">من فضلك أكمل هذا الاستطلاع القصير واحصل بالمقابل</string>
     <string name="thousand">1000 قطعة نقدية</string>

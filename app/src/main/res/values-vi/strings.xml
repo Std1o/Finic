@@ -4,11 +4,11 @@
     <string name="err_no_selected">Nothing is selected</string>
     <string name="empty_field">The field cannot be empty</string>
     <string name="answer_field">Trường để điền thêm: Xin vui lòng ghi 2 - 3 câu.</string>
-    <string name="next">Next</string>
+    <string name="next">Tiếp theo</string>
     <string name="taken">collected&#160;&#160;&#160;</string>
     <string name="coins">&#160;&#160;&#160;coins</string>
     <string name="of">of</string>
-    <string name="getVip">Go for VIP status</string>
+    <string name="getVip">Tiến lên để đạt danh hiệu VIP</string>
     <string name="send">Send</string>
     <string name="push">Xin vui lòng đi khảo sát</string>
 
@@ -77,10 +77,10 @@
 
     <string name="congratulations">Xin chúc mừng!</string>
     <string name="complete1">Bạn đã trả lời thành công tất cả các câu hỏi!</string>
-    <string name="complete2">Now you have received</string>
-    <string name="complete2_2">for financial accounting! And also received</string>
-    <string name="complete3">We will notify you when the application is launched and you will be able to spend it to save up to 30% of your budget and save money for your dreams!</string>
-    <string name="complete4">Thank you from Finic!</string>
+    <string name="complete2">Bạn sẽ nhận được</string>
+    <string name="complete2_2"> Và đồng thời được tặng</string>
+    <string name="complete3">Chúng tôi sẽ thông báo cho bạn biết khi nào ứng dụng bắt đầu chạy và bạn có thể sử dụng chúng để tiết kiệm tới 30% ngân sách cũng như tích góp tiền cho giấc mơ của bạn!</string>
+    <string name="complete4">Finic chân thành cảm ơn bạn!</string>
 
     <string name="future_interface">Giao diện tương lai của chúng tôi</string>
 </resources>

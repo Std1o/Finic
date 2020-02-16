@@ -77,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
             images.add(R.drawable.pt);
             images.add(R.drawable.ru);
             images.add(R.drawable.ar);
+            images.add(R.drawable.vi);
 
             spinner = findViewById(R.id.spinner2);
 
@@ -198,6 +199,9 @@ public class MainActivity extends AppCompatActivity {
             case "ar":
                 position = 7;
                 break;
+            case "vi":
+                position = 8;
+                break;
         }
         return position;
     }
@@ -228,6 +232,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 7:
                 code = "ar";
+                break;
+            case 8:
+                code = "vi";
                 break;
         }
         return code;

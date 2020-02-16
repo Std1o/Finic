@@ -96,7 +96,7 @@ public class NoActivity3 extends AppCompatActivity {
             SharedPreferences.Editor editor = prefs.edit();
             editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 350);
             editor.apply();
-            startActivity(new Intent(this, NecessaryFunctionalActivityLine2.class));
+            startActivity(new Intent(this, NoActivity4.class));
             finish();
         }
         else {

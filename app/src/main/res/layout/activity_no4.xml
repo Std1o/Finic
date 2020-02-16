@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_questions"
-    tools:context=".NecessaryFunctionalActivityLine2">
+    tools:context=".NoActivity4">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"

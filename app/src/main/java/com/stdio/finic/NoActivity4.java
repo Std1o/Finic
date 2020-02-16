@@ -21,7 +21,7 @@ import com.stdio.finic.gmailHelper.GMailSender;
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class NecessaryFunctionalActivityLine2 extends AppCompatActivity {
+public class NoActivity4 extends AppCompatActivity {
 
     ArrayList<String> list = new ArrayList<>();
     EditText etAdvice;
@@ -44,7 +44,7 @@ public class NecessaryFunctionalActivityLine2 extends AppCompatActivity {
         conf.setLocale(new Locale(MainActivity.getLanguageFromPosition(languagePref
                 .getInt("language", MainActivity.getSpinnerPosition(Locale.getDefault().getCountry())))));
         res.updateConfiguration(conf, dm);
-        setContentView(R.layout.activity_necessary_functional_line2);
+        setContentView(R.layout.activity_no4);
 
         progressBar = findViewById(R.id.progressId);
         progressBar.setProgress(90);
@@ -139,7 +139,7 @@ public class NecessaryFunctionalActivityLine2 extends AppCompatActivity {
                     SharedPreferences.Editor editor = prefs.edit();
                     editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 350);
                     editor.apply();
-                    startActivity(new Intent(NecessaryFunctionalActivityLine2.this, CompleteActivity.class));
+                    startActivity(new Intent(NoActivity4.this, CompleteActivity.class));
                     finish();
                 } catch (Exception e) {
                     Log.e("mylog", "Error: " + e.getMessage());

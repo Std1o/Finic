@@ -150,47 +150,24 @@ public class MainActivity extends AppCompatActivity {
             tvMoney.setText(prefs.getInt("moneyCount", 0) + "");
             tvStartBody = findViewById(R.id.tvStartBody);
 
-            if (languagePref.getInt("language", getSpinnerPosition(Locale.getDefault().getCountry())) == 7) {
-                String text = "</font> <font color=#FFE300>" + getResources().getString(R.string.finik) + "</font>"
-                        + "<font color=#FFFFFF>\n" + getResources().getString(R.string.name)
-                        + "\n</font> <font color=#FFFFFF>" + getResources().getString(R.string.startFirstPart)+ "</font>";
-                tvStartBody.setText(Html.fromHtml(text));
+            String text = "<font color=#FFFFFF>\n" + getResources().getString(R.string.name)
+                    + "</font> <font color=#FFE300>" + getResources().getString(R.string.finik) + "</font>"
+                    + "</font> <font color=#FFFFFF>" + getResources().getString(R.string.startFirstPart)+ "</font>";
+            tvStartBody.setText(Html.fromHtml(text));
 
-                tvStartBody2 = findViewById(R.id.tvStartBody2);
-                String text2 =
-                        "</font> <font color=#FFFFFF>" + getResources().getString(R.string.startFirstPart2)+ "</font>"
-                                + "</font> <font color=#FFE300>" + getResources().getString(R.string.thousand)+ "</font>"
-                                + "</font> <font color=#FFFFFF>" + getResources().getString(R.string.in_our_app)+ "</font>";
-                tvStartBody2.setText(Html.fromHtml(text2));
+            tvStartBody2 = findViewById(R.id.tvStartBody2);
+            String text2 =
+                    "</font> <font color=#FFFFFF>" + getResources().getString(R.string.startFirstPart2)+ "</font>"
+                            + "</font> <font color=#FFE300>" + getResources().getString(R.string.thousand)+ "</font>"
+                            + "</font> <font color=#FFFFFF>" + getResources().getString(R.string.in_our_app)+ "</font>";
+            tvStartBody2.setText(Html.fromHtml(text2));
 
-                tvStartBody3 = findViewById(R.id.tvStartBody3);
-                String text3 =
-                        "</font> <font color=#FFFFFF>" + getResources().getString(R.string.startFirstPart3)+ "</font>"
-                                + "</font> <font color=#FFE300>" + getResources().getString(R.string.vip)+ "</font>"
-                                + "</font> <font color=#FFFFFF>" + getResources().getString(R.string.in_our_app)+ "</font>";
-                tvStartBody3.setText(Html.fromHtml(text3));
-            }
-
-            else {
-                String text = "<font color=#FFFFFF>\n" + getResources().getString(R.string.name)
-                        + "</font> <font color=#FFE300>" + getResources().getString(R.string.finik) + "</font>"
-                        + "</font> <font color=#FFFFFF>" + getResources().getString(R.string.startFirstPart)+ "</font>";
-                tvStartBody.setText(Html.fromHtml(text));
-
-                tvStartBody2 = findViewById(R.id.tvStartBody2);
-                String text2 =
-                        "</font> <font color=#FFFFFF>" + getResources().getString(R.string.startFirstPart2)+ "</font>"
-                                + "</font> <font color=#FFE300>" + getResources().getString(R.string.thousand)+ "</font>"
-                                + "</font> <font color=#FFFFFF>" + getResources().getString(R.string.in_our_app)+ "</font>";
-                tvStartBody2.setText(Html.fromHtml(text2));
-
-                tvStartBody3 = findViewById(R.id.tvStartBody3);
-                String text3 =
-                        "</font> <font color=#FFFFFF>" + getResources().getString(R.string.startFirstPart3)+ "</font>"
-                                + "</font> <font color=#FFE300>" + getResources().getString(R.string.vip)+ "</font>"
-                                + "</font> <font color=#FFFFFF>" + getResources().getString(R.string.in_our_app)+ "</font>";
-                tvStartBody3.setText(Html.fromHtml(text3));
-            }
+            tvStartBody3 = findViewById(R.id.tvStartBody3);
+            String text3 =
+                    "</font> <font color=#FFFFFF>" + getResources().getString(R.string.startFirstPart3)+ "</font>"
+                            + "</font> <font color=#FFE300>" + getResources().getString(R.string.vip)+ "</font>"
+                            + "</font> <font color=#FFFFFF>" + getResources().getString(R.string.in_our_app)+ "</font>";
+            tvStartBody3.setText(Html.fromHtml(text3));
         }
     }
 

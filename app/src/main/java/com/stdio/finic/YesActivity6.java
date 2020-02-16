@@ -19,7 +19,7 @@ import com.stdio.finic.gmailHelper.GMailSender;
 
 import java.util.Locale;
 
-public class ReasonForAccountingForPersonaFinancesActivity extends AppCompatActivity {
+public class YesActivity6 extends AppCompatActivity {
 
     EditText editText;
     String recipient = "martiality.me@yandex.ru";
@@ -40,7 +40,7 @@ public class ReasonForAccountingForPersonaFinancesActivity extends AppCompatActi
         conf.setLocale(new Locale(MainActivity.getLanguageFromPosition(languagePref
                 .getInt("language", MainActivity.getSpinnerPosition(Locale.getDefault().getCountry())))));
         res.updateConfiguration(conf, dm);
-        setContentView(R.layout.activity_reason_for_accounting_for_persona_finances);
+        setContentView(R.layout.activity_yes6);
 
         progressBar = findViewById(R.id.progressId);
         progressBar.setProgress(95);
@@ -86,7 +86,7 @@ public class ReasonForAccountingForPersonaFinancesActivity extends AppCompatActi
                     SharedPreferences.Editor editor = prefs.edit();
                     editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 200);
                     editor.apply();
-                    startActivity(new Intent(ReasonForAccountingForPersonaFinancesActivity.this, CompleteActivity.class));
+                    startActivity(new Intent(YesActivity6.this, CompleteActivity.class));
                     finish();
                 } catch (Exception e) {
                     Log.e("mylog", "Error: " + e.getMessage());

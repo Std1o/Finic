@@ -77,7 +77,7 @@ public class YesActivity3 extends AppCompatActivity {
             SharedPreferences.Editor editor = prefs.edit();
             editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 150);
             editor.apply();
-            startActivity(new Intent(YesActivity3.this, NecessaryFunctionalActivity.class));
+            startActivity(new Intent(YesActivity3.this, YesActivity4.class));
             finish();
         }
         else {

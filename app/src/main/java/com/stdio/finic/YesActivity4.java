@@ -17,7 +17,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class NecessaryFunctionalActivity extends AppCompatActivity {
+public class YesActivity4 extends AppCompatActivity {
 
     boolean isFirstClick = true;
     ArrayList<String> list = new ArrayList<>();
@@ -37,7 +37,7 @@ public class NecessaryFunctionalActivity extends AppCompatActivity {
         conf.setLocale(new Locale(MainActivity.getLanguageFromPosition(languagePref
                 .getInt("language", MainActivity.getSpinnerPosition(Locale.getDefault().getCountry())))));
         res.updateConfiguration(conf, dm);
-        setContentView(R.layout.activity_necessary_functional);
+        setContentView(R.layout.activity_yes4);
 
         progressBar = findViewById(R.id.progressId);
         progressBar.setProgress(64);
@@ -113,7 +113,7 @@ public class NecessaryFunctionalActivity extends AppCompatActivity {
             SharedPreferences.Editor editor = prefs.edit();
             editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 150);
             editor.apply();
-            startActivity(new Intent(this, ImproveWayPersonalFinanceAccountActivity.class));
+            startActivity(new Intent(this, YesActivity5.class));
             finish();
         }
         else {

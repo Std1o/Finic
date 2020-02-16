@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 import java.util.Locale;
 
-public class ImproveWayPersonalFinanceAccountActivity extends AppCompatActivity {
+public class YesActivity5 extends AppCompatActivity {
 
     EditText etAdvice;
     TextView tvMoney;
@@ -32,7 +32,7 @@ public class ImproveWayPersonalFinanceAccountActivity extends AppCompatActivity 
         conf.setLocale(new Locale(MainActivity.getLanguageFromPosition(languagePref
                 .getInt("language", MainActivity.getSpinnerPosition(Locale.getDefault().getCountry())))));
         res.updateConfiguration(conf, dm);
-        setContentView(R.layout.activity_improve_way_personal_finance_account);
+        setContentView(R.layout.activity_yes5);
         etAdvice = findViewById(R.id.etAdvice);
 
         SharedPreferences currentPagePref = getSharedPreferences("currentPagePref", MODE_PRIVATE);
@@ -54,7 +54,7 @@ public class ImproveWayPersonalFinanceAccountActivity extends AppCompatActivity 
             SharedPreferences.Editor editor = prefs.edit();
             editor.putInt("moneyCount", prefs.getInt("moneyCount", 0) + 200);
             editor.apply();
-            startActivity(new Intent(this, ReasonForAccountingForPersonaFinancesActivity.class));
+            startActivity(new Intent(this, YesActivity6.class));
             finish();
         }
         else {

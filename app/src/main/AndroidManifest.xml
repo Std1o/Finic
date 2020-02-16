@@ -36,21 +36,21 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ReasonForAccountingForPersonaFinancesActivity">
+        <activity android:name=".YesActivity6">
             <intent-filter>
                 <action android:name=".ReasonForAccountingForPersonaFinancesActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ImproveWayPersonalFinanceAccountActivity">
+        <activity android:name=".YesActivity5">
             <intent-filter>
                 <action android:name=".ImproveWayPersonalFinanceAccountActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".NecessaryFunctionalActivity">
+        <activity android:name=".YesActivity4">
             <intent-filter>
                 <action android:name=".NecessaryFunctionalActivity" />
 
